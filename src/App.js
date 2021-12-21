@@ -1,10 +1,10 @@
-// import logo from './logo.svg';
 import './App.css';
+import Sessions from './Components/Sessions';
 
 function App() {
   return (
-      <div>
-        
+      <div className="App">
+        {/* <Sessions/> */}
       </div>
   );
 }
