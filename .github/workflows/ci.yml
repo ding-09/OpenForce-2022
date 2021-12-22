@@ -29,7 +29,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm
-          npm install
+          yarn
+          yarn install
       - name: Build the project
-        run: npm start 
+        run: yarn start 
