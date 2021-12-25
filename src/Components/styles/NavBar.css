@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+nav {
+    font-family: 'Roboto Mono', monospace;
+    font-size: larger;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+nav img {
+    position: absolute;
+    width: 130px;
+    height: 140px;
+    left: 27px;
+    top: -29px;
+}
+
+.hero-content {
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 72px;
+color: #EEE9E6;
+margin-top: 2rem;
+}
+
+/* .header-container {
+    background-color: #1C232D;
+} */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    width: 497px;
+    margin-right: 6rem;
+    margin-left: 8rem;
+}
+
+header p {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    width: 497px;
+    margin-right: 6rem;
+    margin-left: 8rem;
+    margin-top: 3rem;
+}
+
+header button {
+    width: 208px;
+    height: 95px;
+    border-radius: 24px;
+    margin-top: 3rem;
+}
+
+header .register {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 8rem;
+}
+header .discord {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    color: #EEE9E6;
+    background: #46474B;
+    margin-left: 3rem;
+}
+
+.hero-image {
+    padding-right: 0px;
+}
+
+.hero-image img {
+    width: 600px;
+    height: 600px;
+    margin-top: 5rem;
+}
+
+button img {
+    width: 54px;
+    height: 42px;
+}
+
+.span-color {
+    color: rgb(9, 158, 9);
+}
+
+.dynamic-text {
+    color: #AD5FAA;
+}
+
+
+/* .wrapper .hero-content {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 72px;
+    overflow: hidden;
+  }
+.hero-content h1{
+    list-style: none;
+    color: #AD5FAA;
+    font-size: 48px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+
+.hero-content h1 span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+.hero-content h1 span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1C232D;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+  }
+@keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  } */
