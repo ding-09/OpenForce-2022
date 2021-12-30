@@ -1,0 +1,128 @@
+.orgContainer{
+    display: flex;
+    background-color: #0f141b;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.divider{
+    position: relative;
+    height: 100px;
+    background-color: #1C232D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dividerHorBar{
+    width: 90%;
+    background-color: #AD5FAA;
+    height: 5px;
+    position: absolute;
+    top: calc(50% - 2.5px);
+}
+
+.orgHeading{
+    background-color: #1C232D;
+    color: white;
+    z-index: 2;
+    font-size: 35px;
+    padding: 0px 20px;
+}
+
+
+.bePartofCont{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.bePartOf{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 2px solid #eee9e6;
+    color: #eee9e6;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.bePartOfTwo{
+    top: -2px;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    border: 2px solid #eee9e6;
+    color: #1C232D;
+    font-size: 0px;
+    opacity: 0;
+    background-color: #eee9e6;
+    transition: all 0.5s;
+}
+
+.bePartOf:hover .bePartOfTwo{
+    left: -2px;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.bePartOf:hover{
+    font-size: 0px;
+}
+
+
+
+
+/* Card */
+.orgCont{
+    height: 222px;
+    width: 30%;  
+    position: relative;  
+    margin: 10px 10px;
+}
+
+.orgDataCont{
+    position: absolute;
+    cursor: pointer;
+    height: 192px;
+    width: 100%;
+    left: 0px;
+    top: 30px;
+    border-radius: 24px;
+    transition: all 0.5s;
+    background: radial-gradient(50% 206.3% at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orgLogo{
+    height: 130px;
+    width: 130px;
+    
+}
+.orgName{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.orgCont:hover .orgDataCont{
+    top: 0px;
+    background: radial-gradient(50% 206.3% at 50% 50%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 100%);
+
+}
