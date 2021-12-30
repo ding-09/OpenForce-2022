@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 
 app.use(cors());
 app.use(express.json());
-
+const port = 5000
 
 const uri = "mongodb+srv://openforce:Openforce123@cluster0.enooy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
@@ -15,8 +15,10 @@ mongoose.connect(uri).then(() => {
     console.log(err);
 });
 
-app.listen(5000,()=>{
-    console.log("Listing to port " + 5000);
-})
+app.use('/api/session/',require('./routes/session'))
+
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`)
+  })
 
 //mongodb+srv://openforce:Openforce123@cluster0.enooy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

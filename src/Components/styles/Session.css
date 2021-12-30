@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+#Sessions{
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 100px;
+}
+.heading{
+    position: relative;
+    text-transform: uppercase;
+    color: #EEE9E6;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.heading::after{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: "";
+    border-bottom: 4px solid #EEE9E6;
+    width: 7%;
+}
+#sessions-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,19%);
+    column-gap: 20px;
+    row-gap: 30px;
+}
