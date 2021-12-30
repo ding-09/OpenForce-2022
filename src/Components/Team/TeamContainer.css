@@ -1,0 +1,20 @@
+
+.team-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:2%;
+    background-color: rgb(24, 22, 22);
+}
+
+.team-heading{
+    font-family: "Courier Prime";
+    color: #F5F5F5;
+}
+
+.team-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
