@@ -1,11 +1,13 @@
 .orgContainer{
     display: flex;
-    background-color: #0f141b;
+    background-color: #1C232D;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 90%;
+    padding: 20px;
+    min-height: 420px;
 }
 
 .divider{
@@ -85,44 +87,49 @@
 
 /* Card */
 .orgCont{
-    height: 222px;
-    width: 30%;  
-    position: relative;  
-    margin: 10px 10px;
-}
-
-.orgDataCont{
-    position: absolute;
-    cursor: pointer;
-    height: 192px;
-    width: 100%;
-    left: 0px;
-    top: 30px;
-    border-radius: 24px;
-    transition: all 0.5s;
-    background: radial-gradient(50% 206.3% at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%);
+    width: 250px;
+    height: 320px;
+    border: 2px solid #eee9e6;    
     display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #eee9e6;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-radius: 5px;
+    background-color: #46474B;
 }
 
 .orgLogo{
-    height: 130px;
-    width: 130px;
-    
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
 }
 .orgName{
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 400;
     text-align: center;
-    color: white;
+    font-size: 20px;
+    font-weight: 500;
     margin-top: 10px;
 }
 
-.orgCont:hover .orgDataCont{
-    top: 0px;
-    background: radial-gradient(50% 206.3% at 50% 50%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 100%);
+.orgNavigation{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.orgNavigation div{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #EEE9E6;
+    color: #1C232D;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
 
+.orgNavigation div:hover{
+    box-shadow: 0px 0px 10px #F48B0C;
 }

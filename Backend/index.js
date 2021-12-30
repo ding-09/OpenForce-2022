@@ -16,6 +16,7 @@ mongoose.connect(uri).then(() => {
 });
 
 app.use('/api/session/',require('./routes/session'))
+app.use('/api/org/',require('./routes/organization'))
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
