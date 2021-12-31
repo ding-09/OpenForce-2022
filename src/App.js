@@ -9,6 +9,7 @@ import SponsorsContainer from "./Components/Sponsors/SponsorsContainer";
 import { useEffect } from "react";
 import MentorCard from "./Components/Panel/MentorCard";
 import Panel from "./Components/Panel/Panel";
+import Registration from "./Components/Registration";
 
 function App() {
     return (
@@ -18,8 +19,9 @@ function App() {
                     <Route exact path="/">
                         <Home />
                         <SponsorsContainer/>
-                        {/* <Sessions /> */}
+                        <Sessions />
                         <Organization />
+                        <Registration />
                         <TeamContainer/>
                     </Route>
 
@@ -28,6 +30,8 @@ function App() {
                     </Route>
                     <Route exact path="/panel">
                         <Panel />
+                    </Route>
+                    <Route exact path="/test">
                     </Route>
                 </Switch>
             </div>
