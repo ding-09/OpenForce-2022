@@ -83,6 +83,26 @@ header .discord {
     margin-left: 3rem;
 }
 
+.discord {
+    width: 266px;
+}
+
+.discord a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.discord img {
+    width: 54px;
+    height: 42px;
+    margin-right: 25px;
+}
+
 .hero-image {
     padding-right: 0px;
 }

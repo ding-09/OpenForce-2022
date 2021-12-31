@@ -19,7 +19,7 @@ function Home() {
           <button className="register">Register</button>
           <button className="discord">
             <img src="./images/Discord.png" alt="" />
-            Discord
+            <a href="https://discord.com/invite/s77kYnfSGf">Discord</a>
           </button>
         </div>
         <div className="hero-image col col-md-6">
