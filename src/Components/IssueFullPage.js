@@ -5,42 +5,50 @@ import Addissue from "./Addissue";
 import IssueCard from "./IssueCard";
 import "./styles/OrgFullPage.css";
 
-export default function OrgFullPage(props) {
+export default function IssueFullPage(props) {
     const context = useContext(BaseContext);
-    const [url, setUrl] = useState(new URL(window.location.href));
     const [orgIssue, setorgIssue] = useState([]);
     const [orgData, setorgData] = useState({});
     const [difficultyLevel, setdifficultyLevel] = useState("All");
     const history = useHistory();
     useEffect(() => {
         const updateOrg = async () => {
-            var data = await context.callApi(
-                `/api/org/issue/${url.searchParams.get("id")}`,
-                "GET",
-                {}
-            );
+            var urlParm = new URL(window.location.href);
+            var url = `http://localhost:5000/api/org/issue/${urlParm.searchParams.get("id")}`;
+            var resp = await fetch(url, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json;charset=utf-8",
+                },
+            });
+
+            var data = (await resp.json()).data;
             console.log(data);
-            data = data.data;
             if (!data) {
                 history.push("/error");
                 return;
             }
 
             console.log(data, "data");
-            var comp = (
-                await context.callApi(
-                    `/api/org/${url.searchParams.get("id")}`,
-                    "GET",
-                    {}
-                )
-            ).data;
+
+            url = `http://localhost:5000/api/org/${urlParm.searchParams.get("id")}`;
+            resp = await fetch(url, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json;charset=utf-8",
+                },
+            });
+
+
+            var comp = (await resp.json()).data;
+
             setorgData(comp);
-            context.setorgData(comp);
             var array = [];
             for (var i of data.issue) {
                 array.push(JSON.parse(i));
             }
             setorgIssue(array);
+            console.log("fsdfasdfsdfssdfsdf", array);
         };
         updateOrg();
     }, []);
@@ -57,14 +65,10 @@ export default function OrgFullPage(props) {
         setdifficultyLevel(e.target.value);
     };
 
-    const showAddNewIssue = ()=>{
-        console.log("object")
-        context.setshowNewIssue(true);
-    }
 
     return (
         <div className="fullHeight">
-            <Addissue/>
+            {/* <Addissue/> */}
             <div className="orgHeader">
                 <div className="vertical-center fpageOrgDetails">
                     <img src={orgData.logo} alt="" className="fullPageLogo" />
@@ -77,7 +81,7 @@ export default function OrgFullPage(props) {
                         <option>Intermediate</option>
                         <option>Hard</option>
                     </select>
-                    <div class="addNew" onClick={showAddNewIssue}>Add New</div>
+                    {/* <div class="addNew" onClick={showAddNewIssue}>Add New</div> */}
                 </div>
             </div>
             <div className="issuesCont">

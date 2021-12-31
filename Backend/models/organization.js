@@ -19,6 +19,18 @@ const organizationSchema = new Schema(
         logo: {
             type: String,
             default: "https://firebasestorage.googleapis.com/v0/b/openforce-2022.appspot.com/o/organization%2FdefaultLogo.png?alt=media&token=0d875c0b-30f1-4121-bb5f-c430a3beef58"
+        },
+        panel:{
+            type: Schema.Types.Array,
+            default : []
+        },
+        time : {
+            type:String,
+            default:"1640857768196"
+        },
+        bookedBy : {
+            type: Schema.Types.Array,
+            default : []
         }
     }
 )

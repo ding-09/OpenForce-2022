@@ -1,23 +1,42 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import storage from "../FirebaseInit";
 import BaseContext from "./BaseContext.js";
 
 const BaseState = (props) => {
+    const [organization, setOrganization] = useState([]);
+
+    const getOrganization = async () => {
+        console.log("object");
+        var org = await callApi("/api/org/", "GET", {});
+        console.log(org);
+        if (!org.error) setOrganization(org.data);
+        else setOrganization([]);
+    };
 
     //endpoint is the server endpoint
     //type -> POST, GET, PUT etc
     //data is the data to be sent to server
     const callApi = async (endpoint, type, data) => {
         const url = `http://localhost:5000${endpoint}`;
-        const resp = await fetch(url, {
-            method: type,
-            headers: {
-                "Content-Type": "application/json;charset=utf-8",
-            },
-            body: JSON.stringify(data),
-        });
-
+        let resp;
+        if (type == "GET") {
+            resp = await fetch(url, {
+                method: type,
+                headers: {
+                    "Content-Type": "application/json;charset=utf-8",
+                },
+            });
+        } else {
+            resp = await fetch(url, {
+                method: type,
+                headers: {
+                    "Content-Type": "application/json;charset=utf-8",
+                },
+                body: JSON.stringify(data),
+            });
+        }
+        console.log(url, endpoint);
         const parsed = await resp.json();
         return parsed;
     };
@@ -40,10 +59,15 @@ const BaseState = (props) => {
         return url;
     };
 
-
     return (
         <BaseContext.Provider
-            value={upload,callApi}
+            value={{
+                upload,
+                callApi,
+                getOrganization,
+                organization,
+                setOrganization,
+            }}
         >
             {props.children}
         </BaseContext.Provider>

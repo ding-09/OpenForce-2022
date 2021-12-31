@@ -1,0 +1,9 @@
+.sponsors-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:2%;
+    background-color: rgb(24, 22, 22);
+    font-family: "Courier Prime";
+    color: #F5F5F5;
+}

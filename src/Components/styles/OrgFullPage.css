@@ -22,6 +22,9 @@
     height: 80%;
     margin-right: 20px;
     padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .issueHeading{
@@ -33,17 +36,27 @@
 }
 
 .openIssue{
-    color: #EEE9E6;
-    border:2px solid #46474B;
+    background-color: #EEE9E6;
+    border-radius: 5px;
     text-decoration: none;
-    padding: 5px 20px;
-    background-image: linear-gradient(to bottom, #272c35 0%, #323944 50%, #272c35 100%);
+    padding: 5px 25px;
+    font-weight: 600;
+    color: #272c35;
     margin-right: 30px;
 }
 
 .issueCont:hover{
     background-image: linear-gradient(to bottom, #323944 0%, #272c35 50%, #323944 100%);
 
+}
+
+.levelTag{
+    padding: 2px 10px;
+    font-size: 13px;
+    background-color: #272c35;
+    border: 1px solid #EEE9E6;
+    margin-left: 10px;
+    border-radius: 4px;
 }
 
 /* container */
@@ -65,6 +78,9 @@
 
 .fpageOrgDetails{
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fpageOrgDetails div{
@@ -73,7 +89,7 @@
 }
 
 .selectBox{
-    width: 100px;
+    width: 150px;
     height: 40px;
     text-align: center;
     border-radius: 5px;
@@ -118,6 +134,9 @@
     font-size: 30px;
     border-radius: 10px;
     border: 2px solid #46474B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rightOrgFullHeader{

@@ -31,7 +31,7 @@ router.post("/", async (req, resp) => {
     try {
         var earlier = await organization.find({ name: req.body.name });
         if (earlier.length != 0) {
-            console.log(earlier)
+            console.log(earlier);
             resp.status(400).send({ error: "Already Exist" });
             return;
         }
@@ -57,15 +57,15 @@ router.post("/", async (req, resp) => {
     }
 });
 
-router.get("/issue/:id", async (req, resp)=>{
+router.get("/issue/:id", async (req, resp) => {
     try {
-        var data =await issues.findOne({orgId : req.params.id});
-        resp.send({data});
+        var data = await issues.findOne({ orgId: req.params.id });
+        resp.send({ data });
     } catch (error) {
         console.log(error);
         resp.status(500).send({ error });
     }
-})
+});
 
 router.put("/issue/:id", async (req, resp) => {
     try {
@@ -74,9 +74,9 @@ router.put("/issue/:id", async (req, resp) => {
             title: req.body.title,
             desc: req.body.desc,
             level: req.body.level,
-            status : "Open",
-            repo : req.body.repo,
-            tags : []
+            status: "Open",
+            repo: req.body.repo,
+            tags: [],
         };
         newIssue = JSON.stringify(newIssue);
         data.issue.push(newIssue);
@@ -87,5 +87,60 @@ router.put("/issue/:id", async (req, resp) => {
         resp.status(500).send({ error });
     }
 });
+
+router.put("/:id/panel", async (req, resp) => {
+    try {
+        var oldData = await organization.findById(req.params.id);
+        var data = {
+            name: req.body.name,
+            skills: req.body.skills,
+            linked: req.body.linked,
+            photo : req.body.photo,
+            email : req.body.email
+        };
+        oldData.panel.push(data);
+        await organization.findByIdAndUpdate(req.params.id, oldData);
+        resp.send({"status":"Panel Updated"});
+    } catch (error) {
+        console.log(error);
+        resp.status(500).send({ error });
+    }
+});
+
+router.put("/:id/panel/time", async (req, resp) => {
+    try {
+        var oldData = await organization.findById(req.params.id);
+        console.log(oldData);
+        oldData.time = req.body.time;
+        oldData.bookedBy = [];
+        console.log(oldData);
+        await organization.findByIdAndUpdate(req.params.id, oldData);
+        resp.send({"status":"Successfully Updated"})
+    } catch (error) {
+        console.log(error);
+        resp.status(500).send({ error });
+    }
+});
+
+router.put("/:id/panel/register", async (req, resp) => {
+    try {
+        var oldData = await organization.findById(req.params.id);
+        if(oldData.bookedBy.indexOf(req.body.username) !== -1){
+            resp.status(400).send({"error":"Already Registered"});
+            return;
+        }
+        oldData.bookedBy.push(req.body.username);
+        await organization.findByIdAndUpdate(req.params.id, oldData);
+        resp.send({"status":"Successfully Updated"})
+    } catch (error) {
+        console.log(error);
+        resp.status(500).send({ error });
+    }
+});
+
+
+
+
+
 
 module.exports = router;
