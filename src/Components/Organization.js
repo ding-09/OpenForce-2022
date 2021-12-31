@@ -27,7 +27,7 @@ export default function Organization(props) {
         <>
             <div className="divider">
                 <div className="dividerHorBar"></div>
-                <div className="orgHeading">Open Source Ground</div>
+                <div className="pageHeading">Open Source Ground</div>
             </div>
             <div className="orgContainer">
                 {

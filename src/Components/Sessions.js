@@ -31,10 +31,12 @@ function Sessions() {
         // console.log(sessions,data);
     }, [])
     return (
+    <>
+        <div className="divider">
+            <div className="dividerHorBar"></div>
+            <div className="pageHeading">Schedule Event Now!</div>
+        </div>
         <div id="Sessions">
-            <div className="heading">
-                Schedule Event Now!
-            </div>
             <div id="sessions-grid">
                 {sessions.map((session=>{
                     return <SessionCard session={session}/>
@@ -56,6 +58,7 @@ function Sessions() {
                 <SessionCard image={i1} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/> */}
             </div>
         </div>
+        </>
     )
 }
 

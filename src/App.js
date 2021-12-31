@@ -9,16 +9,18 @@ import SponsorsContainer from "./Components/Sponsors/SponsorsContainer";
 import { useEffect } from "react";
 import MentorCard from "./Components/Panel/MentorCard";
 import Panel from "./Components/Panel/Panel";
+import Particles from "./Components/Particles";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
+                <Particles/>
                 <Switch>
                     <Route exact path="/">
                         <Home />
                         <SponsorsContainer/>
-                        {/* <Sessions /> */}
+                        <Sessions />
                         <Organization />
                         <TeamContainer/>
                     </Route>

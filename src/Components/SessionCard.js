@@ -40,12 +40,12 @@ function SessionCard(props) {
                 <div className="session-about-description">
                     {props.session.description}
                 </div>
-                <div className="session-seats-remaining">
+                {/* <div className="session-seats-remaining">
                     Seats left : {props.session.seatsAvailable}
                 </div>
                 <div className="session-scheduled-time">
                     Scheduled at {timeFormat(props.session.time)}
-                </div>
+                </div> */}
             </div>
             <div className="session-book">
                 <div className="session-book-btn" aria-disabled={!bookingPossible} onClick={()=>bookSession(props.session._id)}>{(bookingPossible)?"RSVP":"Bookings unavailable"} </div>

@@ -19,22 +19,6 @@
     align-items: center;
 }
 
-.dividerHorBar{
-    width: 90%;
-    background-color: #AD5FAA;
-    height: 5px;
-    position: absolute;
-    top: calc(50% - 2.5px);
-}
-
-.orgHeading{
-    background-color: #1C232D;
-    color: white;
-    z-index: 2;
-    font-size: 35px;
-    padding: 0px 20px;
-}
-
 
 .bePartofCont{
     width: 100%;
