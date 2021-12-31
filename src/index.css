@@ -36,3 +36,6 @@ code {
   font-size: 35px;
   padding: 0px 20px;
 }
+.absolute{
+  position: absolute;
+}
