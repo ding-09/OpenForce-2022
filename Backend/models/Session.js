@@ -3,6 +3,11 @@ const SessionSchema = mongoose.Schema({
     'organiser': Map,
     'description':String,
     'image':String,
-    'time':Date
+    'time':Date,
+    'seatsAvailable':{
+        type:Number,
+        default: 300
+    },
+    'rsvps':Array
 })
 module.exports = mongoose.model('session',SessionSchema);

@@ -2,24 +2,32 @@
     background: #EEE9E6;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
-    /* width: 231px;
-    height: 413px; */
+    width: 280px;
+}
+.SessionCard:hover{
+    /* animation: float 3s ease-in 0s infinite alternate; */
+}
+.session-image{
+    height: 185px;
 }
 .session-image>img{
     width: 100%;
+    height: 185px;
     border-radius: 7px 7px 0px 0px;
 }
-.session-about,.session-book{
+.session-about{
     padding: 5px 20px;
 }
 .session-about-name{
     font-size: 15px;
+    line-height: 15px;
     text-transform: uppercase;
     font-weight: 900;
     color: #1C232D;
 }
 .session-about-position{
     font-size: 10px;
+    line-height: 10px;
     font-style: italic;
 }
 .session-about-description{
@@ -27,18 +35,31 @@
     font-size: 10px;
     text-transform: capitalize;
     opacity: 0.9;
+    height: 56px;
+    line-height: 14px;
+    overflow-y: hidden;
+}
+.session-seats-remaining{
+    font-size: 12px;
+    line-height: 15px;
+    padding-bottom: 0;
+    padding-top: 15px;
+}
+.session-scheduled-time{
+    font-size: 12px;
+    padding-top: 0;
 }
 .session-book{
     margin-top: auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    padding: 5px;
 }
 .session-book-btn{
-    align-self: flex-end;
-    width: 124px;
+    /* align-self: flex-end; */
     height: 40px;
-    font-size: 15px;
-    padding: 0px 5px;
+    font-size: 13px;
+    padding: 0px 15px;
     background-color: #1C232D;
     color: #EEE9E6;
     border-radius: 7px;
@@ -46,4 +67,25 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+.session-book-btn[aria-disabled=true]{
+    background-color: #46474B;
+    cursor: not-allowed !important;
+}
+@keyframes float {
+    0%{
+        /* transform: translate(0,0); */
+    }
+    25%{
+        transform: translate(-4px,4px);
+    }
+    50%{
+        transform: translate(-2px,-4px);
+    }
+    75%{
+        transform: translate(4px,0px);
+    }
+    100%{
+        transform: translate(1px,4px);
+    }
 }

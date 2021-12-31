@@ -1,6 +1,11 @@
 import React from 'react'
 import './styles/SessionCard.css';
 
+const timeFormat= (time)=>{
+    const dt = new Date(time);
+    return `${dt.getHours()}:${dt.getMinutes()} on ${dt.getDate()}-${dt.getMonth()}-${dt.getFullYear()}`;
+}
+
 const bookSession = async (id) =>{
     // todo: check if user is signed in and get `userId`
     let userId = null; // this userId will currently be giving error because it can't be found be the db
@@ -9,33 +14,41 @@ const bookSession = async (id) =>{
         headers: {
             'Content-Type':'application/json'
         },
-        body: {
+        body: JSON.stringify({
             sessionId:id,
             userId:userId,
-        }
+        })
     })
     const data = await res.json();
     console.log(data);
 }
 function SessionCard(props) {
+    const bookingPossible = props.session.seatsAvailable>0 && new Date(props.session.time) > new Date();
+    console.log(new Date(props.session.time),new Date())
     return (
         <div className="SessionCard">
             <div className="session-image">
-                <img src={props.image} alt={props.name}/>
+                <img src={props.session.image} alt={props.session.organiser.name}/>
             </div>
             <div className="session-about">
                 <div className="session-about-name">
-                    {props.name}
+                    {props.session.organiser.host}
                 </div>
                 <div className="session-about-position">
-                    {props.position}
+                    {props.session.organiser.position}
                 </div>
                 <div className="session-about-description">
-                    {props.description}
+                    {props.session.description}
+                </div>
+                <div className="session-seats-remaining">
+                    Seats left : {props.session.seatsAvailable}
+                </div>
+                <div className="session-scheduled-time">
+                    Scheduled at {timeFormat(props.session.time)}
                 </div>
             </div>
             <div className="session-book">
-                <div className="session-book-btn" onClick={()=>bookSession(props.id)}>Book Your Seat</div>
+                <div className="session-book-btn" aria-disabled={!bookingPossible} onClick={()=>bookSession(props.session._id)}>{(bookingPossible)?"RSVP":"Bookings unavailable"} </div>
             </div>
         </div>
     )
