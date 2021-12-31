@@ -21,6 +21,21 @@ code {
     monospace;
 }
 
+.dividerHorBar{
+  width: 90%;
+  background-color: #AD5FAA;
+  height: 5px;
+  position: absolute;
+  top: calc(50% - 2.5px);
+}
+
+.pageHeading{
+  background-color: #1C232D;
+  color: white;
+  z-index: 2;
+  font-size: 35px;
+  padding: 0px 20px;
+}
 .absolute{
   position: absolute;
 }
