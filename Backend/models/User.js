@@ -3,15 +3,11 @@ const {Schema} = require('mongoose');
 
 const UserSchema = new Schema(
     {
-        username: {
+        email: {
             type: String,
             required: true,
         },
         name: {
-            type: String,
-            required: true,
-        },
-        profilePic: {
             type: String,
             required: true,
         },
@@ -21,6 +17,19 @@ const UserSchema = new Schema(
         },
         sessionsBooked:{
             type: Array,
+            default:[]
+        },
+        gender:{
+            type:String,
+            required:true
+        },
+        mobileNo : {
+            type:String,
+            required:true
+        },
+        college:{
+            type:String,
+            required:true
         }
     }
 )

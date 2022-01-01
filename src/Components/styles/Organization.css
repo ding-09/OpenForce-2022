@@ -9,13 +9,24 @@
     column-gap: 20px;
     grid-row-gap: 30px;
     row-gap: 30px;
-    background-color: #1C232D;
+    /* background-color: #1C232D; */
     margin: auto;
     width: 100%;
     /* padding: 20px; */
     min-height: 300px;
     grid-auto-flow: column;
     overflow-x: scroll;
+}
+
+.orgContainer::-webkit-scrollbar{
+    display: inline;
+    height: 4px;
+}
+.orgContainer::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+.orgContainer::-webkit-scrollbar-track{
+    background-color: rgba(77, 77, 77, 0.5);
 }
 
 .divider{

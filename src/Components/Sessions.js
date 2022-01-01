@@ -32,11 +32,10 @@ function Sessions() {
     }, [])
     return (
     <>
-        <div className="divider">
-            <div className="dividerHorBar"></div>
-            <div className="pageHeading">Schedule Event Now!</div>
-        </div>
         <div id="Sessions">
+        <div className="heading">
+            Schedule Event Now!
+        </div>
             <div id="sessions-grid">
                 {sessions.map((session=>{
                     return <SessionCard session={session}/>

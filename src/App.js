@@ -11,6 +11,7 @@ import MentorCard from "./Components/Panel/MentorCard";
 import Panel from "./Components/Panel/Panel";
 import Particles from "./Components/Particles";
 import Registration from "./Components/Registration";
+import NavBar from "./Components/NavBar";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Particles/>
                 <Switch>
                     <Route exact path="/">
+                        <NavBar />
                         <Home />
                         <SponsorsContainer/>
                         <Sessions />

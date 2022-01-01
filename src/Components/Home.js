@@ -1,10 +1,8 @@
 import React from "react";
-import NavBar from "./NavBar";
 
 function Home() {
   return (
     <div>
-      <NavBar />
       {/* <div className="header-container">
         <div className="wrapper row"> */}
       <header className="row">

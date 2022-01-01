@@ -15,6 +15,7 @@ mongoose.connect(uri).then(() => {
     console.log(err);
 });
 
+app.use('/api/user/',require('./routes/user'))
 app.use('/api/session/',require('./routes/session'))
 app.use('/api/org/',require('./routes/organization'))
 
