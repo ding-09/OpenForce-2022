@@ -1,0 +1,10 @@
+.sponsors-sub-container-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.sponsors-sub-heading{
+    color:rgb(224, 214, 214);
+}

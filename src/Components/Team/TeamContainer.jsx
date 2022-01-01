@@ -3,7 +3,7 @@ import './TeamContainer.css';
 import TeamCard from './TeamCard/TeamCard';
 
 function TeamContainer(){
-    const teamMembers = [["https://t4america.org/wp-content/uploads/2016/10/Blank-User.jpg","Name","Subteam","",""]];
+    const teamMembers = [["https://t4america.org/wp-content/uploads/2016/10/Blank-User.jpg","Name","Subteam","",""],["https://t4america.org/wp-content/uploads/2016/10/Blank-User.jpg","Name","Subteam","",""],["https://t4america.org/wp-content/uploads/2016/10/Blank-User.jpg","Name","Subteam","",""]];
     return (
         <div className="team-container">
             <h1 className="team-heading">Brought to you by</h1>

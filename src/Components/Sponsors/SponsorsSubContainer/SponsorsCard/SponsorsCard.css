@@ -1,0 +1,7 @@
+.sponsors-card{
+    height: 222px;
+    width: 390px;
+    background-image: radial-gradient(rgba(177, 177, 177, 0.6),rgba(155, 154, 154, 0.3));
+    border-radius: 15px;
+    margin:15px;
+}
