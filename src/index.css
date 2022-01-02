@@ -3,6 +3,8 @@
 *{
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
+  position: relative;
+  z-index: 1;
 
 }
 
@@ -14,9 +16,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #1C232D;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.dividerHorBar{
+  width: 90%;
+  background-color: #AD5FAA;
+  height: 5px;
+  position: absolute;
+  top: calc(50% - 2.5px);
+}
+
+.pageHeading{
+  background-color: #1C232D;
+  color: white;
+  z-index: 2;
+  font-size: 35px;
+  padding: 0px 20px;
+}
+.absolute{
+  position: absolute;
 }

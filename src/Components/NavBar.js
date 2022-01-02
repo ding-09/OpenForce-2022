@@ -3,7 +3,7 @@ import "./styles/NavBar.css";
 
 function NavBar() {
   return (
-    <nav className="navbar bg-dark navbar-expand-lg navbar-light fixed-top">
+    <nav className="navbar navbar-expand-lg fixed-top">
       <img src="./images/Logo.svg" alt="/" />
       <button
         class="navbar-toggler ms-auto"

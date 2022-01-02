@@ -2,19 +2,30 @@
 .team-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding:2%;
-    background-color: rgb(24, 22, 22);
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 20px 100px;
 }
 
 .team-heading{
-    font-family: "Courier Prime";
-    color: #F5F5F5;
+    position: relative;
+    text-transform: uppercase;
+    color: #EEE9E6;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.team-heading::after{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: "";
+    border-bottom: 4px solid #EEE9E6;
+    width: 7%;
 }
 
 .team-flexbox{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }

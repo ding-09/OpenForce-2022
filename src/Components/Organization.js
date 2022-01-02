@@ -24,10 +24,9 @@ export default function Organization(props) {
     },[])
 
     return (
-        <>
-            <div className="divider">
-                <div className="dividerHorBar"></div>
-                <div className="orgHeading">Open Source Ground</div>
+        <div className="orgSupCont">
+            <div className="heading">
+                Open Source Ground
             </div>
             <div className="orgContainer">
                 {
@@ -42,6 +41,6 @@ export default function Organization(props) {
                     
                 </div> */}
             </div>
-        </>
+        </div>
     )
 }

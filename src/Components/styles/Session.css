@@ -32,8 +32,8 @@
     row-gap: 30px;
 }
 #sessions-grid::-webkit-scrollbar{
+    display: inline;
     height: 4px;
-
 }
 #sessions-grid::-webkit-scrollbar-thumb{
     background-color: white;

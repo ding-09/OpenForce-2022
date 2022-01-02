@@ -2,8 +2,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding:2%;
-    background-color: rgb(24, 22, 22);
-    font-family: "Courier Prime";
-    color: #F5F5F5;
+    padding: 20px 100px;
+}
+
+.sponsors-heading{
+    position: relative;
+    text-transform: uppercase;
+    color: #EEE9E6;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.sponsors-heading::after{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: "";
+    border-bottom: 4px solid #EEE9E6;
+    width: 7%;
 }
