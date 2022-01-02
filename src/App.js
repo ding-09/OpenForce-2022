@@ -12,31 +12,33 @@ import Panel from "./Components/Panel/Panel";
 import Particles from "./Components/Particles";
 import Registration from "./Components/Registration";
 import NavBar from "./Components/NavBar";
+import Swags from "./Components/Swags/Swags";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Particles/>
+                <Particles />
+                <NavBar />
                 <Switch>
                     <Route exact path="/">
-                        <NavBar />
                         <Home />
-                        <SponsorsContainer/>
+                        <SponsorsContainer />
                         <Sessions />
                         <Organization />
                         <Registration />
-                        <TeamContainer/>
+                        <TeamContainer />
                     </Route>
-
+                    <Route exact path={"/swags"}>
+                        <Swags />
+                    </Route>
                     <Route exact path="/issue">
                         <IssueFullPage />
                     </Route>
                     <Route exact path="/panel">
                         <Panel />
                     </Route>
-                    <Route exact path="/test">
-                    </Route>
+                    <Route exact path="/test"></Route>
                 </Switch>
             </div>
         </BrowserRouter>
