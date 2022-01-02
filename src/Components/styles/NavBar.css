@@ -21,12 +21,12 @@ nav img {
 
 .hero-content {
     font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 72px;
-color: #EEE9E6;
-margin-top: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    color: #EEE9E6;
+    margin-top: 2rem;
 }
 
 /* .header-container {
@@ -111,6 +111,13 @@ button img {
     color: #AD5FAA;
 }
 
+.nav-link {
+    margin: 0;
+}
+
+.nav-item {
+    text-decoration: none;
+}
 
 /* .wrapper .hero-content {
     margin-left: 15px;

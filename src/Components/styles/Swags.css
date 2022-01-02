@@ -1,0 +1,86 @@
+#swags {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+    color: #d65d20;
+    margin: 0 auto 2rem auto;
+}
+h1:after {
+    content: "";
+    height: 1.5px;
+    background: #ccc;
+    display: block;
+    margin-top: 0.2rem;
+}
+
+.swags-information {
+    padding: 30px;
+    width: 90%;
+    background-color: #feeee5;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    color: #707070;
+}
+
+.swags-item-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+
+.swag-item {
+    width: 520px;
+    height: 290px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.swag-item--mobile {
+    width: 300px;
+    height: 520px;
+}
+
+.swag-item img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.swag-item > span {
+    position: absolute;
+    background: #e85325;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 10px;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+.swag-item .btn {
+    background-color: #e85325;
+    color: #fff;
+    position: absolute;
+    bottom: 8px;
+    right: 13px;
+    z-index: 2;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.swag-item .btn:hover {
+    box-shadow: 0 0 0 6px rgb(232 82 37 / 25%);
+}
