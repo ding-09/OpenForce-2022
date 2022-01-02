@@ -45,8 +45,8 @@ header h1 {
     font-weight: 500;
     font-size: 48px;
     line-height: 72px;
-    width: 497px;
-    margin-right: 6rem;
+    width: 600px;
+    /* margin-right: 6rem; */
     margin-left: 8rem;
 }
 
@@ -86,6 +86,26 @@ header .discord {
     color: #EEE9E6;
     background: #46474B;
     margin-left: 3rem;
+}
+
+.discord {
+    width: 266px;
+}
+
+.discord a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.discord img {
+    width: 54px;
+    height: 42px;
+    margin-right: 25px;
 }
 
 .hero-image {
