@@ -9,7 +9,8 @@ app.use(cors());
 app.use(express.json());
 const port = 5000
 
-const uri = process.env.MONGO_URI;
+// const uri = process.env.MONGO_URI;
+const uri = "mongodb+srv://openforce:Openforce123@cluster0.enooy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 mongoose.connect(uri).then(() => {
     console.log("Connected")

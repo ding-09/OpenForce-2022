@@ -4,7 +4,7 @@ import aboutimage from './Image/aboutus.png'
 
 export default function AboutUs() {
     return (
-        <div className='aboutUsCont'>
+        <div className='aboutUsCont' id="aboutusLink">
             <div className='heading'>About Us</div>
             <div className='aboutsubcont'>
                 <div className='aboutCont'>

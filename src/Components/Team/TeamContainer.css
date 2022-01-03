@@ -29,3 +29,14 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media screen and (max-width:1400px) {
+    .team-container{
+        padding: 20px 70px;
+    }
+}
+@media screen and (max-width:900px) {
+    .team-container{
+        padding: 20px 20px;
+    }
+}

@@ -25,6 +25,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .regText{
@@ -104,4 +105,31 @@
 
 #regform div{
     transition: all 1s;
+}
+
+@media screen and (max-width:1400px) {
+    .registration{
+        padding: 20px 70px;
+    }
+}
+@media screen and (max-width:900px) {
+    .registration{
+        padding: 20px 20px;
+    }
+
+    .regForm{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .regForm form{
+        width: 100%;
+    }
+    .regimage{
+        display: none;
+    }
+    .regbtncont{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }

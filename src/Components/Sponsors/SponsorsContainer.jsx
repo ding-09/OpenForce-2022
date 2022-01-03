@@ -6,8 +6,8 @@ function SponsorsContainer(){
     const sponsorTypes = [["Diamond Sponsors 💎",["","",""]],["Platinum Sponsors 🏆",["","",""]],["Gold Sponsors 🥇",["","",""]],["Silver Sponsors 🥈",["","",""]],["Bronze Sponsors 🥉",["","",""]],["Community Partners 🤝",["","",""]]]
     
     return (
-        <div className="sponsors-container">
-            <h1 className="sponsors-heading">Sponsors and Partners</h1>
+        <div className="sponsors-container" id="sponserLink">
+            <div className="heading">Sponsors and Partners</div>
             {sponsorTypes.map((sponsorType)=>{
                 return <SponsorsSubContainer subheading={sponsorType[0]} links={sponsorType[1]}/>
             })}

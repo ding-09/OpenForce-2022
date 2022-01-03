@@ -19,6 +19,15 @@ body {
   overflow-x: hidden;
 }
 
+#root{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

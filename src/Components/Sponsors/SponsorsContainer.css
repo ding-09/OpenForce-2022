@@ -21,3 +21,14 @@
     border-bottom: 4px solid #EEE9E6;
     width: 7%;
 }
+
+@media screen and (max-width:1400px) {
+    .sponsors-container{
+        padding: 20px 70px;
+    }
+}
+@media screen and (max-width:900px) {
+    .sponsors-container{
+        padding: 20px 20px;
+    }
+}

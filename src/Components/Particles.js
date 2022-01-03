@@ -31,6 +31,12 @@ function Particles() {
             }
         })
     });
+    document.getElementById("root").addEventListener('scroll',(e)=>{
+        const particles = document.getElementById("Particles");
+        if(particles){
+            particles.style.top = `${e.target.scrollTop}px`;
+        }
+    })
     return (
         <div id="Particles">
             <img className="bg-crl" id="bg-c1" src={crlIcon} alt="" data-eff="30" />

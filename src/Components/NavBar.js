@@ -19,24 +19,24 @@ function NavBar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto">
-                    <Link className="nav-item px-3" to="/">
+                    <a className="nav-item px-3" href="#homepageLink">
                         <p className="nav-link text-light">Home</p>
-                    </Link>
+                    </a>
                     <Link className="nav-item px-3" to="/swags">
                         <p className="nav-link text-light">Swags</p>
                     </Link>
-                    <Link className="nav-item px-3" to="/">
+                    <a className="nav-item px-3" href="#aboutusLink">
                         <p className="nav-link text-light">About Us</p>
-                    </Link>
-                    <Link className="nav-item px-3" to="/">
+                    </a>
+                    <a className="nav-item px-3" href="#sponserLink">
                         <p className="nav-link text-light">Sponsors</p>
-                    </Link>
-                    <Link className="nav-item px-3" to="/">
+                    </a>
+                    <a className="nav-item px-3" href="#">
                         <p className="nav-link text-light">FAQs</p>
-                    </Link>
-                    <Link className="nav-item px-3" to="/">
+                    </a>
+                    <a className="nav-item px-3" href="#reg">
                         <p className="nav-link text-light">Register</p>
-                    </Link>
+                    </a>
                 </ul>
             </div>
         </nav>

@@ -139,7 +139,7 @@ export default function Registration() {
     }
 
     return (
-        <div className="registration">
+        <div className="registration" id="reg">
             <div className="heading" id="Regheading">Register Now</div>
             <div className="regForm">
                 <form id="regform" onSubmit={stepForwad}>
@@ -226,7 +226,7 @@ export default function Registration() {
                             />
                         </div>
                     </div>
-                    <div>
+                    <div className="regbtncont">
                         <button type="submit" id="register">Register</button>
                         <button type="button" id="login" onClick={changeForm}>Login</button>
                     </div>
