@@ -1,59 +1,45 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-}
-.contact{
-  position:relative;
+.contact {
+  position: relative;
   min-height: 100vh;
   padding: 50px 100px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  /* background:url("https://images.pexels.com/photos/10542808/pexels-photo-10542808.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
-   /* background:url("Group.jpg");  */
-   
-    /* background:url("../../assets/Reactangle7.jpg");   */
-    background-color: black;
-   background-size: cover; 
+  background-color: #1c232d;
+  background-size: cover;
 }
-.contact .content{
+.contact .content {
   max-width: 800px;
-  text-align:center;
+  text-align: center;
 }
-.contact .content h2{
+.contact .content h2 {
   font-size: 36px;
   font-weight: 500;
   color: #fff;
 }
-.contact .content p{
-
+.contact .content p {
   font-weight: 300;
   color: #fff;
 }
-.container{
+.container {
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
-.container .contactInfo
-{
+.container .contactInfo {
   width: 40%;
   display: flex;
   flex-direction: column;
 }
-.container .contactInfo .box
-{
-  position:relative;
+.container .contactInfo .box {
+  position: relative;
   padding: 20px 0;
-  display:flex;
+  display: flex;
 }
-.container .contactInfo .box .icon
-{
+.container .contactInfo .box .icon {
   min-width: 60px;
   height: 60px;
   background: #fff;
@@ -63,91 +49,83 @@
   border-radius: 50%;
   font-size: 22px;
 }
-.container .contactInfo .box .text{
+.container .contactInfo .box .text {
   display: flex;
   margin-left: 20px;
   font-size: 16px;
-  color:#fff;
+  color: #fff;
   flex-direction: column;
   font-weight: 300;
 }
-.container .contactInfo .box .text .h3{
+.container .contactInfo .box .text .h3 {
   font-weight: 500;
   color: #00bcd4;
 }
-.contactForm{
+.contactForm {
   width: 40%;
   padding: 40px;
   background: #fff;
-
+  border-radius: 15px;
 }
-.contactForm h2{
+.contactForm h2 {
   font-size: 30px;
-  color: #333;
+  color: #1c232d;
   font-weight: 500;
-
 }
-.contactForm .inputBox{
-  position:relative;
+.contactForm .inputBox {
+  position: relative;
   width: 100%;
   margin-top: 10px;
 }
 .contactForm .inputBox input,
-.contactForm .inputBox textarea
-{
+.contactForm .inputBox textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
   margin: 10px 0;
   border: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #1c232d;
   outline: none;
-  resize : none;
+  resize: none;
 }
-.contactForm .inputBox span{
-  position:absolute;
-  left:0;
- padding: 2px 0;
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 2px 0;
   font-size: 16px;
   margin: 10px 0;
   pointer-events: none;
-  transition: 0.5s;
-  color: #666;
+  transition: 0.2s;
+  color: #1c232d;
 }
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span
-{
-  color: #e91e63;
+.contactForm .inputBox textarea:valid ~ span {
+  color: #1c232d;
   font-size: 12px;
   transform: translateY(-20px);
 }
-.contactForm .inputBox input[type="submit"]
-{
+.contactForm .inputBox input[type="submit"] {
   width: 100px;
   background: #00bcd4;
   color: none;
   cursor: pointer;
   padding: 10px;
-  font-size:18px;
+  font-size: 18px;
 }
-@media (max-width: 991px)
-{
-  .contact 
-  {
-      padding:50px;
-
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
   }
-  .container 
-  {
-      flex-direction: column;
+  .container {
+    flex-direction: column;
   }
-  .container .contactInfo
-  {
-      margin-bottom: 40px;
+  .container .contactInfo {
+    margin-bottom: 40px;
   }
-  .container .contactInfo,.contactForm{
-      width: 100%;
+  .container .contactInfo,
+  .contactForm {
+    width: 100%;
   }
 }

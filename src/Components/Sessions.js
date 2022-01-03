@@ -43,18 +43,6 @@ function Sessions() {
                 {pastSessions.map((session=>{
                     return <SessionCard session={session}/>
                 }))}
-                
-                {/* dummy data below */}
-                {/* <SessionCard image={i5} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/>
-                <SessionCard image={i4} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/>
-                <SessionCard image={i3} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/>
-                <SessionCard image={i2} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/>
-                <SessionCard image={i1} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry text of the printing and typesetting industry text of the printing and typesetting industry text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/>
-                <SessionCard image={i5} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/>
-                <SessionCard image={i4} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/>
-                <SessionCard image={i3} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/>
-                <SessionCard image={i2} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/>
-                <SessionCard image={i1} name={"Jamies Ford"} position={"Trainer"} description={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."} id={"iiid"}/> */}
             </div>
         </div>
         </>
