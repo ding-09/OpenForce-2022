@@ -9,6 +9,7 @@ nav {
     -webkit-backdrop-filter: blur(4px);
     position: relative;
     z-index: 2;
+    width: 100vw;
 }
 
 nav img {

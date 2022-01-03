@@ -12,6 +12,7 @@ import Panel from "./Components/Panel/Panel";
 import Particles from "./Components/Particles";
 import Registration from "./Components/Registration";
 import NavBar from "./Components/NavBar";
+import AboutUs from "./Components/AboutUs";
 import Swags from "./Components/Swags/Swags";
 
 function App() {
@@ -23,9 +24,10 @@ function App() {
                 <Switch>
                     <Route exact path="/">
                         <Home />
-                        <SponsorsContainer />
+                        <AboutUs/>
                         <Sessions />
                         <Organization />
+                        <SponsorsContainer />
                         <Registration />
                         <TeamContainer />
                     </Route>
@@ -38,7 +40,8 @@ function App() {
                     <Route exact path="/panel">
                         <Panel />
                     </Route>
-                    <Route exact path="/test"></Route>
+                    <Route exact path="/test">
+                    </Route>
                 </Switch>
             </div>
         </BrowserRouter>
