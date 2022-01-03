@@ -13,7 +13,9 @@ import Particles from "./Components/Particles";
 import Registration from "./Components/Registration";
 import NavBar from "./Components/NavBar";
 import AboutUs from "./Components/AboutUs";
+import Contact from "./Components/Contact";
 import Swags from "./Components/Swags/Swags";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
     return (
@@ -30,6 +32,8 @@ function App() {
                         <SponsorsContainer />
                         <Registration />
                         <TeamContainer />
+                        <FontAwesomeIcon icon={['fab', 'apple']} />
+                        <Contact />
                     </Route>
                     <Route exact path={"/swags"}>
                         <Swags />
