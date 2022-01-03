@@ -12,12 +12,7 @@ function Swags(props) {
         <section id={"swags"}>
             <h1>DIGITAL SWAGS</h1>
             <p className={"swags-information"}>
-                Get yourself equipped with some amazing official Hack This Fall
-                Digital Swags, and flex it by owning them. Get our cool Hack
-                This Fall wallpapers for your desktop computers and mobile
-                phones. Don't forget to use the zoom/meet wallpapers in your
-                meetings. Also, to have fun and enjoy, we have an Instagram
-                Bingo Story for you, which you can share on your stories, tag
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div className={"swags-item-container"}>
                 <SwagItem

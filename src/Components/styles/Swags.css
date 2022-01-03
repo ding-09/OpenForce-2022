@@ -40,7 +40,6 @@ h1:after {
 
 .swag-item {
     width: 520px;
-    height: 290px;
     border-radius: 20px;
     position: relative;
     z-index: 2;
@@ -48,7 +47,6 @@ h1:after {
 
 .swag-item--mobile {
     width: 300px;
-    height: 520px;
 }
 
 .swag-item img {
@@ -77,10 +75,20 @@ h1:after {
     bottom: 8px;
     right: 13px;
     z-index: 2;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 10px;
 }
 
 .swag-item .btn:hover {
     box-shadow: 0 0 0 6px rgb(232 82 37 / 25%);
+}
+
+@media only screen and (max-width: 1170px) {
+    .swags-item-container {
+        flex-wrap: wrap;
+    }
+
+    .swag-item {
+        margin: 20px;
+    }
 }
