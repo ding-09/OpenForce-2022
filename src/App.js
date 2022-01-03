@@ -45,6 +45,7 @@ function App() {
                         <Panel />
                     </Route>
                     <Route exact path="/test">
+                        <Home/>
                     </Route>
                 </Switch>
             </div>

@@ -1,199 +1,127 @@
 .landing {
+    padding-top: 30px;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
+    width: 90%;
+    margin-left: 10%;
+    height: fit-content;
     font-family: Poppins;
+    align-items: center;
 }
 
-/*landing heading*/
-.landindContent {
-    font-weight: 500;
-    color: #EEE9E6;
-    margin-top: 2rem;
-    width: 50%;
+.landingImage{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.landindContent h1 {
-    font-size: 3rem;
-    width: 100%;
-    margin-left: 6rem;
+.landingContent{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.landindContent p {
-    font-family: Roboto Mono;
-    font-size: 2.5rem;
-    width: 80%;
-    margin-right: 6rem;
-    margin-left: 8rem;
-    margin-top: 3rem;
+.landingImage img{
+    width:100%;
+    align-self: center;
 }
 
-.landingBtn {
-    width: 30%;
-    height: 6rem;
-    border-radius: 24px;
-    margin-top: 3rem;
-    font-size: 2rem;
+.landindContent h1{
+    font-size: 40px;
+    color: white;
 }
-.landingBtn.register { 
-    margin-left: 8rem;
-}
-.landingBtn.discord {
-    color: #EEE9E6;
-    background: #46474B;
-    margin-left: 3rem;
-    width: 40%;
-}
-
-
-.discord a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.discord img {
-    width: 54px;
-    height: 42px;
-    margin-right: 25px;
-}
-
-.span-color {
-    color: rgb(9, 158, 9);
-}
-
-.dynamic-text {
+.dynamic-text{
     color: #AD5FAA;
 }
-/**/
 
-.landingImage {
-    padding-right: 0px;
-    width: 50%;
+.landindContent p{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
 }
-.landingImage img {
-    width: 90%;
-    margin-left: 5rem;
-    margin-top: 5rem;
+.span-color{
+    color: #5FAD79;
 }
 
-@media (min-width:1500px){
+.landingBtn--wapper{
+    padding: 10px;
+}
+
+.landindContent a{
+    color: black;
+    text-decoration: none;
+}
+
+.landingBtn{
+    width: 150px;
+    height: 75px;
+    background-color: #EEE9E6;
+    margin-right: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.homeregbtn{
+    font-size: 23px;
+}
+
+.discord{
+    width: 170px;
+    background-color: #46474B;
+    color: #EEE9E6;
+    font-size: 20px;
+}
+
+
+.discordimg{
+    height: 30px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width : 900px){
+    .landindContent{
+        width: 100%;
+    }
     .landing{
-        width: 120%;
+        padding-top: 60px;
+        flex-wrap: wrap;
+        /* margin-left: 10px; */
+        width: 80%;
     }
-    .landindContent h1 {
-        font-size: 5rem;
-        width: 100%;
-        margin-left: 10rem;
-    }
-    
-    .landindContent p {
-        font-family: Roboto Mono;
-        font-size: 3rem;
-        width: 100%;
-        margin-right: 1rem;
-        margin-left: 10rem;
-    }
-}
-
-@media (max-width:1200px){
-    .landing{
-        flex-direction: column;
-    }
-    .landindContent {
-        margin-top: 8rem;
-        width: 100%;
-    }
-    .landingImage{
-        width: 100%;
-    }
-    .landindContent h1 {
-        font-size: 5rem;
-        width: 100%;
-        margin-left: 8rem;
-    }
-    
-    .landindContent p {
-        font-size: 3.5rem;
-        width: 100%;
-        margin-right: 1rem;
-        margin-left: 8rem;
+    .landindContent h1{
+        font-size: 40px;
     }
     .landingBtn--wapper{
-        width: 150%;
+        display: flex;
+        justify-content: flex-end;
     }
-    .landingBtn {
-        width: 20%;
-        height: 6rem;
-        border-radius: 24px;
-        font-size: 2rem;
-    }
-    .landingBtn.register { 
-        margin-left: 8rem;
-        margin-right: 2rem;
-    }
-    .landingBtn.discord {
-        width: 30%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .discord img {
-        margin-right: 10px;
-    }
-    .landingImage img {
+
+    .landingImage {
         width: 100%;
-        margin-left: 8rem;
-        margin-top: 2rem;
     }
 }
 
-
-@media (max-width:414px) {
-    .landindContent {
-        margin-top: 4rem;
+@media screen and (max-width : 500px){
+    .landindContent{
         width: 100%;
     }
-    .landingImage
-    {
-        width: 100%;
+    .landing{
+        padding-top: 60px;
+        flex-wrap: wrap;
+        margin-left: 10px;
     }
-    .landindContent h1 {
-        font-size: 2.5rem;
-        width: 100%;
-        margin-left: 2rem;
-    }
-    
-    .landindContent p {
-        font-size: 2rem;
-        width: 100%;
-        margin-right: 1rem;
-        margin-left: 3rem;
+    .landindContent h1{
+        font-size: 30px;
+        width: 90vw;
     }
     .landingBtn--wapper{
-        width: 150%;
+        justify-content: unset;
+        display: flex;
     }
-    .landingBtn {
-        width: 30%;
-        height: 6rem;
-        border-radius: 24px;
-        font-size: 2rem;
-    }
-    .landingBtn.register { 
-        margin-left: 4rem;
-        margin-right: 2rem;
-    }
-    .landingBtn.discord {
-        width: 45%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .discord img {
-        margin-right: 10px;
-    }
-    .landingImage img {
+
+    .landingImage {
         width: 100%;
-        margin-left: 8rem;
-        margin-top: 2rem;
     }
 }

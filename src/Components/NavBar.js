@@ -1,10 +1,15 @@
 import React from "react";
-import "./styles/NavBar.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+import "./styles/NavBar.css";
+
+library.add(faBars);
 
 function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg fixed-top">
+        <nav className="navbar navbar-expand-lg fixed-top" style={{minHeight:"60px"}}>
             <img src="./images/Logo.svg" alt="/" />
             <button
                 class="navbar-toggler ms-auto"
@@ -15,7 +20,10 @@ function NavBar() {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
             >
-                <span class="navbar-toggler-icon"></span>
+                {/* <span class="navbar-toggler-icon"></span> */}
+                {/* <i class="fas fa-bars"></i> */}
+                <FontAwesomeIcon icon="bars" className="navOpenBtn"/>
+
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto">

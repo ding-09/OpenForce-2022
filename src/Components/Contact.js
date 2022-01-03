@@ -1,6 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from "@fortawesome/fontawesome-svg-core";
 import React, { useState } from 'react';
+import { faMapMarkerAlt,faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import './styles/Contact.css';
+library.add(faMapMarkerAlt, faPhone, faEnvelope);
+
+
+
 function Contact() {
     const [status, setStatus] = useState("Submit");
     const handleSubmit = async (e) => {
@@ -36,7 +42,7 @@ function Contact() {
                 <div className="container">
                     <div className="contactInfo">
                         <div className="box">
-                            <div className="icon"><FontAwesomeIcon icon={["fas", "fa-map-marker-alt"]} /></div>
+                            <div className="icon"><FontAwesomeIcon icon="map-marker-alt"/></div>
                             <div className="text">
                                 <h3>Address</h3>
                                 <p> Nit Kurukshetra<br />Kurukshetra,Haryana<br />136119</p>
@@ -44,7 +50,7 @@ function Contact() {
                         </div>
                         <div className="box">
 
-                            <div className="icon"><FontAwesomeIcon icon={["fas", "fa-phone"]} /></div>
+                            <div className="icon"><FontAwesomeIcon icon="phone" /></div>
 
                             <div className="text">
                                 <h3>Phone</h3>
@@ -53,7 +59,7 @@ function Contact() {
                         </div>
                         <div className="box">
                             <div className="icon">
-                                <FontAwesomeIcon icon={["fas", "fa-envelope"]} />
+                                <FontAwesomeIcon icon="envelope" />
                             </div>
                             <div className="text">
                                 <h3>Email</h3>
