@@ -17,6 +17,7 @@ import Contact from "./Components/Contact";
 import Swags from "./Components/Swags/Swags";
 import Timeline from "./Components/Timeline";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FAQ from "./Components/FAQ";
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                         <Sessions />
                         <Organization />
                         <SponsorsContainer />
+                        <FAQ/>
                         <Registration />
                         <TeamContainer />
                         <Contact />
@@ -44,6 +46,9 @@ function App() {
                     </Route>
                     <Route exact path="/panel">
                         <Panel />
+                    </Route>
+                    <Route exact path="/FAQs">
+                        <FAQ/>
                     </Route>
                     <Route exact path="/test">
                         <Home/>
