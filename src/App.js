@@ -15,6 +15,7 @@ import NavBar from "./Components/NavBar";
 import AboutUs from "./Components/AboutUs";
 import Contact from "./Components/Contact";
 import Swags from "./Components/Swags/Swags";
+import Timeline from "./Components/Timeline";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                     <Route exact path="/">
                         <Home />
                         <AboutUs/>
+                        <Timeline/>
                         <Sessions />
                         <Organization />
                         <SponsorsContainer />
