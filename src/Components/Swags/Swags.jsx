@@ -17,25 +17,29 @@ function Swags(props) {
             <div className={"swags-item-container"}>
                 <SwagItem
                     key={desktopSwags.wallpaper.download}
+                    divId={"desktopSwags-walpaper"}
                     images={desktopSwags.wallpaper.images}
                     link={desktopSwags.wallpaper.download}
-                />
+                    />
                 <SwagItem
                     key={desktopSwags.zoomBackground.download}
+                    divId={"desktopSwags-background"}
                     images={desktopSwags.zoomBackground.images}
                     link={desktopSwags.zoomBackground.download}
-                />
+                    />
             </div>
             <div className={"swags-item-container"}>
                 <SwagItem
                     key={mobileSwags.wallpaper.download}
                     mobile={true}
+                    divId={"mobileSwags-walpaper"}
                     images={mobileSwags.wallpaper.images}
                     link={mobileSwags.wallpaper.download}
                     />
                 <SwagItem
                     key={mobileSwags.story.download}
                     mobile={true}
+                    divId={"mobileSwags-background"}
                     images={mobileSwags.story.images}
                     link={mobileSwags.story.download}
                 />

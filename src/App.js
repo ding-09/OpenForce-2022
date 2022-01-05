@@ -18,7 +18,6 @@ import Contact from "./Components/Contact";
 import Swags from "./Components/Swags/Swags";
 import Timeline from "./Components/Timeline";
 import FAQ from "./Components/FAQ"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
     const [faqs, setfaqs] = useState([
