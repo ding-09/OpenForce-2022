@@ -1,36 +1,19 @@
-import React from 'react'
-import './styles/FAQs.css'
+import React,{ useState } from 'react';
+import "./styles/faq.css"
 
-function FAQ() {
+function FAQ({faq,index, toggleFAQ}) {
     return (
-        <div className='faqmaindiv'>
-            <div className='heading'>FAQ<small>s</small></div>
-            <div className='main-faq'>
-                <div className='faq'>
-                    <div className='ques'>Q1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                    <div className='ans'>Ans:- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                </div>
-                <div className='faq'>
-                    <div className='ques'>Q1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                    <div className='ans'>Ans:- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                </div>
-                <div className='faq'>
-                    <div className='ques'>Q1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                    <div className='ans'>Ans:- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                </div>
-                <div className='faq'>
-                    <div className='ques'>Q1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                    <div className='ans'>Ans:- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                </div>
-                <div className='faq'>
-                    <div className='ques'>Q1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                    <div className='ans'>Ans:- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                </div>
-                <div className='faq'>
-                    <div className='ques'>Q1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                    <div className='ans'>Ans:- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus auctor velit, eget ultricies lacus fermentum a. Sed mollis, nunc vel?</div>
-                </div>
-            </div>
+        <div 
+            className={"faq "+ (faq.open ? 'open' : '')}
+            key={index}
+            onClick={() => toggleFAQ(index)}
+        >
+            <div className='faq-question'>
+                {faq.question}
+            </div>  
+            <div className='faq-answer'>
+                {faq.answer}
+            </div>  
         </div>
     )
 }
