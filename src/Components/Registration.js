@@ -7,8 +7,16 @@ export default function Registration() {
     const [login, setlogin] = useState("register");
 
     const changeForm = ()=>{
+        var l = document.getElementById("login");
+        if(l) {
+            l.setAttribute("disabled",true);
+            setTimeout(()=>{
+                if(l) l.removeAttribute("disabled");
+            },1500)
+        }
         if(login === "register") setlogin("login");
         else setlogin("register");
+
     }
 
     const switchCont = (id, cont)=>{

@@ -8,6 +8,7 @@ export default function Panel() {
     const [orgData, setorgData] = useState({bookedBy:[],panel:[]});
     const userEmail = "_10_eek"
     useEffect(() => {
+        document.getElementById("root").scrollTop = 0;
         const updateOrg = async () => {
             var urlParm = new URL(window.location.href);
 
@@ -89,7 +90,7 @@ export default function Panel() {
                 <div className="bookpanel">
                     {orgData.bookedBy.indexOf(userEmail) !== -1 ? (
                         <div className="alreadyBooked">Already Booked</div>
-                    ) : orgData.bookedBy.length === 300 ? (
+                    ) : orgData.bookedBy.length >= 300 ? (
                         <div className="slotsfull">No Slots Avilable</div>
                     ) : (
                         <div className="bookNow" onClick={bookMe}>Book Now</div>

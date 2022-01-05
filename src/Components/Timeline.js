@@ -7,8 +7,8 @@ export default function Timeline() {
                 <div className="heading">
                     Timeline
                 </div>
-                <div class="tlboxwrap">
-                    <div className="tlboxes" id="tlbox1">
+                <div class="tlboxwrap tlfirst">
+                    <div className="tlboxes dark" id="tlbox1">
                         1st February 2022
                     </div>
                     <div className="tlboxes" id="tlbox2">
@@ -17,7 +17,7 @@ export default function Timeline() {
                 </div>
 
                 <div class="tlboxwrap">
-                    <div className="tlboxes" id="tlbox3">
+                    <div className="tlboxes dark" id="tlbox3">
                         28th February 2022
                     </div>
                     <div className="tlboxes" id="tlbox4">
@@ -26,7 +26,7 @@ export default function Timeline() {
                 </div>
 
                 <div class="tlboxwrap">
-                    <div className="tlboxes" id="tlbox5">
+                    <div className="tlboxes dark" id="tlbox5">
                         2nd march 2022
                     </div>
                     <div className="tlboxes" id="tlbox6">
@@ -35,8 +35,8 @@ export default function Timeline() {
                 </div>
 
                 <div class="tlboxwrap">
-                    <div className="tlboxes" id="tlbox7">
-                        <pre>5th March- 10th March 2022</pre>
+                    <div className="tlboxes dark" id="tlbox7">
+                        5th March- 10th March 2022
                     </div>
                     <div className="tlboxes" id="tlbox8">
                         Panel Mentorship
@@ -44,7 +44,7 @@ export default function Timeline() {
                 </div>
 
                 <div class="tlboxwrap">
-                    <div className="tlboxes" id="tlbox9">
+                    <div className="tlboxes dark" id="tlbox9">
                         23rd March 2022
                     </div>
                     <div className="tlboxes" id="tlbox10">

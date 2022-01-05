@@ -12,6 +12,7 @@ export default function IssueFullPage(props) {
     const [difficultyLevel, setdifficultyLevel] = useState("All");
     const history = useHistory();
     useEffect(() => {
+        document.getElementById("root").scrollTop = 0;
         const updateOrg = async () => {
             var urlParm = new URL(window.location.href);
             var url = `http://localhost:5000/api/org/issue/${urlParm.searchParams.get("id")}`;
