@@ -11,7 +11,7 @@ export default function Panel() {
         const updateOrg = async () => {
             var urlParm = new URL(window.location.href);
 
-            const url = `http://localhost:5000/api/org/${urlParm.searchParams.get(
+            const url = `/api/org/${urlParm.searchParams.get(
                 "id"
             )}`;
             var resp = await fetch(url, {
@@ -34,7 +34,7 @@ export default function Panel() {
 
     const bookMe = async ()=>{
         var urlParm = new URL(window.location.href);
-        const url = `http://localhost:5000/api/org/${urlParm.searchParams.get("id")}/panel/register`;
+        const url = `/api/org/${urlParm.searchParams.get("id")}/panel/register`;
         if(orgData.bookedBy.length >= 300){
             window.alert("Seats already full");
             return;

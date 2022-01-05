@@ -83,7 +83,7 @@ export default function Registration() {
             college : document.getElementById("regcollege").value,
             gender:getGender()
         }
-        const url = `http://localhost:5000/api/user/register`;
+        const url = `/api/user/register`;
         var resp = await fetch(url, {
             method: "POST",
             headers: {
@@ -107,7 +107,7 @@ export default function Registration() {
             email : document.getElementById("regpassword").value,
             password : document.getElementById("regcpassword").value,
         }
-        const url = `http://localhost:5000/api/user/login`;
+        const url = `/api/user/login`;
         var resp = await fetch(url, {
             method: "POST",
             headers: {

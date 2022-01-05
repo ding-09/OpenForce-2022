@@ -14,7 +14,7 @@ export default function IssueFullPage(props) {
     useEffect(() => {
         const updateOrg = async () => {
             var urlParm = new URL(window.location.href);
-            var url = `http://localhost:5000/api/org/issue/${urlParm.searchParams.get("id")}`;
+            var url = `/api/org/issue/${urlParm.searchParams.get("id")}`;
             var resp = await fetch(url, {
                 method: "GET",
                 headers: {
@@ -29,7 +29,7 @@ export default function IssueFullPage(props) {
             }
 
 
-            url = `http://localhost:5000/api/org/${urlParm.searchParams.get("id")}`;
+            url = `/api/org/${urlParm.searchParams.get("id")}`;
             resp = await fetch(url, {
                 method: "GET",
                 headers: {
