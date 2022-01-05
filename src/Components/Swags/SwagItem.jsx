@@ -1,7 +1,7 @@
 import React from "react";
 import Btn from "../Btn";
 import CarouselContainer from "../Carousel/CarouselContainer";
-import img from '../assets/swag1.jpeg'
+// import img from '../assets/swag1.jpeg'
 function SwagItem(props) {
     const onDownload = () => {
         const img  = document.querySelector(`#${props.divId} img`);
