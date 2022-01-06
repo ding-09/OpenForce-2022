@@ -15,7 +15,7 @@ export default function IssueFullPage(props) {
         document.getElementById("root").scrollTop = 0;
         const updateOrg = async () => {
             var urlParm = new URL(window.location.href);
-            var url = `/api/org/issue/${urlParm.searchParams.get("id")}`;
+            var url = `https://openforce2022.herokuapp.com/api/org/issue/${urlParm.searchParams.get("id")}`;
             var resp = await fetch(url, {
                 method: "GET",
                 headers: {
@@ -30,7 +30,7 @@ export default function IssueFullPage(props) {
             }
 
 
-            url = `/api/org/${urlParm.searchParams.get("id")}`;
+            url = `https://openforce2022.herokuapp.com/api/org/${urlParm.searchParams.get("id")}`;
             resp = await fetch(url, {
                 method: "GET",
                 headers: {

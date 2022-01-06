@@ -1,14 +1,12 @@
-import React, { useContext, useEffect, useState } from 'react'
-import BaseContext from '../Context/BaseContext'
+import React, { useEffect, useState } from 'react'
 import OrganizationCard from './OrganizationCard'
 import "./styles/Organization.css"
 
 export default function Organization(props) {
-    const context = useContext(BaseContext);
     const [organization, setorganization] = useState([]);
     useEffect(()=>{
         const getOrg = async ()=>{
-            const url = `/api/org/`;
+            const url = `https://openforce2022.herokuapp.com/api/org/`;
             const resp = await fetch(url, {
                 method: "GET",
                 headers: {

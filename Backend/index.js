@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static(path.resolve(__dirname,'../build')))
 const port = process.env.PORT || 5000
 
-const uri = process.env.MONGO_URI;
+const uri = process.env.MONGO_URI || "mongodb+srv://openforce:Openforce123@cluster0.enooy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(uri).then(() => {
     console.log("Connected")
 }).catch((err) => {
