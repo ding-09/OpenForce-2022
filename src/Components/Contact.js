@@ -64,7 +64,7 @@ function Contact() {
                             </div>
                             <div className="text" >
                                 <h3>Email</h3>
-                               <div className='email_'> Codefloworg@gmail.com</div>
+                               <div className='email_'>codefloworg@gmail.com</div>
                             </div>
                         </div>
                     </div>
