@@ -7,6 +7,12 @@
     top: 0px;
     left: 0px;
 }
+.bg-crl{
+    content: url('../assets/crl_icon.svg');
+}
+.bg-icn{
+    content: url('../assets/code_icon.svg');
+}
 #Particles *{
     position: absolute;
     display: inline-block;
