@@ -36,9 +36,10 @@ function Contact() {
                     Contact Us
                 </div>
                 <div className="content">
-                    <p>Codeflow, a community that serves the ultimate purpose of Learning must go on,  is an organization whose main motive is to empower the student community by organizing webinars,
-                        hackathons and open source events.As a community, we have impacted 6k+ students and reached 100+ colleges  in less than 1 year. We had previously organized an event called “DSA Bootcamp” which had 5k+ registrations, 30+ community partners and collaborated with 25+ eminent speakers. </p>
-                </div>
+                  
+                    <p> <span style={{color:"#AD5FAA"}}>CodeFlow ,</span>  a community that serves the ultimate purpose of Learning must go on,  is an organization whose main motive is to empower the student community by organizing webinars,
+                        hackathons and open source events.As a community, <span style={{color:"#AD5FAA"}}>we have impacted 6k+ students and reached 100+ colleges  in less than 1 year .</span>  We had previously organized an event called “DSA Bootcamp” which had  <span style={{color:"#AD5FAA"}}> 5k+ registrations, 30+ community partners and collaborated with 25+ eminent speakers.</span> </p>
+                          </div>
                 <div className="container">
                     <div className="contactInfo">
                         <div className="box">
@@ -61,9 +62,9 @@ function Contact() {
                             <div className="icon">
                                 <FontAwesomeIcon icon="envelope" />
                             </div>
-                            <div className="text">
+                            <div className="text" >
                                 <h3>Email</h3>
-                                <p>Codefloworg@gmail.com</p>
+                               <div className='email_'> Codefloworg@gmail.com</div>
                             </div>
                         </div>
                     </div>
