@@ -1,6 +1,7 @@
 .timelineCont {
     margin-top: 70px;
     padding: 20px 100px;
+    position: relative;
 }
 
 .tlboxwrap {
@@ -30,8 +31,39 @@
     width: 30vw;
     background-color: #EEE9E6;
     color: #1C232D;
+    position: relative;
 }
 
+.dot{
+    content: '';
+    position: absolute;
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background-color: #EEE9E6;
+    border-radius: 100%;
+    /* position: relative; */
+}
+
+.dot::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #EEE9E6;
+    border-radius: 100%;
+    top: -5px;
+    left: -5px;
+}
+
+.tlline{
+    position: absolute;
+    height: 80%;
+    bottom: 0px;
+    width: 3px;
+    background-color: #EEE9E6;
+    left: 52%;
+}
 
 @media screen and (max-width: 1400px) {
     .timelineCont {
@@ -42,6 +74,13 @@
     }
     .dark{
         width: 35vw;
+    }
+    .dark::after{
+        left: 111.8%;
+    }
+
+    .dark::before{
+        left: calc(111.8% - 5px);
     }
 }
 @media screen and (max-width: 900px) {
@@ -55,5 +94,8 @@
     }
     .dark{
         width: 45vw;
+    }
+    .dot, .tlline{
+        display: none;
     }
 }
