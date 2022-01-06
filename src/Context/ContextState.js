@@ -7,7 +7,7 @@ const BaseState = (props) => {
     const [organization, setOrganization] = useState([]);
 
     const getOrganization = async () => {
-        var org = await callApi("/api/org/", "GET", {});
+        var org = await callApi("https://openforce2022.herokuapp.com/api/org/", "GET", {});
         if (!org.error) setOrganization(org.data);
         else setOrganization([]);
     };

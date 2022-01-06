@@ -91,7 +91,7 @@ export default function Registration() {
             college : document.getElementById("regcollege").value,
             gender:getGender()
         }
-        const url = `/api/user/register`;
+        const url = `https://openforce2022.herokuapp.com/api/user/register`;
         var resp = await fetch(url, {
             method: "POST",
             headers: {
@@ -115,7 +115,7 @@ export default function Registration() {
             email : document.getElementById("regpassword").value,
             password : document.getElementById("regcpassword").value,
         }
-        const url = `/api/user/login`;
+        const url = `https://openforce2022.herokuapp.com/api/user/login`;
         var resp = await fetch(url, {
             method: "POST",
             headers: {

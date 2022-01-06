@@ -90,6 +90,7 @@
   border-radius:15px;
   /* border-bottom: 2px solid #1c232d; */
   outline: none;
+  color: rgb(255, 255, 255);
   resize: none;
 }
 .contactForm .inputBox span {
@@ -104,7 +105,7 @@
 }
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span{
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 15px;
   transform: translateY(-32px);
 }
