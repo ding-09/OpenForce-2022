@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "../styles/Swags.css";
 import SwagItem from "./SwagItem";
@@ -8,6 +8,9 @@ import config from "../../config/config";
 const { desktopSwags, mobileSwags } = config;
 
 function Swags(props) {
+    useEffect(()=>{
+        document.getElementById("root").scrollTop = 0;
+    },[])
     return (
         <section id={"swags"}>
             <h1>DIGITAL SWAGS</h1>

@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
 import './styles/Particles.css'
-import codeIcon from './assets/code_icon.svg';
-import crlIcon from './assets/crl_icon.svg';
 function Particles() {
     useEffect(()=>{
         let w = window.innerWidth;
@@ -39,31 +37,31 @@ function Particles() {
     })
     return (
         <div id="Particles">
-            <img className="bg-crl" id="bg-c1" src={crlIcon} alt="" data-eff="30" />
-            <img className="bg-crl" id="bg-c2" src={crlIcon} alt="" data-eff="-10" />
-            <img className="bg-crl" id="bg-c3" src={crlIcon} alt="" data-eff="-25" />
-            <img className="bg-crl" id="bg-c4" src={crlIcon} alt="" data-eff="20" />
-            <img className="bg-crl" id="bg-c5" src={crlIcon} alt="" data-eff="-5" />
-            <img className="bg-crl" id="bg-c6" src={crlIcon} alt="" data-eff="-5"/>
+            <img className="bg-crl" id="bg-c1" alt="" data-eff="30" />
+            <img className="bg-crl" id="bg-c2" alt="" data-eff="-10" />
+            <img className="bg-crl" id="bg-c3" alt="" data-eff="-25" />
+            <img className="bg-crl" id="bg-c4" alt="" data-eff="20" />
+            <img className="bg-crl" id="bg-c5" alt="" data-eff="-5" />
+            <img className="bg-crl" id="bg-c6" alt="" data-eff="-5"/>
             
-            <img className="bg-icn" id="bg-i1" src={codeIcon} alt="" data-eff="30" />
-            <img className="bg-icn" id="bg-i2" src={codeIcon} alt="" data-eff="-10" />
-            <img className="bg-icn" id="bg-i3" src={codeIcon} alt="" data-eff="25" />
-            <img className="bg-icn" id="bg-i4" src={codeIcon} alt="" data-eff="20" />
-            <img className="bg-icn" id="bg-i5" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i6" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i7" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i8" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i9" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i10" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i11" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i12" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i13" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i14" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i15" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i16" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i17" src={codeIcon} alt="" data-eff="-5" />
-            <img className="bg-icn" id="bg-i18" src={codeIcon} alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i1" alt="" data-eff="30" />
+            <img className="bg-icn" id="bg-i2" alt="" data-eff="-10" />
+            <img className="bg-icn" id="bg-i3" alt="" data-eff="25" />
+            <img className="bg-icn" id="bg-i4" alt="" data-eff="20" />
+            <img className="bg-icn" id="bg-i5" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i6" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i7" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i8" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i9" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i10" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i11" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i12" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i13" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i14" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i15" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i16" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i17" alt="" data-eff="-5" />
+            <img className="bg-icn" id="bg-i18" alt="" data-eff="-5" />
         </div>
     )
 }

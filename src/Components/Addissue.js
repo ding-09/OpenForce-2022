@@ -20,7 +20,7 @@ export default function Addissue() {
         data.desc = newIssueDesc.value;
         data.level = level.value;
         data.repo = newIssuegitRepo.value;
-        context.callApi(`/api/org/issue/${context.orgData._id}`,"PUT",data);
+        context.callApi(`https://openforce2022.herokuapp.com/api/org/issue/${context.orgData._id}`,"PUT",data);
         window.alert("Issue Added Successfully");
     }
 

@@ -5,7 +5,7 @@ function FAQ({ faq,index }) {
     const toggle = () => {};
     return (
         <>
-            <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordionExample" style={{marginTop:"12px"}}>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button

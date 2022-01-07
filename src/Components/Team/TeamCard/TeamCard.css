@@ -35,3 +35,13 @@
 i{
     color:white;
 }
+
+
+.team-description a{
+    color: white;
+    font-size: 20px;
+}
+.teammemb-git{
+    margin-left: 15px;
+
+}

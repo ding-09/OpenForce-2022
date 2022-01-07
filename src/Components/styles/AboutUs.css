@@ -23,7 +23,14 @@
     width: 80%;
     margin:auto;
 }
-
+.aboutImg{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.aboutImg img{
+    display: block;
+}
 @media screen and (max-width:1200px) {
     .aboutCont{
         width: 55%;
@@ -84,4 +91,39 @@
         text-align: center;
     }
 }
+.containerr{
+    display: flex;
+    justify-content: end;
+    gap: 0px;
+}
+.first , .second{
+    display: block;
+
+}
+.textimg{
+    text-align: center;
+    text-decoration: underline rgb(233, 154, 50);
+    text-underline-position: under;
+    color: #EEE9E6;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.imgs{
+    border-radius: 10%;
+}
+.next{
+    padding: 5%;
+    padding-left: 10%;
+}
+@media screen and (max-width:896px){
+    .aboutsubcont{
+        display: block;
+    }
+    .aboutCont {
+        margin: auto;
+    }
+}
+
+
 

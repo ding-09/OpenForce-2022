@@ -20,6 +20,7 @@ import Timeline from "./Components/Timeline";
 import FAQ from "./Components/FAQ";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FAQCont from "./Components/FAQCont";
+import Footer from "./Components/Footer";
 
 function App() {
     return (
@@ -39,6 +40,7 @@ function App() {
                         <FAQCont/>
                         <TeamContainer />
                         <Contact />
+                        <Footer />
                     </Route>
                     <Route exact path={"/swags"}>
                         <Swags />
