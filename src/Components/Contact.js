@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import React, { useState } from 'react';
-import { faMapMarkerAlt,faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons"
+import { faMapMarkerAlt, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import './styles/Contact.css';
 library.add(faMapMarkerAlt, faPhone, faEnvelope);
 
@@ -36,17 +36,16 @@ function Contact() {
                     Contact Us
                 </div>
                 <div className="content">
-                  
                     <p> <span style={{color:"#AD5FAA"}}>Codeflow,</span>  a community that serves the ultimate purpose of Learning must go on,  is an organization whose main motive is to empower the student community by organizing webinars,
                         hackathons and open source events.As a community, <span style={{color:"#AD5FAA"}}>we have impacted 6k+ students and reached 100+ colleges  in less than 1 year .</span>  We had previously organized an event called “DSA Bootcamp” which had  <span style={{color:"#AD5FAA"}}> 5k+ registrations, 30+ community partners and collaborated with 25+ eminent speakers.</span> </p>
                           </div>
                 <div className="container">
                     <div className="contactInfo">
                         <div className="box">
-                            <div className="icon"><FontAwesomeIcon icon="map-marker-alt"/></div>
+                            <div className="icon"><FontAwesomeIcon icon="map-marker-alt" /></div>
                             <div className="text">
                                 <h3>Address</h3>
-                                <p> Nit Kurukshetra<br />Kurukshetra,Haryana<br />136119</p>
+                                <p>New Delhi<br />India<br /></p>
                             </div>
                         </div>
                         <div className="box">
