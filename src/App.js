@@ -34,8 +34,8 @@ function App() {
                         <Home />
                         <AboutUs />
                         <Timeline />
-                        <Sessions />
                         <Organization />
+                        <Sessions />
                         <SponsorsContainer />
                         {/* <Registration /> */}
                         <FAQCont/>

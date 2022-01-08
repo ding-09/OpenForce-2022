@@ -12,7 +12,7 @@
 }
 .bg-icn{
     content: url('../assets/code_icon.svg');
-    opacity: 0.5;
+    opacity: 0.3;
 }
 #Particles *{
     position: absolute;
@@ -124,6 +124,9 @@
 }
 
 @media screen and (max-width : 500px) {
+    #Particles{
+        /* display: none; */
+    }
     #bg-c1{
         width: 30vh;
         top: -10%;

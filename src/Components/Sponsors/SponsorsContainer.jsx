@@ -2,6 +2,7 @@ import React from "react";
 import "./SponsorsContainer.css";
 import SponsorsSubContainer from "./SponsorsSubContainer/SponsorsSubContainer";
 import stickermule from "./logo/stickermule.png";
+import gdsc from "./logo/template2_white.png"
 import Heading from "../Heading";
 
 function SponsorsContainer() {
@@ -21,13 +22,22 @@ function SponsorsContainer() {
                 "12",
             ],
         ],
-        ["Bronze Sponsors 🥉", ["12", "13", "14"]],
-        ["Community Partners 🤝", ["14"]],
+        // ["Bronze Sponsors 🥉", ["12", "13", "14"]],
+        [
+            "Community Partners 🤝",
+            [
+                {
+                    website: "#",
+                    name: "",
+                    logo: gdsc,
+                },
+            ],
+        ],
     ];
 
     return (
         <div id="sponserLink">
-            <Heading name="Sponsors and Partners"/>
+            <Heading name="Sponsors and Partners" />
             <div className="sponsors-container">
                 {sponsorTypes.map((sponsorType) => {
                     return (

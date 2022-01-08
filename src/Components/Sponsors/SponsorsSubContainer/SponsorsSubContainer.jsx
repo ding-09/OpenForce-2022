@@ -4,8 +4,8 @@ import SponsorsCard from './SponsorsCard/SponsorsCard';
 
 function SponsorsSubContainer(props){
     return (
-        <div className="sponsors-sub-container">
-            <h3 className="sponsors-sub-heading"># {props.subheading}</h3>
+        <div className="sponsors-sub-container" style={{marginTop:"50px"}}>
+            <h3 className="sponsors-sub-heading"><span className='purplespon'>#</span> {props.subheading}</h3>
             <div className="sponsors-sub-container-flexbox">
                 {props.links.map((link)=>{
                     return <SponsorsCard key={link.name} link={link}/>
