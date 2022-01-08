@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'OpenForce'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7ED454D999CA49EAA372AF3010ECFB75 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CCD37C6B3E954B58B56937BC23D0AB58 }}
           package: .
