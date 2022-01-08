@@ -21,6 +21,7 @@ import FAQ from "./Components/FAQ";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FAQCont from "./Components/FAQCont";
 import Footer from "./Components/Footer";
+import Error from "./Components/Error";
 
 function App() {
     return (
@@ -54,8 +55,8 @@ function App() {
                     <Route exact path="/FAQs">
                         <FAQ />
                     </Route>
-                    <Route exact path="/test">
-                        <Home />
+                    <Route exact path="/error">
+                        <Error/>
                     </Route>
                 </Switch>
             </div>

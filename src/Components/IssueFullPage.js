@@ -15,7 +15,9 @@ export default function IssueFullPage(props) {
         document.getElementById("root").scrollTop = 0;
         const updateOrg = async () => {
             var urlParm = new URL(window.location.href);
-            var url = `https://openforce2022.herokuapp.com/api/org/issue/${urlParm.searchParams.get("id")}`;
+            var url = `https://openforce2022.herokuapp.com/api/org/issue/${urlParm.searchParams.get(
+                "id"
+            )}`;
             var resp = await fetch(url, {
                 method: "GET",
                 headers: {
@@ -24,20 +26,21 @@ export default function IssueFullPage(props) {
             });
 
             var data = (await resp.json()).data;
+            console.log(data);
             if (!data) {
                 history.push("/error");
                 return;
             }
 
-
-            url = `https://openforce2022.herokuapp.com/api/org/${urlParm.searchParams.get("id")}`;
+            url = `https://openforce2022.herokuapp.com/api/org/${urlParm.searchParams.get(
+                "id"
+            )}`;
             resp = await fetch(url, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json;charset=utf-8",
                 },
             });
-
 
             var comp = (await resp.json()).data;
 
@@ -51,16 +54,44 @@ export default function IssueFullPage(props) {
         updateOrg();
     }, []);
 
-    useEffect(() => {
-    }, [orgIssue]);
+    useEffect(() => {}, [orgIssue]);
 
-    useEffect(()=>{
-    }, [orgData])
+    useEffect(() => {}, [orgData]);
 
     const chgPrefrence = (e) => {
-        setdifficultyLevel(e.target.value);
-    };
+        document.querySelector(".dropDown").style.height = "160px";
+        document.querySelector(".dropDir").style.transform = "rotateZ(-180deg)"
 
+
+    };
+    
+    const setAll = ()=>{
+        document.querySelector(".dropDown").style.height = "0px";
+        document.querySelector("#selectedVal").innerHTML = "All";
+        setdifficultyLevel("All");
+        document.querySelector(".dropDir").style.transform = "rotateZ(0deg)"
+    }
+
+    const setEasy = ()=>{
+        document.querySelector(".dropDown").style.height = "0px";
+        document.querySelector("#selectedVal").innerHTML = "Easy";
+        document.querySelector(".dropDir").style.transform = "rotateZ(0deg)"
+        setdifficultyLevel("Easy");
+    }
+
+    const setInter = ()=>{
+        document.querySelector(".dropDown").style.height = "0px";
+        document.querySelector(".dropDir").style.transform = "rotateZ(0deg)"
+        document.querySelector("#selectedVal").innerHTML = "Intermed..";
+        setdifficultyLevel("Intermediate");
+    }
+
+    const setHard = ()=>{
+        document.querySelector(".dropDown").style.height = "0px";
+        document.querySelector(".dropDir").style.transform = "rotateZ(0deg)"
+        document.querySelector("#selectedVal").innerHTML = "Hard";
+        setdifficultyLevel("Hard");
+    }
 
     return (
         <div className="fullHeight">
@@ -71,12 +102,15 @@ export default function IssueFullPage(props) {
                     <div>{orgData.name}</div>
                 </div>
                 <div className="rightOrgFullHeader">
-                    <select className="selectBox" onChange={chgPrefrence}>
-                        <option>All</option>
-                        <option>Easy</option>
-                        <option>Intermediate</option>
-                        <option>Hard</option>
-                    </select>
+                    <div className="selectLevel">
+                        <div id="selected" onClick={chgPrefrence}><span id="selectedVal">All</span> <i class="fas fa-caret-down dropDir"></i></div>
+                        <div className="dropDown">
+                            <div className="option" onClick={setAll}>All</div>
+                            <div className="option" onClick={setEasy}>Easy</div>
+                            <div className="option" onClick={setInter}>Intermediate</div>
+                            <div className="option" onClick={setHard}>Hard</div>
+                        </div>
+                    </div>
                     {/* <div className="addNew" onClick={showAddNewIssue}>Add New</div> */}
                 </div>
             </div>
@@ -84,13 +118,10 @@ export default function IssueFullPage(props) {
                 {orgIssue.length === 0 ? (
                     <div className="noIssue middle">No Issue Avilable</div>
                 ) : (
-                    orgIssue.map((elem,ind) => {
+                    orgIssue.map((elem, ind) => {
                         elem.ind = ind + 1;
                         return (
-                            <IssueCard
-                                data={elem}
-                                level={difficultyLevel}
-                            />
+                            <IssueCard data={elem} level={difficultyLevel} />
                         );
                     })
                 )}

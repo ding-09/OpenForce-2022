@@ -1,0 +1,28 @@
+.errorCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error{
+    color: #46474B;
+    font-size: 160px;
+}
+
+.error img{
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.errorType{
+    color: #46474B;
+    font-size: 30px;
+}
+
+@media screen and (max-width : 450px) {
+    .errorType{
+        font-size: 23px;
+    }
+}

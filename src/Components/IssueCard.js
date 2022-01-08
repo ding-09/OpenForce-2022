@@ -4,10 +4,10 @@ import "./styles/OrgFullPage.css";
 export default function IssueCard(props) {
     if (props.level !== "All" && props.level !== props.data.level) return <></>;
     return (
-        <div class="card" style={{color:"#EEE9E6", border:"2px solid #eee9e6", marginTop:"10px", borderRadius:"10px"}}>
+        <div class="card" style={{color:"#EEE9E6", width:"100%",border:"2px solid #eee9e6", marginTop:"20px", borderRadius:"10px"}}>
             <div class="card-header" style={{background:"#1C232D", borderTopRightRadius:"10px", borderTopLeftRadius:"10px"}}>
                 Issue-{props.data.ind}{" "}
-                <span className="badge bg-secondary">{props.data.level}</span>
+                <span className="badge bg-secondary" style={{marginLeft:"20px"}}>{props.data.level}</span>
             </div>
             <div class="card-body" style={{background:"#46474B",borderBottomRightRadius:"10px",borderBottomLeftRadius:"10px"}}>
                 <h5 class="card-title">{props.data.title}</h5>
