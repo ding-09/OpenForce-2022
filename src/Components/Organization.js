@@ -31,6 +31,7 @@ export default function Organization(props) {
                             return <OrganizationCard data={elem} key={elem._id}/>
                         })
                     }
+                    
                     {/* <div className="bePartofCont">
                         <div className="bePartOf">Be part of Openforce
                         <div className="bePartOfTwo">Be part of Openforce</div>

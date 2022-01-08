@@ -49,6 +49,14 @@
     color: #AD5FAA;
     /* display: inline; */
     width: 350px;
+    margin-left: 10px;
+}
+
+.openforcemention{
+    color: #5865F2;
+    font-weight: bolder;
+    font-size: 55px;
+    margin-bottom: 30px;
 }
 
 .landindContent p{
@@ -110,6 +118,12 @@
     margin-right: 10px;
 }
 
+@media screen and (max-width : 1300px){
+    .openforcemention{
+        font-size: 45px;
+    }
+}
+
 @media screen and (max-width : 900px){
     .landindContent{
         width: 100%;
@@ -133,7 +147,16 @@
     }
 }
 
+@media screen and (max-width : 600px) {
+    .openforcemention{
+        font-size: 45px;
+    }
+}
+
 @media screen and (max-width : 500px){
+    .openforcemention{
+        font-size: 40px;
+    }
     .landindContent{
         width: 100%;
     }
@@ -156,9 +179,12 @@
     }
 }
 
-@media screen and (max-width : 350px){
+@media screen and (max-width : 365px){
     .landindContent h1{
         font-size: 25px;
         width: 90vw;
+    }
+    .openforcemention{
+        font-size: 30px;
     }
 }

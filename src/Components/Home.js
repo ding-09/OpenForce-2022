@@ -17,9 +17,9 @@ function Home() {
                         clearInterval(interval2);
                         return;
                     }
-                },70)
+                },140)
             }
-        },70)
+        },140)
     }
 
     setInterval(()=>{
@@ -30,15 +30,16 @@ function Home() {
         }else if(elem.innerHTML === "Openforce"){
             switchCont("dynamic-text", "Contributor Force");
         }
-    },2000)
+    },4000)
 
     
     return (
         <div className="landing" id="homepageLink">
             <div className="landindContent">
                 <h1 className="homeCont">
+                    <div className="openforcemention">OpenForce 2022</div>
                     <div>OpenSource meets</div>
-                    <div className="homeContSub">its <div className="dynamic-text" id="dynamic-text">Contributor Force</div></div>
+                    <div className="homeContSub">its{" "}<div className="dynamic-text" id="dynamic-text">Contributor Force</div></div>
                 </h1>
                 <p>
                     10th to 15th Jan <span className="span-color">2022</span>
