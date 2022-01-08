@@ -19,16 +19,13 @@ export default function AboutUs() {
                             where we will be connecting Open Source Contributors with Opensource
                             Organisations with an initiative of{" "}
                             <span style={{ color: "#AD5FAA" }}>
-                                'OpenSource meets its Contributor Force!’
+                                'OpenSource meets its Contributor Force!’.
                             </span>
-                            .
+                            
                         </p>
                         <p>
                             This mega event is organised by{" "}
-                            <span style={{ color: "#E1C340" }}>“Codeflow”</span> along with{" "}
-                            <span style={{ color: "#008000" }}>
-                                “Google developer Students Club NIT Kurukshetra.”
-                            </span>
+                            <span style={{ color: "#E1C340" }}>'Codeflow’. </span>
                             Codeflow is an organisation whose main motive is to empower the
                             student community by organising webinars, hachathons and open source
                             events.
@@ -37,7 +34,7 @@ export default function AboutUs() {
                     <div className="containerr d-block" >
                         <div>
                             <p className="textimg">
-                                #  Our  Impact
+                                Our  Impact
                             </p>
                         </div>
                         <div className="next d-flex">

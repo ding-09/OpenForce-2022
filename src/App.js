@@ -37,7 +37,7 @@ function App() {
                         <Sessions />
                         <Organization />
                         <SponsorsContainer />
-                        <Registration />
+                        {/* <Registration /> */}
                         <FAQCont/>
                         <TeamContainer />
                         <Contact />

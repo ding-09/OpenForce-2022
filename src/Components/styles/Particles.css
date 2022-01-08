@@ -12,6 +12,7 @@
 }
 .bg-icn{
     content: url('../assets/code_icon.svg');
+    opacity: 0.5;
 }
 #Particles *{
     position: absolute;

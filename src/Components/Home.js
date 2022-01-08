@@ -14,7 +14,7 @@ function Home() {
                 </p>
 
                 <div className="landingBtn--wapper">
-                    <a href="#reg">
+                    <a href="https://forms.gle/VBqnNxuYUVdwHKgy6" target="_blank">
                         <button className="homeregbtn landingBtn">Register</button>
                     </a>
                     <a
