@@ -1,0 +1,31 @@
+.Heading{
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    width: 100vw;
+    background: #1C232D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Heading>hr{
+    position: absolute;
+    height: 4px;
+    color: #AD5FAA;
+    width: 90vw;
+}
+.heading-name{
+    background: #1C232D;
+    padding: 20px 35px;
+    font-size: 30px;
+    color: #EEE9E6;
+}
+@media screen and (max-width:900px) {
+    .heading-name{
+        font-size: 20px;
+        padding: 15px 15px;
+    }
+    .Heading>hr{
+        width: 95vw;
+    }
+}

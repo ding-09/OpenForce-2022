@@ -2,6 +2,7 @@ import React from "react";
 import "./SponsorsContainer.css";
 import SponsorsSubContainer from "./SponsorsSubContainer/SponsorsSubContainer";
 import stickermule from "./logo/stickermule.png";
+import Heading from "../Heading";
 
 function SponsorsContainer() {
     const sponsorTypes = [
@@ -25,17 +26,19 @@ function SponsorsContainer() {
     ];
 
     return (
-        <div className="sponsors-container" id="sponserLink">
-            <div className="heading">Sponsors and Partners</div>
-            {sponsorTypes.map((sponsorType) => {
-                return (
-                    <SponsorsSubContainer
-                        key={sponsorType[0]}
-                        subheading={sponsorType[0]}
-                        links={sponsorType[1]}
-                    />
-                );
-            })}
+        <div id="sponserLink">
+            <Heading name="Sponsors and Partners"/>
+            <div className="sponsors-container">
+                {sponsorTypes.map((sponsorType) => {
+                    return (
+                        <SponsorsSubContainer
+                            key={sponsorType[0]}
+                            subheading={sponsorType[0]}
+                            links={sponsorType[1]}
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
 }

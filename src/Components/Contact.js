@@ -3,6 +3,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import React, { useState } from 'react';
 import { faMapMarkerAlt,faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import './styles/Contact.css';
+import Heading from './Heading';
 library.add(faMapMarkerAlt, faPhone, faEnvelope);
 
 
@@ -30,11 +31,9 @@ function Contact() {
         alert(result.status);
     };
     return (
-        <div>
+        <div class="full-page-container">
+            <Heading name="Contact Us"/>
             <section className="contact" >
-                <div className="heading">
-                    Contact Us
-                </div>
                 <div className="content">
                   
                     <p> <span style={{color:"#AD5FAA"}}>CodeFlow ,</span>  a community that serves the ultimate purpose of Learning must go on,  is an organization whose main motive is to empower the student community by organizing webinars,

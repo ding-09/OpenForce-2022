@@ -1,4 +1,5 @@
 import React from "react";
+import Heading from "./Heading";
 import "./styles/Timeline.css";
 export default function Timeline() {
     const resetTimeline = () => {
@@ -32,8 +33,8 @@ export default function Timeline() {
     window.addEventListener('resize',resetTimeline);
     return (
         <>
+            <Heading name="Timeline"/>
             <div className="timelineCont">
-                <div className="heading">Timeline</div>
                 <div className="tlline"></div>
                 <div class="tlboxwrap tlfirst">
                     <div className="tlboxes dark" id="tlbox1">

@@ -53,3 +53,6 @@ code {
 .absolute{
   position: absolute;
 }
+.full-page-container{
+  /* min-height: 100vh; */
+}

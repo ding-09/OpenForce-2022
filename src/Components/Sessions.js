@@ -6,6 +6,7 @@ import i2 from './assets/2.jpg'
 import i3 from './assets/3.jpg'
 import i4 from './assets/4.jpg'
 import i5 from './assets/5.jpg'
+import Heading from './Heading';
 
 function Sessions() {
     const [sessions, setSessions] = useState([]);
@@ -30,10 +31,8 @@ function Sessions() {
     }, [])
     return (
     <>
+        <Heading name="Schedule Event Now!"/>
         <div id="Sessions">
-        <div className="heading">
-            Schedule Event Now!
-        </div>
             <div id="sessions-grid">
                 {sessions.map((session=>{
                     return <SessionCard key={session._id} session={session}/>

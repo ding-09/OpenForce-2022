@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import FAQ from './FAQ';
+import Heading from './Heading';
 
 export default function FAQCont() {
 
@@ -27,18 +28,18 @@ export default function FAQCont() {
     ]);
 
     return (
-        <div className='faqcont' id="faqclick">
-            <div className='heading'>
-                FAQs
+        <>
+            <Heading id="faqclick" name="FAQs"/>
+            <div className='faqcont'>
+                <div className="faqs">
+                    {faqs.map((faq, i) => (
+                        <FAQ
+                            faq={faq}
+                            index={i}
+                        />
+                    ))}
+                </div>
             </div>
-            <div className="faqs">
-                {faqs.map((faq, i) => (
-                    <FAQ
-                        faq={faq}
-                        index={i}
-                    />
-                ))}
-            </div>
-        </div>
+        </>
     )
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Heading from "./Heading";
 import leftImg from "./Image/register.png";
 import "./styles/Registration.css";
 
@@ -142,101 +143,103 @@ export default function Registration() {
     }
 
     return (
-        <div className="registration" id="reg">
-            <div className="heading" id="Regheading">Register Now</div>
-            <div className="regForm">
-                <form id="regform" onSubmit={stepForwad}>
-                    <div id="username">
-                        <div className="regText">Full Name</div>
-                        <div className="regInput">
-                            <input
-                                type="text"
-                                required={true}
-                                className="regInputField"
-                                id="regname"
-                            />
+        <div class="full-page-container" id="reg">
+            <Heading id="Regheading" name="Register Now"/>
+            <div className="registration">
+                <div className="regForm">
+                    <form id="regform" onSubmit={stepForwad}>
+                        <div id="username">
+                            <div className="regText">Full Name</div>
+                            <div className="regInput">
+                                <input
+                                    type="text"
+                                    required={true}
+                                    className="regInputField"
+                                    id="regname"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div id="email">
-                        <div className="regText">Email</div>
-                        <div className="regInput">
-                            <input
-                                type="email"
-                                required={true}
-                                id="regemail"
-                                className="regInputField"
-                            />
+                        <div id="email">
+                            <div className="regText">Email</div>
+                            <div className="regInput">
+                                <input
+                                    type="email"
+                                    required={true}
+                                    id="regemail"
+                                    className="regInputField"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div id="password">
-                        <div className="regText" id="passwordCont">Password</div>
-                        <div className="regInput">
-                            <input
-                                type="text"
-                                required={true}
-                                className="regInputField"
-                                id="regpassword"
-                            />
+                        <div id="password">
+                            <div className="regText" id="passwordCont">Password</div>
+                            <div className="regInput">
+                                <input
+                                    type="text"
+                                    required={true}
+                                    className="regInputField"
+                                    id="regpassword"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div id="cpassword">
-                        <div className="regText" id="cpasswordCont">Confirm Password</div>
-                        <div className="regInput">
-                            <input
-                                type="password"
-                                autoComplete="true"
-                                id="regcpassword"
-                                required={true}
-                                className="regInputField"
-                            />
+                        <div id="cpassword">
+                            <div className="regText" id="cpasswordCont">Confirm Password</div>
+                            <div className="regInput">
+                                <input
+                                    type="password"
+                                    autoComplete="true"
+                                    id="regcpassword"
+                                    required={true}
+                                    className="regInputField"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div id="mobile">
-                        <div className="regText">Mobile No</div>
-                        <div className="regInput">
-                            <input
-                                type="number"
-                                required={true}
-                                id="regno"
-                                className="regInputField"
-                            />
+                        <div id="mobile">
+                            <div className="regText">Mobile No</div>
+                            <div className="regInput">
+                                <input
+                                    type="number"
+                                    required={true}
+                                    id="regno"
+                                    className="regInputField"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div id="gender">
-                        <div className="regText">Gender</div>
-                        <div className="regInput genderSelect">
-                            <span>
-                                <input type="radio" name="gender" id="male" value="Male"/>
-                                <label htmlFor="male">Male</label>
-                            </span>
-                            <span>
-                                <input type="radio" name="gender" id="female" value="Female"/>
-                                <label htmlFor="female">Female</label>
-                            </span>
-                            <span>
-                                <input type="radio" name="gender" id="other" value="Other"/>
-                                <label htmlFor="other">Other</label>
-                            </span>
+                        <div id="gender">
+                            <div className="regText">Gender</div>
+                            <div className="regInput genderSelect">
+                                <span>
+                                    <input type="radio" name="gender" id="male" value="Male"/>
+                                    <label htmlFor="male">Male</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="gender" id="female" value="Female"/>
+                                    <label htmlFor="female">Female</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="gender" id="other" value="Other"/>
+                                    <label htmlFor="other">Other</label>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div id="college">
-                        <div className="regText">College</div>
-                        <div className="regInput">
-                            <input
-                                type="text"
-                                required={true}
-                                className="regInputField"
-                                id="regcollege"
-                            />
+                        <div id="college">
+                            <div className="regText">College</div>
+                            <div className="regInput">
+                                <input
+                                    type="text"
+                                    required={true}
+                                    className="regInputField"
+                                    id="regcollege"
+                                />
+                            </div>
                         </div>
+                        <div className="regbtncont">
+                            <button type="submit" id="register">Register</button>
+                            <button type="button" id="login" onClick={changeForm}>Login</button>
+                        </div>
+                    </form>
+                    <div className="leftRegBar">
+                        <img src={leftImg} className="regimage" />
                     </div>
-                    <div className="regbtncont">
-                        <button type="submit" id="register">Register</button>
-                        <button type="button" id="login" onClick={changeForm}>Login</button>
-                    </div>
-                </form>
-                <div className="leftRegBar">
-                    <img src={leftImg} className="regimage" />
                 </div>
             </div>
         </div>
