@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import SessionCard from './SessionCard';
 import './styles/Session.css'
-import i1 from './assets/1.jpg'
-import i2 from './assets/2.jpg'
-import i3 from './assets/3.jpg'
-import i4 from './assets/4.jpg'
-import i5 from './assets/5.jpg'
 import Heading from './Heading';
+import leftArr from './assets/left_arr.svg';
+import rightArr from './assets/right_arr.svg';
 
+const scroll = (dir)=>{
+    let sg = document.getElementById('sessions-grid');
+    sg.scrollLeft+=dir*window.innerWidth*0.8;
+}
 function Sessions() {
     const [sessions, setSessions] = useState([]);
     const [pastSessions, setPastSessions] = useState([]);
@@ -24,8 +25,8 @@ function Sessions() {
             if(new Date(i.time)<new Date()) ps.push(i);
             else s.push(i);
         }
-        s.sort((a,b)=>new Date(a.time)<new Date(b.time));
-        ps.sort((a,b)=>new Date(a.time)<new Date(b.time));
+        s.sort((a,b)=>new Date(a.time) - new Date(b.time));
+        ps.sort((a,b)=>new Date(b.time) - new Date(a.time));
         setSessions(s);
         setPastSessions(ps);
     }, [])
@@ -40,6 +41,12 @@ function Sessions() {
                 {pastSessions.map((session=>{
                     return <SessionCard key={session._id} session={session}/>
                 }))}
+            </div>
+            <div className="session-arrows" id="ses-prev" onClick={()=>{scroll(-1)}}>
+                <img src={leftArr} alt="" />
+            </div>
+            <div className="session-arrows" id="ses-next" onClick={()=>{scroll(+1)}}>
+                <img src={rightArr} alt="" />    
             </div>
         </div>
         </>

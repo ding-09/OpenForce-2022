@@ -2,22 +2,8 @@
 #Sessions{
     font-family: 'Montserrat', sans-serif;
     padding: 20px 100px;
-}
-.heading{
     position: relative;
-    text-transform: uppercase;
-    color: #EEE9E6;
-    font-size: 30px;
-    font-weight: 900;
-    margin-bottom: 30px;
-}
-.heading::after{
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    content: "";
-    border-bottom: 4px solid #EEE9E6;
-    width: 7%;
+    width: 100%;
 }
 #sessions-grid{
     display: grid;
@@ -30,6 +16,36 @@
     grid-template-rows: auto auto;
     column-gap: 20px;
     row-gap: 30px;
+    scroll-behavior: smooth;
+}
+.session-arrows{
+    position: absolute;
+    top:45%;
+    display: flex;
+    opacity: 0;
+    justify-content: space-between;
+    color: white;
+    font-size: 35px;
+    z-index: 1;
+    transition: opacity 0.2s;
+}
+#ses-prev{
+    left: 2%;
+}
+#ses-next{
+    right: 2%;
+}
+.session-arrows>img{
+    position: relative;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #0f141b; */
+}
+#Sessions:hover .session-arrows{
+    opacity: 1;
 }
 @media screen and (max-width:1400px) {
     #Sessions{

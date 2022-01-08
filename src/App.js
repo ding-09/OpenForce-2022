@@ -22,22 +22,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FAQCont from "./Components/FAQCont";
 import Footer from "./Components/Footer";
 import Error from "./Components/Error";
+import AddSession from "./Components/AddSession";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
                 <Particles />
+                <NavBar />
                 <Switch>
                     <Route exact path="/">
-                        <NavBar />
                         <Home />
                         <AboutUs />
                         <Timeline />
-                        <Sessions />
                         <Organization />
+                        <Sessions />
                         <SponsorsContainer />
-                        <Registration />
+                        {/* <Registration /> */}
                         <FAQCont/>
                         <TeamContainer />
                         <Contact />
