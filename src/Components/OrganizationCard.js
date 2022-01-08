@@ -23,7 +23,7 @@ export default function OrganizationCard(props) {
             <div className="orgNavigation">
                 <div className="orgName">{props.data.name}</div>
                 <div className="orgIssue orgButton" onClick={showIssues}>Issues</div>
-                <div className="orgPanel orgButton" onClick={showPanel}>Panel</div>
+                <div className="orgPanel orgButton" onClick={showPanel}>Panel MentorShip</div>
 
                 <div className="absolute orgBall ball1"></div>
                 {/* <div className="absolute orgBall ball3"></div> */}
