@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 .sponsors-sub-container-flexbox{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .sponsors-sub-heading{
     color:rgb(224, 214, 214);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.purplespon{
+    color: #AD5FAA;
 }

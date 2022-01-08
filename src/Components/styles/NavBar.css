@@ -28,6 +28,10 @@ nav img {
     margin: 0;
 }
 
+.nav-link:hover{
+  color: #F48B0C !important;
+}
+
 .nav-item {
     text-decoration: none;
 }

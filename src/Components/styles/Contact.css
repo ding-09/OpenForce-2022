@@ -100,7 +100,7 @@
   margin: 10px 10px ;
   pointer-events: none;
   transition: 0.2s;
-  color: white;
+  color: #cececee0;
 }
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span{

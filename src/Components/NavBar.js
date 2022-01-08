@@ -34,15 +34,15 @@ function NavBar() {
                         <p className="nav-link text-light">Swags</p>
                     </Link>
                     <a className="nav-item px-3" href="/#aboutusLink">
-                        <p className="nav-link text-light">About Us</p>
+                        <p className="nav-link text-light">Issues</p>
                     </a>
                     <a className="nav-item px-3" href="/#sponserLink">
                         <p className="nav-link text-light">Sponsors</p>
                     </a>
                     <a className="nav-item px-3" href="#faqclick">
-                        <p className="nav-link text-light">FAQs</p>
+                        <p className="nav-link text-light">Sessions</p>
                     </a>
-                    <a className="nav-item px-3" href="/#reg">
+                    <a className="nav-item px-3" href="https://forms.gle/VBqnNxuYUVdwHKgy6" target="_blank">
                         <p className="nav-link text-light">Register</p>
                     </a>
                 </ul>

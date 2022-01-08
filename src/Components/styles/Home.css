@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .landing {
     padding-top: 30px;
     display: flex;
@@ -6,7 +7,7 @@
     width: 90%;
     margin-left: 10%;
     height: fit-content;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     align-items: center;
 }
 
@@ -17,16 +18,27 @@
     justify-content: space-evenly;
 }
 
-.landingContent{
-    width: 35%;
+.landindContent{
+    /* width: 35%; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    /* width: 50vw; */
+    
 }
 
 .landingImage img{
     width:100%;
     align-self: center;
+}
+
+.homeCont{
+    display: flex;
+    flex-direction: column;
+}
+
+.homeContSub{
+    display: flex;
 }
 
 .landindContent h1{
@@ -35,6 +47,16 @@
 }
 .dynamic-text{
     color: #AD5FAA;
+    /* display: inline; */
+    width: 350px;
+    margin-left: 10px;
+}
+
+.openforcemention{
+    color: #5865F2;
+    font-weight: bolder;
+    font-size: 55px;
+    margin-bottom: 30px;
 }
 
 .landindContent p{
@@ -70,6 +92,13 @@
     margin-right: 20px;
     font-size: 18px;
     border-radius: 20px;
+    transition: all 0.3s;
+}
+
+
+.landingBtn:hover{
+    transform: translateY(-5px);
+    
 }
 
 .homeregbtn{
@@ -87,6 +116,12 @@
 .discordimg{
     height: 30px;
     margin-right: 10px;
+}
+
+@media screen and (max-width : 1300px){
+    .openforcemention{
+        font-size: 45px;
+    }
 }
 
 @media screen and (max-width : 900px){
@@ -112,7 +147,16 @@
     }
 }
 
+@media screen and (max-width : 600px) {
+    .openforcemention{
+        font-size: 45px;
+    }
+}
+
 @media screen and (max-width : 500px){
+    .openforcemention{
+        font-size: 40px;
+    }
     .landindContent{
         width: 100%;
     }
@@ -132,5 +176,15 @@
 
     .landingImage {
         width: 100%;
+    }
+}
+
+@media screen and (max-width : 365px){
+    .landindContent h1{
+        font-size: 25px;
+        width: 90vw;
+    }
+    .openforcemention{
+        font-size: 30px;
     }
 }
