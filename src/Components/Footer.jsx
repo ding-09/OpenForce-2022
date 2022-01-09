@@ -1,6 +1,8 @@
 import React from 'react'
 import './styles/Footer.css'
 import Logo from './assets/Logo-footer.png'
+import YouTube from './assets/YouTube.svg'
+import Discord from './assets/Discord.svg'
 import Instagram from './assets/Instagram.svg'
 import Twitter from './assets/Twitter.svg'
 import LinkedIn from './assets/LinkedIn.svg'
@@ -18,10 +20,12 @@ function Footer() {
                         <div className="social-medias">
                             <div className="text">Social Media</div>
                             <div className="icons">
-                                <a href="https://www.instagram.com/codefloworg/" target="_blank"><img src={Instagram} alt=""/></a>
-                                <a href="https://twitter.com/codefloworg" target="_blank"><img src={Twitter} alt=""/></a>
+                                <a href="https://www.youtube.com/c/Codefloworg" target="_blank"><img src={YouTube} alt=""/></a>
+                                <a href="https://discord.gg/XYWMBqCXPJ" target="_blank"><img src={Discord} alt=""/></a>
                                 <a href="https://in.linkedin.com/company/codefloworg" target="_blank"><img src={LinkedIn} alt=""/></a>
                                 <a href="https://github.com/CodeFlowOrg" target="_blank"><img src={Github} alt=""/></a>
+                                <a href="https://www.instagram.com/codefloworg/" target="_blank"><img src={Instagram} alt=""/></a>
+                                <a href="https://twitter.com/codefloworg" target="_blank"><img src={Twitter} alt=""/></a>
                             </div>
                         </div>
                     </li>
