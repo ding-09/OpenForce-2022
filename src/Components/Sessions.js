@@ -31,7 +31,7 @@ function Sessions() {
         setPastSessions(ps);
     }, [])
     return (
-    <>
+    <div id="sessionsLink" className='component-container'>
         <Heading name="Schedule Event Now!"/>
         <div id="Sessions">
             <div id="sessions-grid">
@@ -49,7 +49,7 @@ function Sessions() {
                 <img src={rightArr} alt="" />    
             </div>
         </div>
-        </>
+        </div>
     )
 }
 

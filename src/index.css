@@ -56,3 +56,6 @@ code {
 .full-page-container{
   /* min-height: 100vh; */
 }
+.component-container{
+  padding-top: 80px;
+}

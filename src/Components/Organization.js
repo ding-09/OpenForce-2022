@@ -22,7 +22,7 @@ export default function Organization(props) {
     },[])
 
     return (
-        <>
+        <div id="issueLink" className='component-container'>
             <Heading name="Open Source Ground"/>
             <div className="orgSupCont">
                 <div className="orgContainer">
@@ -40,6 +40,6 @@ export default function Organization(props) {
                     </div> */}
                 </div>
             </div>
-        </>
+        </div>
     )
 }

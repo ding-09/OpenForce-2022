@@ -36,7 +36,7 @@ function SponsorsContainer() {
     ];
 
     return (
-        <div id="sponserLink">
+        <div id="sponserLink" className='component-container'>
             <Heading name="Sponsors and Partners" />
             <div className="sponsors-container">
                 {sponsorTypes.map((sponsorType) => {
