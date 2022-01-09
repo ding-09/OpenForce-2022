@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/Ayush7614/OpenForce-2022/blob/main/src/Components/Image/logo%201.jpg" alt="Logo" height ="auto" width="200" />
+<img src="https://github.com/Ayush7614/OpenForce-2022/blob/main/src/Components/Image/logo%202.jpeg" alt="Logo" height ="auto" width="200" />
 <br />
 <h1>Openforce Website</h1>
 <p>
