@@ -75,16 +75,19 @@ function Contact() {
                         </div>
                     </div>
                     <div className="contactForm">
-                        <form>
+                        <form action="https://formsubmit.co/queries.codeflow@gmail.com" method="POST">
                             <h2>Send Message</h2>
                             <div className="inputBox">
                                 <input
                                     type="text"
-                                    name=""
+                                    name="Name"
                                     required="required"
                                 />
                                 <span>Full Name</span>
                             </div>
+                            <input type="hidden" name="_captcha" value="false"/>
+                            <input type="hidden" name="_subject" value="New message from OpenForce 2022"/>
+                            <input type="hidden" name="_next" value="http://localhost:3000/"/>
                             <div className="inputBox">
                                 <input
                                     type="text"
@@ -93,8 +96,9 @@ function Contact() {
                                 />
                                 <span>Email</span>
                             </div>
+
                             <div className="inputBox">
-                                <input type="text" required="required"></input>
+                                <input type="text" required="required" name="Message"></input>
                                 <span>Type Your message</span>
                             </div>
                             <div className="inputBox">
