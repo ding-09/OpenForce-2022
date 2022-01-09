@@ -8,7 +8,7 @@ function SponsorsSubContainer(props){
             <h3 className="sponsors-sub-heading"><span className='purplespon'>#</span> {props.subheading}</h3>
             <div className="sponsors-sub-container-flexbox">
                 {props.links.map((link)=>{
-                    return <SponsorsCard key={link.name} link={link}/>
+                    return <SponsorsCard key={link} link={link}/>
                 })}
             </div>
         </div>

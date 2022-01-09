@@ -14,15 +14,15 @@ export default function Timeline() {
                 0,
                 window.getComputedStyle(timelineCont).paddingLeft.length - 2
             );
-        console.log(
-            `${line.offsetLeft - a.offsetLeft}px`,
-            window
-                .getComputedStyle(timelineCont)
-                .paddingLeft.substring(
-                    0,
-                    window.getComputedStyle(timelineCont).paddingLeft.length - 2
-                )
-        );
+        // console.log(
+        //     `${line.offsetLeft - a.offsetLeft}px`,
+        //     window
+        //         .getComputedStyle(timelineCont)
+        //         .paddingLeft.substring(
+        //             0,
+        //             window.getComputedStyle(timelineCont).paddingLeft.length - 2
+        //         )
+        // );
 
         for (var i of dots) {
             i.style.left = `${line.offsetLeft - a.offsetLeft - padding - 10}px`;
@@ -36,7 +36,7 @@ export default function Timeline() {
             <Heading name="Timeline"/>
             <div className="timelineCont">
                 <div className="tlline"></div>
-                <div class="tlboxwrap tlfirst">
+                <div className="tlboxwrap tlfirst">
                     <div className="tlboxes dark" id="tlbox1">
                         1st February 2022
                         <div className="dot"></div>
@@ -47,7 +47,7 @@ export default function Timeline() {
                     </div>
                 </div>
 
-                <div class="tlboxwrap">
+                <div className="tlboxwrap">
                     <div className="tlboxes dark" id="tlbox3">
                         28th February 2022
                         <div className="dot"></div>
@@ -58,7 +58,7 @@ export default function Timeline() {
                     </div>
                 </div>
 
-                <div class="tlboxwrap">
+                <div className="tlboxwrap">
                     <div className="tlboxes dark" id="tlbox5">
                         2nd march 2022
                         <div className="dot"></div>
@@ -69,7 +69,7 @@ export default function Timeline() {
                     </div>
                 </div>
 
-                <div class="tlboxwrap">
+                <div className="tlboxwrap">
                     <div className="tlboxes dark" id="tlbox7">
                         5th March- 10th March 2022
                         <div className="dot"></div>
@@ -80,7 +80,7 @@ export default function Timeline() {
                     </div>
                 </div>
 
-                <div class="tlboxwrap">
+                <div className="tlboxwrap">
                     <div className="tlboxes dark" id="tlbox9">
                         23rd March 2022
                         <div className="dot"></div>

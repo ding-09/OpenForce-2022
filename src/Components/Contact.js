@@ -33,7 +33,7 @@ function Contact() {
         alert(result.status);
     };
     return (
-        <div class="full-page-container">
+        <div className="full-page-container">
             <Heading name="Contact Us" />
             <section className="contact">
                 <div className="container">
