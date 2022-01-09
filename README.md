@@ -69,7 +69,7 @@ git push -u origin <your_branch_name>
 
 **15** Voila! You have made a PR to the awesome-developer-portfolio project. Sit back patiently and relax while your PR is reviewed. 
 
- In case of any help, please free to contact me via mail @ ayushknj3@gmail.com
+ In case of any help, please free to contact me via mail @ Codefloworg@gmail.com
  
 <h2 align=center> ✨ Contributors </h2>
 
@@ -86,12 +86,3 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 	</tr>
 </table>
 
-
-<h2 align=center> 🌟 Stargazers Over Time 🌟 </h2>
-
-[![Stargazers over time](https://starchart.cc/Ayush7614/CodeFlowOrg/OpenForce-2022.svg)](https://starchart.cc/Ayush7614/CodeFlowOrg/OpenForce-2022)
-	
-## Project Maintainers 😃
-
-
-<h1 align=center>Happy Coding 👨‍💻 </h1>
