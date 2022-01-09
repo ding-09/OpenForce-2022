@@ -26,7 +26,6 @@ export default function IssueFullPage(props) {
             });
 
             var data = (await resp.json()).data;
-            console.log(data);
             if (!data) {
                 history.push("/error");
                 return;
@@ -103,7 +102,7 @@ export default function IssueFullPage(props) {
                 </div>
                 <div className="rightOrgFullHeader">
                     <div className="selectLevel">
-                        <div id="selected" onClick={chgPrefrence}><span id="selectedVal">All</span> <i class="fas fa-caret-down dropDir"></i></div>
+                        <div id="selected" onClick={chgPrefrence}><span id="selectedVal">All</span> <i className="fas fa-caret-down dropDir"></i></div>
                         <div className="dropDown">
                             <div className="option" onClick={setAll}>All</div>
                             <div className="option" onClick={setEasy}>Easy</div>

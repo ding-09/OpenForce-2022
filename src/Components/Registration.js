@@ -143,7 +143,7 @@ export default function Registration() {
     }
 
     return (
-        <div class="full-page-container" id="reg">
+        <div className="full-page-container" id="reg">
             <Heading id="Regheading" name="Register Now"/>
             <div className="registration">
                 <div className="regForm">

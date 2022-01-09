@@ -17,11 +17,8 @@ nav {
 }
 
 nav img {
-    position: absolute;
-    width: 130px;
-    height: 140px;
-    left: 27px;
-    top: -29px;
+  padding-left: 30px;
+  cursor: pointer;
 }
 
 .nav-link {

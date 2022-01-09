@@ -10,7 +10,9 @@ library.add(faBars);
 function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg fixed-top" style={{minHeight:"60px"}}>
-            <img src="./images/Logo.svg" alt="/" />
+            <Link to="/">
+                <img src="./images/Logo.svg" alt="/"/>
+            </Link>
             <button
                 className="navbar-toggler ms-auto"
                 type="button"
@@ -33,14 +35,14 @@ function NavBar() {
                     <Link className="nav-item px-3" to="/swags">
                         <p className="nav-link text-light">Swags</p>
                     </Link>
-                    <a className="nav-item px-3" href="/#aboutusLink">
+                    <a className="nav-item px-3" href="/#issueLink">
                         <p className="nav-link text-light">Issues</p>
+                    </a>
+                    <a className="nav-item px-3" href="/#sessionsLink">
+                        <p className="nav-link text-light">Sessions</p>
                     </a>
                     <a className="nav-item px-3" href="/#sponserLink">
                         <p className="nav-link text-light">Sponsors</p>
-                    </a>
-                    <a className="nav-item px-3" href="#faqclick">
-                        <p className="nav-link text-light">Sessions</p>
                     </a>
                     <a className="nav-item px-3" href="https://forms.gle/VBqnNxuYUVdwHKgy6" target="_blank">
                         <p className="nav-link text-light">Register</p>

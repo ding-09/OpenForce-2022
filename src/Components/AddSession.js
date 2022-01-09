@@ -34,7 +34,6 @@ const addSession = async e=>{
             body:JSON.stringify(body)
         }) 
         const data = await res.json();
-        console.log(data.sessionId)
         alert("success",`Succesfully book with id ${data.sessionId}`);
     }
 
@@ -50,7 +49,6 @@ function AddSession() {
             reader.readAsDataURL(sessionimage.files[0]);
             reader.onload = async ()=>{
                 const imageData = reader.result;
-                console.log(imageData)
                 document.getElementById('testimg').src=imageData;
             }
         })

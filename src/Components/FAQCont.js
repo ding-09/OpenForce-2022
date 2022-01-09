@@ -34,6 +34,7 @@ export default function FAQCont() {
                 <div className="faqs">
                     {faqs.map((faq, i) => (
                         <FAQ
+                            key={i}
                             faq={faq}
                             index={i}
                         />
