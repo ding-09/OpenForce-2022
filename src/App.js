@@ -29,9 +29,9 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Particles />
-                <NavBar />
                 <Switch>
                     <Route exact path="/">
+                        <NavBar />
                         <Home />
                         <AboutUs />
                         <Timeline />
@@ -39,25 +39,28 @@ function App() {
                         <Sessions />
                         <SponsorsContainer />
                         {/* <Registration /> */}
-                        <FAQCont/>
+                        <FAQCont />
                         <TeamContainer />
                         <Contact />
                         <Footer />
                     </Route>
                     <Route exact path={"/swags"}>
+                        <NavBar />
                         <Swags />
                     </Route>
                     <Route exact path="/issue">
+                        <NavBar />
                         <IssueFullPage />
                     </Route>
                     <Route exact path="/panel">
+                        <NavBar />
                         <Panel />
                     </Route>
                     <Route exact path="/FAQs">
                         <FAQ />
                     </Route>
                     <Route exact path="/error">
-                        <Error/>
+                        <Error />
                     </Route>
                 </Switch>
             </div>

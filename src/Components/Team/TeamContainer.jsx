@@ -31,7 +31,7 @@ import t25 from './team/t25.jpeg';
 import t26 from './team/t26.jpeg';
 
 function TeamContainer(){
-    const codeflow = [[logo,"Codeflow","https://www.linkedin.com/company/codefloworg/","","",""]];
+    const codeflow = [[logo,"Codeflow","Openforce 2022 Organiser","","",""]];
 
     const founderMembers = [[t1,"Hargun Kaur","Founder, Codeflow","https://linkedin.com/in/hkaur008/","https://github.com/hkaur008"],
     [t2,"Harsh Chhabra","Founder, Codeflow","https://linkedin.com/in/harshchhabra","https://github.com/chhabraharsh37"]];

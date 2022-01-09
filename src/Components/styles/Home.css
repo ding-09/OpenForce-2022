@@ -134,7 +134,7 @@
         /* padding-top: 60px; */
         flex-wrap: wrap;
         /* margin-left: 10px; */
-        width: 80%;
+        width: 80%;padding-top: 100px;
     }
     .landindContent h1{
         font-size: 40px;

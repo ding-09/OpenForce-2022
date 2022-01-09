@@ -8,6 +8,9 @@ import "./styles/NavBar.css";
 library.add(faBars);
 
 function NavBar() {
+    const scrollZero = ()=>{
+        document.getElementById("root").scrollTop = 0;
+    }
     return (
         <nav className="navbar navbar-expand-lg fixed-top" style={{minHeight:"60px"}}>
             <Link to="/">
@@ -29,7 +32,7 @@ function NavBar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto">
-                    <Link className="nav-item px-3" to="/">
+                    <Link className="nav-item px-3" to="/" onClick={scrollZero}>
                         <p className="nav-link text-light">Home</p>
                     </Link>
                     <Link className="nav-item px-3" to="/swags">

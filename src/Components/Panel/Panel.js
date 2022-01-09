@@ -5,8 +5,8 @@ import MentorCard from "./MentorCard"
 
 export default function Panel() {
     const history = useHistory();
+    const userEmail = "codeflow"
     const [orgData, setorgData] = useState({bookedBy:[],panel:[]});
-    const userEmail = "_10_eek"
     useEffect(() => {
         document.getElementById("root").scrollTop = 0;
         const updateOrg = async () => {
@@ -88,13 +88,15 @@ export default function Panel() {
                     <div>Booked : {orgData.bookedBy.length}/300</div>
                 </div>
                 <div className="bookpanel">
-                    {orgData.bookedBy.indexOf(userEmail) !== -1 ? (
+                    {/* {orgData.bookedBy.indexOf(userEmail) !== -1 ? (
                         <div className="alreadyBooked">Already Booked</div>
                     ) : orgData.bookedBy.length >= 300 ? (
                         <div className="slotsfull">No Slots Avilable</div>
                     ) : (
                         <div className="bookNow" onClick={bookMe}>Book Now</div>
-                    )}
+                    )} */}
+                    <a className="bookNow" href="https://discord.gg/s77kYnfSGf" target="_blank">Book Now</a>
+
                 </div>
             </div>
             <div className="ourMentor">Our Mentors</div>
