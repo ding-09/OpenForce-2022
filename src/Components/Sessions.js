@@ -4,7 +4,7 @@ import './styles/Session.css'
 import Heading from './Heading';
 import leftArr from './assets/left_arr.svg';
 import rightArr from './assets/right_arr.svg';
-
+import sessionData from '../data/sessions.json';
 const scroll = (dir)=>{
     let sg = document.getElementById('sessions-grid');
     sg.scrollLeft+=dir*window.innerWidth*0.8;
@@ -13,15 +13,17 @@ function Sessions() {
     const [sessions, setSessions] = useState([]);
     const [pastSessions, setPastSessions] = useState([]);
     useEffect(async () => {
-        const res = await fetch('https://openforce2022.herokuapp.com/api/session/',{
-            method: 'GET',
-            headers:{
-                'Content-Type':'application/json'
-            }
-        })
-        const data = await res.json();
+        // const res = await fetch('https://openforce2022.herokuapp.com/api/session/',{
+        //     method: 'GET',
+        //     headers:{
+        //         'Content-Type':'application/json'
+        //     }
+        // })
+        // const data = await res.json();
+        const data = sessionData;
+        console.log(data)
         const s = [],ps = [];
-        for(var i of data.sessions){
+        for(var i of data){
             if(new Date(i.time)<new Date()) ps.push(i);
             else s.push(i);
         }
