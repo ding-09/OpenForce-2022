@@ -29,14 +29,15 @@ function Particles() {
             }
         })
     });
-    document.getElementById("root").addEventListener('scroll',(e)=>{
-        if(e.target.scrollTop > window.innerHeight*0.5){
-            document.querySelector(".scrollTop").style.bottom = "10px";
-        }else{
-            document.querySelector(".scrollTop").style.bottom = "-100px";
-
-        }
-    })
+    const rootEle = document.getElementById("root");
+    if(rootEle)     
+        rootEle.addEventListener('scroll',(e)=>{
+            if(e.target.scrollTop > window.innerHeight*0.5){
+                document.querySelector(".scrollTop").style.bottom = "10px";
+            }else{
+                document.querySelector(".scrollTop").style.bottom = "-100px";
+            }
+        })
     return (
         <div id="Particles">
             <img className="bg-crl" id="bg-c1" alt="" data-eff="30" />

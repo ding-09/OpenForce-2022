@@ -14,10 +14,12 @@ function NavBar() {
         history.push(`/#${a}`);
         document.getElementById("root").scrollTop=document.getElementById(a).offsetTop;
     }
-
+    const scrollTop = ()=>{
+        document.querySelector('.scrollTop').click();
+    }
     return (
         <nav className="navbar navbar-expand-lg fixed-top" style={{minHeight:"60px"}}>
-            <Link to="/">
+            <Link to="/" onClick={scrollTop} data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <img src="./images/Logo.svg" alt="/"/>
             </Link>
             <button
@@ -36,23 +38,23 @@ function NavBar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto">
-                    <Link className="nav-item px-3" to="/">
-                        <p className="nav-link text-light">Home</p>
+                    <Link className="nav-item px-3" to="/" onClick={scrollTop}>
+                        <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Home</p>
                     </Link>
                     <Link className="nav-item px-3" to="/swags">
-                        <p className="nav-link text-light">Swags</p>
+                        <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Swags</p>
                     </Link>
                     <Link className="nav-item px-3" to="/" onClick={()=>{moveTo("issueLink")}}>
-                        <p className="nav-link text-light">Issues</p>
+                        <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Issues</p>
                     </Link>
                     <Link className="nav-item px-3" to="/" onClick={()=>{moveTo("sessionsLink")}}>
-                        <p className="nav-link text-light">Sessions</p>
+                        <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Sessions</p>
                     </Link>
                     <Link className="nav-item px-3" to="/" onClick={()=>{moveTo("sponserLink")}}>
-                        <p className="nav-link text-light">Sponsors</p>
+                        <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Sponsors</p>
                     </Link>
                     <a className="nav-item px-3" href="https://forms.gle/VBqnNxuYUVdwHKgy6" target="_blank">
-                        <p className="nav-link text-light">Register</p>
+                        <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Register</p>
                     </a>
                 </ul>
             </div>
