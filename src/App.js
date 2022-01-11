@@ -62,6 +62,7 @@ function App() {
                     <Route exact path="/error">
                         <Error />
                     </Route>
+
                 </Switch>
             </div>
         </BrowserRouter>

@@ -1,38 +1,30 @@
-import React from "react";
-import "./styles/faq.css";
+import React from 'react'
+import "./styles/FAQnew.css"
 
-function FAQ({ faq,index }) {
-    const toggle = () => {};
+export default function FAQnew(props) {
+
+    const changeState = ()=>{
+        const btn = document.getElementById("expand"+props.index);
+
+        if(btn.innerHTML === "-"){
+            document.getElementById("answer"+props.index).style.padding="0px";
+            document.getElementById("answer"+props.index).style.height = "0px";
+            btn.innerHTML="+";
+        }else{
+            document.getElementById("answer"+props.index).style.height = "110px";
+            btn.innerHTML="-";
+            document.getElementById("answer"+props.index).style.padding="20px";
+        }
+
+    }
+
     return (
-        <>
-            <div className="accordion" id="accordionExample" style={{marginTop:"12px"}}>
-                <div className="accordion-item">
-                    <h2 className="accordion-header" id="headingOne">
-                        <button
-                            className="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target={"#collapseOne-"+index}
-                            aria-expanded={false}
-                            aria-controls="collapseOne"
-                        >
-                            {faq.question}
-                        </button>
-                    </h2>
-                    <div
-                        id={"collapseOne-"+index}
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
-                    >
-                        <div className="accordion-body">
-                            {faq.answer}
-                        </div>
-                    </div>
-                </div>
+        <div className='faqcont'>
+            <div className='faqque'>
+                <div className='stateHolder' id={"expand"+props.index} onClick={changeState}>+</div>
+                <div className='faqSubque'>{props.faq.question}</div>
             </div>
-        </>
-    );
+            <div id={"answer"+props.index} className='faqans'>{props.faq.answer}</div>
+        </div>
+    )
 }
-
-export default FAQ;
