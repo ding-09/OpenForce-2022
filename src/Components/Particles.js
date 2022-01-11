@@ -34,6 +34,12 @@ function Particles() {
         if(particles){
             particles.style.top = `${e.target.scrollTop}px`;
         }
+        if(e.target.scrollTop > window.innerHeight*0.5){
+            document.querySelector(".scrollTop").style.bottom = "10px";
+        }else{
+            document.querySelector(".scrollTop").style.bottom = "-100px";
+
+        }
     })
     return (
         <div id="Particles">

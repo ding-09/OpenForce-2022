@@ -23,6 +23,7 @@ import FAQCont from "./Components/FAQCont";
 import Footer from "./Components/Footer";
 import Error from "./Components/Error";
 import AddSession from "./Components/AddSession";
+import ScrollTop from "./Components/ScrollTop";
 
 function App() {
     return (
@@ -43,6 +44,7 @@ function App() {
                         <TeamContainer />
                         <Contact />
                         <Footer />
+                        <ScrollTop/>
                     </Route>
                     <Route exact path={"/swags"}>
                         <NavBar />

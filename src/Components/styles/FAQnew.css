@@ -1,16 +1,19 @@
 .faqcont{
-    width: 70vw;
+    width: 100vw;
     margin: auto;
-
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .faqs:first-child{
     margin-top: 40px;
 }
 
 .faqque{
-    width: 100%;
-    height: 50px;
+    width: 70vw;
+    height: 60px;
     background: #F4F4F426;
     color: #EEE9E6;
     display: flex;
@@ -21,13 +24,15 @@
 .faqSubque{
     width: 100%;
     height: 50px;
+    /* padding: 5px 0px; */
     color: #EEE9E6;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 40px;
+    padding-left: 45px;
     border-radius: 10px;
     overflow-y: scroll;
+    white-space: nowrap;
 }
 
 .faqSubque::-webkit-scrollbar-thumb{
@@ -36,8 +41,8 @@
 }
 
 .stateHolder{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     position: absolute;
     background: #C4C4C4F2;
     color: #1C232D;
@@ -50,7 +55,7 @@
 }
 
 .faqans{
-    width: 100%;
+    width: 70vw;
     height: 0px;
     /* padding: 20px; */
     overflow: hidden;
