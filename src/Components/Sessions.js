@@ -21,7 +21,6 @@ function Sessions() {
         // })
         // const data = await res.json();
         const data = sessionData;
-        console.log(data)
         const s = [],ps = [];
         for(var i of data){
             if(new Date(i.time)<new Date()) ps.push(i);

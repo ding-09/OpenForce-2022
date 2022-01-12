@@ -15,7 +15,9 @@ function NavBar() {
         document.getElementById("root").scrollTop=document.getElementById(a).offsetTop;
     }
     const scrollTop = ()=>{
-        document.querySelector('.scrollTop').click();
+        setTimeout(()=>{
+            document.querySelector('.scrollTop').click();
+        },10)
     }
     return (
         <nav className="navbar navbar-expand-lg fixed-top" style={{minHeight:"60px"}}>
