@@ -19,13 +19,29 @@
 }
 .social-medias{
     margin-top: 50px;
+    margin-left: 20px;
 }
 .social-medias>.text{
     margin-bottom: 25px;
+
 }
+.socalmedia{
+    display: flex;
+    flex-direction: column;
+}
+
+.socalmedia li{
+    margin: 5px;
+}
+
+.socalmediaicon{
+    margin-right: 10px;
+}
+
 .social-medias>.icons{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 .footer-row-cont{
     display: flex;

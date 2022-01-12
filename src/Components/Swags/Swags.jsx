@@ -13,24 +13,11 @@ function Swags(props) {
     },[])
     return (
         <section id={"swags"}>
-            <h1>DIGITAL SWAGS</h1>
+            <h1>DIGITAL SWAGS <i class="fas fa-gifts"></i></h1>
             <p className={"swags-information"}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div className={"swags-item-container"}>
-                <SwagItem
-                    key={desktopSwags.wallpaper.download}
-                    divId={"desktopSwags-walpaper"}
-                    images={desktopSwags.wallpaper.images}
-                    link={desktopSwags.wallpaper.download}
-                    />
-                <SwagItem
-                    key={desktopSwags.zoomBackground.download}
-                    divId={"desktopSwags-background"}
-                    images={desktopSwags.zoomBackground.images}
-                    link={desktopSwags.zoomBackground.download}
-                    />
-            </div>
+            <div className="swagborder">
             <div className={"swags-item-container"}>
                 <SwagItem
                     key={mobileSwags.wallpaper.download}
@@ -46,6 +33,21 @@ function Swags(props) {
                     images={mobileSwags.story.images}
                     link={mobileSwags.story.download}
                 />
+            </div>
+            <div className={"swags-item-container"}>
+                <SwagItem
+                    key={desktopSwags.wallpaper.download}
+                    divId={"desktopSwags-walpaper"}
+                    images={desktopSwags.wallpaper.images}
+                    link={desktopSwags.wallpaper.download}
+                    />
+                <SwagItem
+                    key={desktopSwags.zoomBackground.download}
+                    divId={"desktopSwags-background"}
+                    images={desktopSwags.zoomBackground.images}
+                    link={desktopSwags.zoomBackground.download}
+                    />
+            </div>
             </div>
         </section>
     );

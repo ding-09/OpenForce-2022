@@ -7,11 +7,17 @@
     flex-direction: column;
 }
 
+/* .swagborder{
+    border: 2px solid #EEE9E6;
+    margin-bottom: 20px;
+    border-radius: 10px;
+} */
+
 h1 {
     font-size: 2rem;
     font-weight: 700;
     padding: 10px;
-    color: #d65d20;
+    color: aliceblue;
     margin: 0 auto 2rem auto;
 }
 h1:after {
@@ -25,7 +31,7 @@ h1:after {
 .swags-information {
     padding: 30px;
     width: 90%;
-    background-color: #feeee5;
+    background-color: #EEE9E6;
     text-align: center;
     border-radius: 1rem;
     margin: 2rem auto;
@@ -57,7 +63,7 @@ h1:after {
 
 .swag-item > span {
     position: absolute;
-    background: #e85325;
+    background: #4149a1;
     color: #fff;
     font-weight: 600;
     padding: 8px 10px;
@@ -69,12 +75,13 @@ h1:after {
 }
 
 .swag-item .btn {
-    background-color: #e85325;
-    color: #fff;
+    background-color: #EEE9E6;
+    color: #1C232D;
     position: absolute;
     bottom: 8px;
     right: 13px;
     z-index: 2;
+    font-weight: 900;
     padding: 0.3rem 0.8rem;
     border-radius: 10px;
 }

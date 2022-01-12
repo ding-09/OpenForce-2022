@@ -13,12 +13,12 @@ function TeamCard(props) {
             <img src={props.imageLink} alt="" className="team-img" />
             <h5 className="team-text">{props.name}</h5>
             <h6 className="team-text">{props.subteam}</h6>
-            <div className="team-description">
-                <a href={props.linkedin}>
-                    <FontAwesomeIcon icon={["fab", "linkedin"]} />
+            <div className="team-description" style={{paddingTop:"5px"}}>
+                <a href={props.linkedin} className="teamlinkes">
+                    <i class="fab fa-linkedin" style={{fontSize:"25px"}}></i>
                 </a>{" "}
                 <a href={props.github} className="teammemb-git">
-                    <FontAwesomeIcon icon={["fab", "github"]} />
+                    <i class="fab fa-github" style={{fontSize:"25px"}}></i>
                 </a>
             </div>
         </div>

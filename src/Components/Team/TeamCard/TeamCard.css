@@ -27,19 +27,22 @@
 }
 
 .team-text{
-    font-family: "Courier Prime";
+    font-family: 'Roboto Mono', monospace;
     color: #F5F5F5;
     margin: 5px;
 }
 
 i{
     color:white;
+
 }
+
 
 
 .team-description a{
     color: white;
     font-size: 20px;
+    margin-top: 10px;
 }
 .teammemb-git{
     margin-left: 15px;

@@ -24,6 +24,7 @@ import Footer from "./Components/Footer";
 import Error from "./Components/Error";
 import AddSession from "./Components/AddSession";
 import ScrollTop from "./Components/ScrollTop";
+import Content from "./Components/Content";
 
 function App() {
     return (
@@ -36,6 +37,7 @@ function App() {
                         <Home />
                         <AboutUs />
                         <Timeline />
+                        <Content/>
                         <Organization />
                         <Sessions />
                         <SponsorsContainer />

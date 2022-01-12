@@ -13,49 +13,51 @@ function Footer() {
         <div id="Footer">
             <div className="footer-main">
                 <ul className="footer-row-cont">
-                    <li>
+                    <li className='footerfirst'>
                         <div className="footer-logo">
-                            <a href="#" target="_blank"><img className="icon" src={Logo} alt=""/></a>
+                            <a href="#" target="_blank"><img className="icon" src={Logo} alt="" style={{height:"235px"}}/></a>
                         </div>
-                        <div className="social-medias">
-                            <div className="text">Social Media</div>
+                        {/* <div className="social-medias">
+                            <div className="text"></div>
                             <div className="icons">
-                                <a href="https://www.youtube.com/c/Codefloworg" target="_blank"><img src={YouTube} alt=""/></a>
-                                <a href="https://discord.gg/XYWMBqCXPJ" target="_blank"><img src={Discord} alt=""/></a>
-                                <a href="https://in.linkedin.com/company/codefloworg" target="_blank"><img src={LinkedIn} alt=""/></a>
-                                <a href="https://github.com/CodeFlowOrg" target="_blank"><img src={Github} alt=""/></a>
-                                <a href="https://www.instagram.com/codefloworg/" target="_blank"><img src={Instagram} alt=""/></a>
-                                <a href="https://twitter.com/codefloworg" target="_blank"><img src={Twitter} alt=""/></a>
+                                
                             </div>
+                        </div> */}
+                        <div style={{fontSize:"25px",textAlign:"center"}}>
+                        OpenSource meets its<br/>Contributor Force!
                         </div>
                     </li>
                     <li>
-                        <div className="links-heading">Company</div>
+                        <div className="links-heading">Social Media</div>
+                        <ul className='socalmedia'>
+                            <li><a href="https://www.youtube.com/c/Codefloworg" target="_blank"><img src={YouTube} alt="" className='socalmediaicon'/> YouTube</a></li>
+                            <li><a href="https://discord.gg/XYWMBqCXPJ" target="_blank"><img src={Discord} alt="" className='socalmediaicon'/> Discord</a></li>
+                            <li><a href="https://in.linkedin.com/company/codefloworg" target="_blank"><img src={LinkedIn} alt="" className='socalmediaicon'/> LinkedIn</a></li>
+                            <li><a href="https://github.com/CodeFlowOrg" target="_blank"><img src={Github} alt="" className='socalmediaicon'/> Github</a></li>
+                            <li><a href="https://www.instagram.com/codefloworg/" target="_blank"><img src={Instagram} alt="" className='socalmediaicon'/> Instagram</a></li>
+                            <li><a href="https://twitter.com/codefloworg" target="_blank"><img src={Twitter} alt="" className='socalmediaicon'/> Twitter</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div className="links-heading">Codeflow</div>
                         <ul>
                             <div className="footer-links"><a href="#aboutusLink">About Us</a></div>
-                            <div className="footer-links"><a href="#">Our Service</a></div>
-                            <div className="footer-links"><a href="#">Privacy Policy</a></div>
-                            <div className="footer-links"><a href="#">Affiliate Program</a></div>
+                            <div className="footer-links"><a href="https://drive.google.com/file/d/1z1GqyHtHzFY38EZ4JehV8DaqUPNWtN9W/view" target="_blank">Brochure</a></div>
+                            <div className="footer-links"><a href="mailto:codefloworg@gmail.com">Be a sponsor</a></div>
+                            <div className="footer-links"><a href="mailto:queries.codeflow@gmail.com">Conduct a Session</a></div>
+                            <div className="footer-links"><a href="mailto:queries.codeflow@gmail.com">Become a community partner</a></div>
+                            <div className="footer-links"><a href="mailto:queries.codeflow@gmail.com">Bring Opensource Organisation</a></div>
                         </ul>
                     </li>
-                    <li>
-                        <div className="links-heading">Get Help</div>
-                        <ul>
-                            <div className="footer-links"><a href="#faqclick">FAQs</a></div>
-                            <div className="footer-links"><a href="#">CodeFlow</a></div>
-                            <div className="footer-links"><a href="#">Message</a></div>
-                            <div className="footer-links"><a href="#">Payment Details</a></div>
-                        </ul>
-                    </li>
-                    <li>
-                        <div className="links-heading">Prize</div>
+                    {/* <li>
+                        <div className="links-heading">Our Services</div>
                         <ul>
                             <div className="footer-links"><a href="#">Watch</a></div>
                             <div className="footer-links"><a href="#">Bagpack</a></div>
                             <div className="footer-links"><a href="#">Shoes</a></div>
                             <div className="footer-links"><a href="#">Dress</a></div>
                         </ul>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
             <hr />

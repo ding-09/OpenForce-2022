@@ -1,0 +1,38 @@
+.content-cont{
+    padding: 20px 100px;
+    color: #EEE9E6;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.bold{
+    font-weight: bolder;
+    color: #AD5FAA;
+}
+@media screen and (max-width:1200px) {
+    .content-cont{
+        padding: 20px 30px;
+        margin: auto;
+        font-size: 18px;
+
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .content-cont{
+        padding: 20px 30px;
+        margin: auto;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .content-cont{
+        padding: 20px 30px;
+        margin: auto;
+        font-size: 16px;
+    }
+}
+

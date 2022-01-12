@@ -24,7 +24,7 @@ export default function FAQnew(props) {
                 <div className='stateHolder' id={"expand"+props.index} onClick={changeState}>+</div>
                 <div className='faqSubque'>{props.faq.question}</div>
             </div>
-            <div id={"answer"+props.index} className='faqans'>{props.faq.answer}</div>
+            <div id={"answer"+props.index} className='faqans'><div>{props.faq.answer}</div><div>{props.faq.option2}</div><div>{props.faq.option3}</div></div>
         </div>
     )
 }

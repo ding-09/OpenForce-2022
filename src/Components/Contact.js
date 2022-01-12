@@ -54,12 +54,12 @@ function Contact() {
                         </div>
                         <div className="box">
                             <div className="icon">
-                                <FontAwesomeIcon icon="phone" />
+                            <FontAwesomeIcon icon="envelope" />
                             </div>
 
                             <div className="text">
-                                <h3>Phone</h3>
-                                <p> +91-7082860744</p>
+                                <h3>Queries Email</h3>
+                                <p>queries.codeflow@gmail.com</p>
                             </div>
                         </div>
                         <div className="box">
