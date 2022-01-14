@@ -15,7 +15,7 @@ export default function AboutUs() {
                 <div className="aboutsubcont">
                     <div className="aboutCont">
                         <p>
-                        Code flow is an organization that serves the ultimate purpose of ‘Learning must go on,  is an organization whose main motive is to empower the student community by organizing webinars, hackathons, and open-source events. Code flow is organizing the event named OpenForce, an initiative taken up for the students to provide them with the best learning environment and help them gain the principal knowledge about the fastest-growing field <span style={{ color: "#AD5FAA" }}>‘Open Source’.</span>    
+                        Codeflow is an organization that serves the ultimate purpose of ‘Learning must go on,  is an organization whose main motive is to empower the student community by organizing webinars, hackathons, and open-source events. Code flow is organizing the event named OpenForce, an initiative taken up for the students to provide them with the best learning environment and help them gain the principal knowledge about the fastest-growing field <span style={{ color: "#AD5FAA" }}>‘Open Source’.</span>    
                         </p>
                         <p>
                         We are conducting the Open Source Enlightenment Program, where we will be connecting Open Source Contributors with Opensource Organisations with an initiative of <span style={{ color: "#E1C340" }}>'OpenSource meets its Contributor Force!’.</span> We will be empowering many tech enthusiasts by providing them with the platform of learning with resources.
