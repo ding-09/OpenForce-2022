@@ -18,25 +18,30 @@ mongoose.connect(uri).then(() => {
 }).catch((err) => {
     console.log(err);
 });
+
+
+//serving webpages
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../build/index.html'));
+})
+
+app.get('/swags', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../build/index.html'));
+})
+
+app.get('/issue', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../build/index.html'));
+})
+
+app.get('/panel', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../build/index.html'));
+})
+
+//for api
 app.use('/api/user/',require('./routes/user'))
 app.use('/api/session/',require('./routes/session'))
 app.use('/api/org/',require('./routes/organization'))
 
-app.use('*',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'../build/index.html'));
-})
-
-app.use('/swags', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../build/index.html'));
-})
-
-app.use('/issue', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../build/index.html'));
-})
-
-app.use('/panel', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../build/index.html'));
-})
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
