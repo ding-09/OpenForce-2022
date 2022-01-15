@@ -62,7 +62,7 @@ function Footer() {
             </div>
             <hr />
             <div className="footer-end">
-                Made with ❤️ by CodeFlow    
+                Made with ❤️ by Codeflow    
             </div>
             <div className="footer-bg-particles">
                 {/* set data-eff to 0 for these particles to stop animating on mouse move */}

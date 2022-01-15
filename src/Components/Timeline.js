@@ -38,7 +38,7 @@ export default function Timeline() {
                 <div className="tlline"></div>
                 <div className="tlboxwrap tlfirst">
                     <div className="tlboxes dark" id="tlbox1">
-                        1st February 2022
+                        15th January 2022
                         <div className="dot"></div>
                         {/* <div className="dotcircle"></div> */}
                     </div>
@@ -60,7 +60,7 @@ export default function Timeline() {
 
                 <div className="tlboxwrap">
                     <div className="tlboxes dark" id="tlbox5">
-                        2nd march 2022
+                        3rd march 2022
                         <div className="dot"></div>
                         {/* <div className="dotcircle"></div> */}
                     </div>
@@ -71,7 +71,7 @@ export default function Timeline() {
 
                 <div className="tlboxwrap">
                     <div className="tlboxes dark" id="tlbox7">
-                        5th March- 10th March 2022
+                        5th March - 10th March 2022
                         <div className="dot"></div>
                         {/* <div className="dotcircle"></div> */}
                     </div>
@@ -82,7 +82,7 @@ export default function Timeline() {
 
                 <div className="tlboxwrap">
                     <div className="tlboxes dark" id="tlbox9">
-                        23rd March 2022
+                        28rd March 2022
                         <div className="dot"></div>
                         {/* <div className="dotcircle"></div> */}
                     </div>

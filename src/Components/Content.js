@@ -4,7 +4,7 @@ import "./styles/Content.css"
 
 export default function Content() {
     return (
-        <div>
+        <div className="contContainer">
             <Heading name="Program Overview" />
 
             <div className="content-cont">

@@ -8,6 +8,9 @@
 #backend nodeModule
 /Backend/node_modules
 
+#visual studio
+.vs/
+
 # testing
 /coverage
 
