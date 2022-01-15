@@ -26,6 +26,18 @@ app.use('*',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'../build/index.html'));
 })
 
+app.use('/swags', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../build/index.html'));
+})
+
+app.use('/issue', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../build/index.html'));
+})
+
+app.use('/panel', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../build/index.html'));
+})
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
