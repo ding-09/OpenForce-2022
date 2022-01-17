@@ -58,8 +58,13 @@ export default function IssueFullPage(props) {
     useEffect(() => {}, [orgData]);
 
     const chgPrefrence = (e) => {
-        document.querySelector(".dropDown").style.height = "160px";
-        document.querySelector(".dropDir").style.transform = "rotateZ(-180deg)"
+        if (document.querySelector(".dropDown").style.height != "160px") {
+            document.querySelector(".dropDown").style.height = "160px";
+            document.querySelector(".dropDir").style.transform = "rotateZ(-180deg)";
+        } else {
+            document.querySelector(".dropDown").style.height = "0px";
+            document.querySelector(".dropDir").style.transform = "rotateZ(0deg)";
+        }
 
 
     };
