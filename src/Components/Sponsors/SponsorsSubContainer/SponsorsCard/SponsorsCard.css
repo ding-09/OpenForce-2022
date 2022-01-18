@@ -15,10 +15,10 @@
     flex-wrap: wrap;
 }
 
-    .tags span {
-        color: #EEE9E6;
-        background-color: #1C232D;
-    }
+.tags span {
+    color: #EEE9E6;
+    background-color: #1C232D;
+}
 
 .desc {
     margin-top: 20px;
@@ -87,5 +87,9 @@ a {
 @media screen and (max-width : 500px) {
     .sponsors-card {
         height: 200px;
+        padding-bottom:10px;
+    }
+    .tags{
+        font-size:13px;
     }
 }
