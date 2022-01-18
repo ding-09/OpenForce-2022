@@ -21,7 +21,8 @@ export default function OrganizationCard(props) {
                 />
             </div>
             <div className="orgNavigation">
-                <div className="orgName">{props.data.name}</div>
+                <div className="orgName">{props.data.name}<a href={props.data.website}><i class="fas fa-external-link-alt"></i></a></div>
+                <div className="orgTagLine">{props.data.tagline}</div>
                 <div className="orgIssue orgButton" onClick={showIssues}>Issues</div>
                 <div className="orgPanel orgButton" onClick={showPanel}>Panel Mentorship</div>
 

@@ -44,7 +44,7 @@ function NavBar() {
                         <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Home</p>
                     </Link>
                     <Link className="nav-item px-3" to="/swags">
-                        <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Swags</p>
+                        <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Prizes</p>
                     </Link>
                     <Link className="nav-item px-3" to="/" onClick={()=>{moveTo("issueLink")}}>
                         <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Issues</p>
