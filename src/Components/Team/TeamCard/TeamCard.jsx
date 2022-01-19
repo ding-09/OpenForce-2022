@@ -18,7 +18,7 @@ function TeamCard(props) {
                     <i class="fab fa-linkedin" style={{fontSize:"25px"}}></i>
                 </a>{" "}
                 <a href={props.github} className="teammemb-git">
-                    <i class="fab fa-github" style={{fontSize:"25px"}}></i>
+                    <i className="fab fa-github" style={{fontSize:"25px"}}></i>
                 </a>
             </div>
         </div>

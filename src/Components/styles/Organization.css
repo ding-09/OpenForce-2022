@@ -80,8 +80,28 @@
 
 
 /* Card */
-.orgCont{
-    border: 2px solid #eee9e6;    
+.orgTagLine {
+    text-align:left;
+    width:80%;
+    /*margin:10px;*/
+    margin-top:0px !important;
+}
+
+.orgName a{
+    margin-left:15px;
+    cursor:pointer;
+}
+
+.orgName {
+    text-align: left;
+    font-size:18px;
+    width: 80%;
+    margin-top: 15px !important;
+    box-sizing:border-box;
+}
+
+.orgCont {
+    border: 2px solid #eee9e6;
     color: #eee9e6;
     padding: 20px 0px;
     border-radius: 10px;

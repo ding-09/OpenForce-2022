@@ -11,7 +11,6 @@ import { useEffect } from "react";
 import MentorCard from "./Components/Panel/MentorCard";
 import Panel from "./Components/Panel/Panel";
 import Particles from "./Components/Particles";
-import Registration from "./Components/Registration";
 import NavBar from "./Components/NavBar";
 import AboutUs from "./Components/AboutUs";
 import Contact from "./Components/Contact";
@@ -27,12 +26,26 @@ import ScrollTop from "./Components/ScrollTop";
 import Content from "./Components/Content";
 
 function App() {
+    window.addEventListener('load', () => {
+        var sc = sessionStorage.getItem("scroll");
+        
+        if (sc !== null) {
+            
+            document.getElementById("root").scrollTop = sc;
+        }
+    })
+
+    document.getElementById("root").addEventListener('scroll', () => {
+        sessionStorage.setItem("scroll", document.getElementById("root").scrollTop);
+    })
+    
     return (
         <BrowserRouter>
             <div className="App">
                 <Particles />
                 <Switch>
                     <Route exact path="/">
+
                         <NavBar />
                         <Home />
                         <AboutUs />
@@ -66,7 +79,6 @@ function App() {
                     <Route exact path="/error">
                         <Error />
                     </Route>
-
                 </Switch>
             </div>
         </BrowserRouter>

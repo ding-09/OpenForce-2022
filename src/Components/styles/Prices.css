@@ -1,0 +1,36 @@
+.pricescont{
+    position: relative;
+}
+
+.subcont {
+    padding:20px 0px;
+    border: 2px solid white;
+    height: 470px;
+    width: 260px;
+    box-shadow: 0px 0px 10px #eee9e6cc, 0px 0px 10px #1C232D inset;
+    background-color: #eee9e633;
+}
+
+.prizelogo {
+    width: 70%;
+    margin-bottom: 20px;
+}
+.pricesdesc {
+    color: #EEE9E6;
+    width:80%;
+    margin:auto;
+    padding:15px 0px;
+    text-align:left;
+}
+
+.prizepara{
+    color:#eee9e6;
+    text-align:left;
+    width:90%;
+    margin:auto;
+    font-size:14px;
+}
+
+.prizelower{
+    height:contain;
+}
