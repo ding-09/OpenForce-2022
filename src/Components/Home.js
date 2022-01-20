@@ -8,6 +8,7 @@ function Home() {
     const switchCont = (id, cont)=>{
         const interval1 = setInterval(()=>{
             const elem = document.getElementById(id);
+            if (!elem) return;
             elem.innerHTML = elem.innerHTML.substring(0, elem.innerHTML.length - 1);
             if(elem.innerHTML.length <= 1) {
                 clearInterval(interval1);
