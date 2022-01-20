@@ -135,13 +135,6 @@ function TeamContainer() {
             "https://github.com/Manan-jn",
         ],
         [
-            t14,
-            "Ayush Kumar",
-            "Opensource Maintainer",
-            "https://github.com/Ayush7614",
-            "https://www.linkedin.com/in/ayush-kumar-🇮🇳-984443191",
-        ],
-        [
             t15,
             "Pranav Chauhan",
             "DevRel Engineer",
@@ -168,13 +161,6 @@ function TeamContainer() {
             "DevRel Engineer",
             "https://www.linkedin.com/in/sejalxz/",
             "https://github.com/sejalxz",
-        ],
-        [
-            t19,
-            "Ayush Kumar Srivas",
-            "DevRel Engineer",
-            "https://www.linkedin.com/in/ayush-kumar-srivas-6a661b200",
-            "",
         ],
         [
             t21,

@@ -33,9 +33,9 @@ function Particles() {
     if(rootEle)     
         rootEle.addEventListener('scroll',(e)=>{
             if(e.target.scrollTop > window.innerHeight*0.5){
-                document.querySelector(".scrollTop").style.bottom = "10px";
+                if (document.querySelector(".scrollTop"))document.querySelector(".scrollTop").style.bottom = "10px";
             }else{
-                document.querySelector(".scrollTop").style.bottom = "-100px";
+                if (document.querySelector(".scrollTop"))document.querySelector(".scrollTop").style.bottom = "-100px";
             }
         })
     return (

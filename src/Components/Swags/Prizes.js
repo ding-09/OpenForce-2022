@@ -9,12 +9,12 @@ export default function Prices(props) {
                 <div className="prizelower">
                     <p className="prizepara">{props.data.p1}</p>
                     <p className="prizepara">{props.data.p2}</p>
-                    <div class="pricesdesc">
+                    <div className="pricesdesc">
                         <h3>Prizes</h3>
                         <ul>
                             {
                                 props.data.prices.map((elem) => {
-                                    return <li>{elem}</li>
+                                    return <li key={elem}>{elem}</li>
                                 })
                             }
                         </ul>

@@ -15,13 +15,13 @@ function Swags(props) {
     return (
         <section id={"swags"}>
             <>
-                <h1>Prizes <i class="fas fa-award"></i></h1>
+                <h1>Prizes <i className="fas fa-award"></i></h1>
 
                 <div className="swagborder">
                     <div className={"swags-item-container"}>
                         {
                             prizes.map((elem) => {
-                                return (<Prices data={elem}/>)
+                                return (<Prices data={elem} key={elem}/>)
                             })
                         }
                     </div>
@@ -29,7 +29,7 @@ function Swags(props) {
             </>
 
             <>
-                <h1>DIGITAL SWAGS <i class="fas fa-gifts"></i></h1>
+                <h1>DIGITAL SWAGS <i className="fas fa-gifts"></i></h1>
                 <p className={"swags-information"}>
                     Get Openforce 2022 awesome wallpaper for your computer and mobile phones. Don't forget to shine among your friend by getting these swags.
                 </p>
