@@ -59,43 +59,57 @@ git pull upstream main
 git checkout -b <your_branch_name>
 ```
 
-**10.** Perform your desired changes to the code base.
+**10.** Sync your fork or your local repository with the origin repository.
+
+```
+git fetch upstream
+```
+```
+git merge upstream/main
+```
+
+### Alternatively, Sync your forked repository on Github:
+#### In your forked repository, click on "Fetch upstream"
+#### Click "Fetch and merge"
+
+	
+**11.** Perform your desired changes to the code base.
 
 
-**11.** Track your changes:heavy_check_mark: .
+**12.** Track your changes:heavy_check_mark: .
 
 ```
 git add . 
 ```
 
-**12.** Commit your changes .
+**13.** Commit your changes .
 
 ```
 git commit -m "Relevant message"
 ```
 
-**13.** Push the committed changes in your feature branch to your remote repo.
+**14.** Push the committed changes in your feature branch to your remote repo.
 ```
 git push -u origin <your_branch_name>
 ```
 
-**14.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repository you are supposed to make a PR to.
+**15.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repository you are supposed to make a PR to.
 
 
-**15.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+**16.** Add appropriate title and description to your pull request explaining your changes and efforts done.
 
 
-**16.** Click on `Create Pull Request`.
+**17.** Click on `Create Pull Request`.
 
 
-**17.** Voila! You have made a PR to the awesome-developer-portfolio project. Sit back patiently and relax while your PR is reviewed. 
+**18.** Voila! You have made a PR to the awesome-developer-portfolio project. Sit back patiently and relax while your PR is reviewed. 
 
- In case of any help, please free to contact me via mail @ Codefloworg@gmail.com
+ In case of any help, please feel free to contact via mail @ Codefloworg@gmail.com
  
 <h2 align=center> ✨ Contributors </h2>
 
 
-Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributions** of any kind are welcome! 
+Thanks to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributions** of all kind are welcome! 
 
 <table>
 	<tr>
