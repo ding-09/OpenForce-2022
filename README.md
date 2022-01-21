@@ -23,7 +23,7 @@ git clone --depth 1 https://github.com/<your_name>/CodeFlowOrg/OpenForce-2022.gi
 cd CodeFlowOrg/OpenForce-2022
 ```
 
-**4.** Install dependencies open command prompt in cloned folder.
+**4.** Open command prompt in the cloned folder and install dependencies.
 
 ```
 npm install 
@@ -88,7 +88,7 @@ git push -u origin <your_branch_name>
 **16.** Click on `Create Pull Request`.
 
 
-**17.** Voila! You have made a PR to the awesome-developer-portfolio project. Sit back patiently and relax while your PR is reviewed. 
+**17.** Voila! You have made a PR to the Openforce website. Sit back patiently and relax while your PR is reviewed. 
 
  In case of any help, please free to contact me via mail @ Codefloworg@gmail.com
  
