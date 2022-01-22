@@ -23,7 +23,7 @@ git clone --depth 1 https://github.com/<your_name>/CodeFlowOrg/OpenForce-2022.gi
 cd CodeFlowOrg/OpenForce-2022
 ```
 
-**4.** Install dependencies open command prompt in cloned folder.
+**4.** Open command prompt in the cloned folder and install dependencies.
 
 ```
 npm install 
@@ -47,11 +47,18 @@ git remote -v
 ```
 
 
-**8.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+**8.** Always Sync your local repository before making any changes or commiting.
 
 ```
-git pull upstream main
+git fetch upstream
 ```
+```
+git merge upstream/main
+```
+
+### Alternatively Sync your forked repository on Github.
+##### In your forked repository, click on "Fetch upstream"
+##### Click "Fetch and merge"
 
 **9.** Create a new branch.
 
@@ -88,14 +95,14 @@ git push -u origin <your_branch_name>
 **16.** Click on `Create Pull Request`.
 
 
-**17.** Voila! You have made a PR to the awesome-developer-portfolio project. Sit back patiently and relax while your PR is reviewed. 
+**17.** Voila! You have made a PR to the Openforce website. Sit back patiently and relax while your PR is reviewed. 
 
  In case of any help, please free to contact me via mail @ Codefloworg@gmail.com
  
 <h2 align=center> ✨ Contributors </h2>
 
 
-Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributions** of any kind are welcome! 
+Thanks to these **Wonderful People** 👨🏻‍💻 for contributing to this project:      🚀 **Contributions** of any kind are welcome! 
 
 <table>
 	<tr>

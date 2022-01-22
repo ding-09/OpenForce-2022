@@ -98,3 +98,9 @@ h1:after {
         margin: 20px;
     }
 }
+
+@media only screen and (max-width: 830px) {
+    #swags {
+        padding: 70px 20px;
+    }
+}
