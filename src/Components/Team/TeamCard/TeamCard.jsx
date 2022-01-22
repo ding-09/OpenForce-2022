@@ -15,7 +15,7 @@ function TeamCard(props) {
             <h6 className="team-text">{props.subteam}</h6>
             <div className="team-description" style={{paddingTop:"5px"}}>
                 <a href={props.linkedin} className="teamlinkes">
-                    <i class="fab fa-linkedin" style={{fontSize:"25px"}}></i>
+                    <i className="fab fa-linkedin" style={{fontSize:"25px"}}></i>
                 </a>{" "}
                 <a href={props.github} className="teammemb-git">
                     <i className="fab fa-github" style={{fontSize:"25px"}}></i>

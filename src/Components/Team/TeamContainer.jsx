@@ -29,6 +29,7 @@ import t23 from "./team/t23.jpeg";
 import t24 from "./team/t24.jpeg";
 import t25 from "./team/t25.jpeg";
 import t26 from "./team/t26.jpeg";
+import t27 from "./team/t27.jpeg";
 
 function TeamContainer() {
     const codeflow = [
@@ -133,6 +134,13 @@ function TeamContainer() {
             "Opensource Maintainer",
             "https://www.linkedin.com/in/manan-jain-65aa561b7/",
             "https://github.com/Manan-jn",
+        ],
+        [
+            t27,
+            "Aryan Kabra",
+            "DevRel Lead",
+            "https://www.linkedin.com/in/aryan-kabra-22407",
+            "https://github.com/Aryan9301",
         ],
         [
             t15,

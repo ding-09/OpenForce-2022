@@ -24,6 +24,8 @@ import Error from "./Components/Error";
 import AddSession from "./Components/AddSession";
 import ScrollTop from "./Components/ScrollTop";
 import Content from "./Components/Content";
+import ChallengeCard from "./Components/Challenge/ChallengeCard"
+import ChallengeContainer from "./Components/Challenge/ChallengeContainer";
 
 function App() {
     window.addEventListener('load', () => {
@@ -78,6 +80,10 @@ function App() {
                     </Route>
                     <Route exact path="/error">
                         <Error />
+                    </Route>
+                    <Route exact path="/challenges">
+                        <NavBar />
+                        <ChallengeContainer/>
                     </Route>
                 </Switch>
             </div>
