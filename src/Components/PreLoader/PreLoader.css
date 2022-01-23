@@ -1,0 +1,26 @@
+
+.preloader{
+    height:100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.preloader-img{
+    height: 200px;
+    width: 200px;
+    animation: beat 2s infinite;
+}
+
+@keyframes beat {
+    50%{
+        height: 250px;
+        width: 250px;
+    }
+}
+
+.hide{
+    display: none;
+}
