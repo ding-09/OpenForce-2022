@@ -41,7 +41,7 @@ function SponsorsContainer() {
             "Gold Sponsors 🥇",
             [
                 {
-                    // website: "https://www.stickermule.com/",
+                    website: "https://projects.eclipse.org/projects/adoptium.aqavit",
                     // name: "Eclipse AqAvit",
                     // logo: stickermule,
                     tags: ["Goodies", "Workshops"],

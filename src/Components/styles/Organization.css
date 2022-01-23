@@ -83,8 +83,19 @@
 .orgTagLine {
     text-align:left;
     width:80%;
-    /*margin:10px;*/
+    font-size: 13px;
     margin-top:0px !important;
+}
+
+.orgeventtags{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.orgeventtags div{
+    margin: 5px;
 }
 
 .orgName a{
@@ -96,6 +107,7 @@
     text-align: left;
     font-size:18px;
     width: 80%;
+    font-size: 17px;
     margin-top: 15px !important;
     box-sizing:border-box;
 }
@@ -112,18 +124,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 310px;
 }
 
 .orgNavigation{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.orgNavigation > div{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 15px;
 }
-.orgNavigation div{
+
+.btncont > div{
+    margin: 10px 0px;
+}
+
+.contcont > div{
     margin: 10px;
+    text-align: center;
 }
 
 .orgLogo{

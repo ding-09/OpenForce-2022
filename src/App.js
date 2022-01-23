@@ -30,6 +30,25 @@ import PreLoader from "./Components/PreLoader/PreLoader";
 
 
 function App() {
+
+
+    const resetTimeline = () => {
+        const a = document.querySelector(".dark");
+        const dots = document.querySelectorAll(".dot");
+        const dotcircle = document.querySelectorAll(".dotcircle");
+        const line = document.querySelector(".tlline");
+        const timelineCont = document.querySelector(".timelineCont");
+        var padding = window
+            .getComputedStyle(timelineCont)
+            .paddingLeft.substring(
+                0,
+                window.getComputedStyle(timelineCont).paddingLeft.length - 2
+            );
+        for (var i of dots) {
+            i.style.left = `${line.offsetLeft - a.offsetLeft - padding - 10}px`;
+        }
+    };
+
     window.addEventListener('load', () => {
         var sc = sessionStorage.getItem("scroll");
         
@@ -46,7 +65,9 @@ function App() {
     setTimeout(() => {
         document.getElementsByClassName("App")[0].classList.remove("hide");
         document.getElementsByClassName("preloader")[0].classList.add("hide");
-    },5000);
+        setTimeout(resetTimeline, 100);
+        window.addEventListener('resize',resetTimeline);
+    },4000);
     return (
         <div>
         <PreLoader/>
