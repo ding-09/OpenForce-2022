@@ -26,6 +26,8 @@ import ScrollTop from "./Components/ScrollTop";
 import Content from "./Components/Content";
 import ChallengeCard from "./Components/Challenge/ChallengeCard"
 import ChallengeContainer from "./Components/Challenge/ChallengeContainer";
+import PreLoader from "./Components/PreLoader/PreLoader";
+
 
 function App() {
     window.addEventListener('load', () => {
@@ -41,9 +43,15 @@ function App() {
         sessionStorage.setItem("scroll", document.getElementById("root").scrollTop);
     })
     
+    setTimeout(() => {
+        document.getElementsByClassName("App")[0].classList.remove("hide");
+        document.getElementsByClassName("preloader")[0].classList.add("hide");
+    },5000);
     return (
+        <div>
+        <PreLoader/>
         <BrowserRouter>
-            <div className="App">
+            <div className="App hide">
                 <Particles />
                 <Switch>
                     <Route exact path="/">
@@ -88,6 +96,7 @@ function App() {
                 </Switch>
             </div>
         </BrowserRouter>
+        </div>
     );
 }
 
