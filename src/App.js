@@ -26,8 +26,29 @@ import ScrollTop from "./Components/ScrollTop";
 import Content from "./Components/Content";
 import ChallengeCard from "./Components/Challenge/ChallengeCard"
 import ChallengeContainer from "./Components/Challenge/ChallengeContainer";
+import PreLoader from "./Components/PreLoader/PreLoader";
+
 
 function App() {
+
+
+    const resetTimeline = () => {
+        const a = document.querySelector(".dark");
+        const dots = document.querySelectorAll(".dot");
+        const dotcircle = document.querySelectorAll(".dotcircle");
+        const line = document.querySelector(".tlline");
+        const timelineCont = document.querySelector(".timelineCont");
+        var padding = window
+            .getComputedStyle(timelineCont)
+            .paddingLeft.substring(
+                0,
+                window.getComputedStyle(timelineCont).paddingLeft.length - 2
+            );
+        for (var i of dots) {
+            i.style.left = `${line.offsetLeft - a.offsetLeft - padding - 10}px`;
+        }
+    };
+
     window.addEventListener('load', () => {
         var sc = sessionStorage.getItem("scroll");
         
@@ -41,9 +62,17 @@ function App() {
         sessionStorage.setItem("scroll", document.getElementById("root").scrollTop);
     })
     
+    setTimeout(() => {
+        document.getElementsByClassName("App")[0].classList.remove("hide");
+        document.getElementsByClassName("preloader")[0].classList.add("hide");
+        setTimeout(resetTimeline, 100);
+        window.addEventListener('resize',resetTimeline);
+    },4000);
     return (
+        <div>
+        <PreLoader/>
         <BrowserRouter>
-            <div className="App">
+            <div className="App hide">
                 <Particles />
                 <Switch>
                     <Route exact path="/">
@@ -88,6 +117,7 @@ function App() {
                 </Switch>
             </div>
         </BrowserRouter>
+        </div>
     );
 }
 

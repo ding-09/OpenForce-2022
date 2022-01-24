@@ -56,3 +56,7 @@
         height: 45px;
     }
 }
+
+.hide{
+    display: none;
+}

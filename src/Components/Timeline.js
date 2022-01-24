@@ -2,35 +2,6 @@ import React from "react";
 import Heading from "./Heading";
 import "./styles/Timeline.css";
 export default function Timeline() {
-    const resetTimeline = () => {
-        const a = document.querySelector(".dark");
-        const dots = document.querySelectorAll(".dot");
-        const dotcircle = document.querySelectorAll(".dotcircle");
-        const line = document.querySelector(".tlline");
-        const timelineCont = document.querySelector(".timelineCont");
-        var padding = window
-            .getComputedStyle(timelineCont)
-            .paddingLeft.substring(
-                0,
-                window.getComputedStyle(timelineCont).paddingLeft.length - 2
-            );
-        // console.log(
-        //     `${line.offsetLeft - a.offsetLeft}px`,
-        //     window
-        //         .getComputedStyle(timelineCont)
-        //         .paddingLeft.substring(
-        //             0,
-        //             window.getComputedStyle(timelineCont).paddingLeft.length - 2
-        //         )
-        // );
-
-        for (var i of dots) {
-            i.style.left = `${line.offsetLeft - a.offsetLeft - padding - 10}px`;
-        }
-    };
-
-    setTimeout(resetTimeline, 100);
-    window.addEventListener('resize',resetTimeline);
     return (
         <>
             <Heading name="Timeline"/>
