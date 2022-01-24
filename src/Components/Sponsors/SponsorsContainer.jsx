@@ -6,6 +6,7 @@ import bharatX from "./logo/bharatX.png";
 import gdsc from "./logo/template2_white.png";
 import ShardingSphere from "./logo/ShardingSphere Logo.jpeg";
 import givemycertificates from "./logo/givemycertificates.png"
+import eclipse from "./logo/eclipse.png"
 import jina from "./logo/jina.png"
 import Heading from "../Heading";
 
@@ -32,24 +33,24 @@ function SponsorsContainer() {
                     desc :"Apache ShardingSphere is an open source Big Data ecosystem, and one of the most successful Apache Software Foundation projects.",
                     padding:"20px"
                 },
-                "2",
-                "3",
+                // "2",
+                // "3",
             ],
         ],
-        ["Platinum Sponsors 🏆", ["4", "5", "6"]],
+        // ["Platinum Sponsors 🏆", ["4", "5", "6"]],
         [
             "Gold Sponsors 🥇",
             [
                 {
                     website: "https://projects.eclipse.org/projects/adoptium.aqavit",
                     // name: "Eclipse AqAvit",
-                    // logo: stickermule,
+                    logo: eclipse,
                     tags: ["Goodies", "Workshops"],
                     desc : "Eclipse AQAvit project began about 4 years ago as a community effort to improve the quality of OpenJDK binaries"
                 },
                 ,
-                "8",
-                "9",
+                // "8",
+                // "9",
             ],
         ],
         [
@@ -60,8 +61,8 @@ function SponsorsContainer() {
                     name: "Stickermule",
                     logo: stickermule,
                 },
-                "11",
-                "12",
+                // "11",
+                // "12",
             ],
         ],
         [
@@ -72,8 +73,8 @@ function SponsorsContainer() {
                     name: "Jina.Ai",
                     logo: jina,
                 },
-                "13",
-                "14",
+                // "13",
+                // "14",
             ],
         ],
         [
