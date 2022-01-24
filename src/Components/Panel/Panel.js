@@ -24,10 +24,10 @@ export default function Panel() {
 
             var comp = (await resp.json()).data;
 
-            if (!comp) {
-                history.push("/error");
-                return;
-            }
+            // if (!comp) {
+            //     history.push("/error");
+            //     return;
+            // }
             setorgData(comp);
         };
         updateOrg();

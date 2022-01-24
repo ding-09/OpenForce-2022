@@ -9,6 +9,17 @@ import givemycertificates from "./logo/givemycertificates.png"
 import eclipse from "./logo/eclipse.png"
 import jina from "./logo/jina.png"
 import Heading from "../Heading";
+import IEEEDTU from "./logo/IEEEDTU.png"
+import gdscamity from "./logo/gdscemity.png"
+import TurningClub from "./logo/Turning Club.jpeg"
+import LWM from "./logo/LWM.jpeg"
+import HITK from "./logo/HITK.png"
+import IEEEBITS from "./logo/IEEEBITS.png"
+import GDSCRur from "./logo/GDSCRourkela.png"
+import GDSCBITW from "./logo/GDSCBITW.png"
+import GDSCKalindiDU  from "./logo/GDSCKalindiDU.png"
+import IOS  from "./logo/IOS.png"
+import IEEEMSIT from "./logo/IEEEMSIT.png"
 
 function SponsorsContainer() {
     const titleSpon = [
@@ -90,38 +101,38 @@ function SponsorsContainer() {
                     fontSize:"15px",
                     tags:["Certificate Partner"]
                 },
-                {
-                    website: "mailto:codefloworg@gmail.com",
-                    name: "Become Our Partner!",
-                    width : "320px",
-                    height : "180px",
-                    fontSize:"23px",
-                    tags:["Education Partner"]
-                },
-                {
-                    website: "mailto:codefloworg@gmail.com",
-                    name: "Become Our Partner!",
-                    width : "320px",
-                    height : "180px",
-                    fontSize:"23px",
-                    tags:["Platform Partner"]
-                },
-                {
-                    website: "mailto:codefloworg@gmail.com",
-                    name: "Become Our Partner!",
-                    width : "320px",
-                    height : "180px",
-                    fontSize:"23px",
-                    tags:["Communication Partner"]
-                },
-                {
-                    website: "mailto:codefloworg@gmail.com",
-                    name: "Become Our Partner!",
-                    width : "320px",
-                    height : "180px",
-                    fontSize:"23px",
-                    tags:["Media Partner"]
-                },
+                // {
+                //     website: "mailto:codefloworg@gmail.com",
+                //     name: "Become Our Partner!",
+                //     width : "320px",
+                //     height : "180px",
+                //     fontSize:"23px",
+                //     tags:["Education Partner"]
+                // },
+                // {
+                //     website: "mailto:codefloworg@gmail.com",
+                //     name: "Become Our Partner!",
+                //     width : "320px",
+                //     height : "180px",
+                //     fontSize:"23px",
+                //     tags:["Platform Partner"]
+                // },
+                // {
+                //     website: "mailto:codefloworg@gmail.com",
+                //     name: "Become Our Partner!",
+                //     width : "320px",
+                //     height : "180px",
+                //     fontSize:"23px",
+                //     tags:["Communication Partner"]
+                // },
+                // {
+                //     website: "mailto:codefloworg@gmail.com",
+                //     name: "Become Our Partner!",
+                //     width : "320px",
+                //     height : "180px",
+                //     fontSize:"23px",
+                //     tags:["Media Partner"]
+                // },
                 
             ],
         ],
@@ -136,7 +147,117 @@ function SponsorsContainer() {
                     height : "190px",
                     fontSize:"15px",
                     logoSize:"80%"
+                },
+                {
+                    website: "#",
+                    // name: "IEEE Delhi Technological University",
+                    logo: IEEEDTU,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"60%"
+                },
+                {
+                    website: "#",
+                    name: "Turning Club",
+                    logo: TurningClub,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"45%"
+                },
+                {
+                    website: "#",
+                    // name: "Turning Club",
+                    logo: gdscamity,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"90%"
+                },
+                {
+                    website: "#",
+                    name: "Learn With Mitul Community",
+                    logo: LWM,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"40%"
+                },
+                {
+                    website: "#",
+                    name: "HITK Tech Community",
+                    logo: HITK,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"40%"
+                },
+                {
+                    website: "#",
+                    // name: "HITK Tech Community",
+                    logo: IEEEBITS,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"60%"
+                },
+                {
+                    website: "#",
+                    // name: "HITK Tech Community",
+                    logo: IEEEBITS,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"60%"
+                },
+                {
+                    website: "#",
+                    name: "GDSC NIT Rourkela",
+                    logo: GDSCRur,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"80%"
+                },
+                {
+                    website: "#",
+                    name: "GDSC BITW",
+                    logo: GDSCBITW,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"80%"
+                },
+                {
+                    website: "#",
+                    name: "GDSC Kalindi",
+                    logo: GDSCKalindiDU,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"80%"
+                },
+                {
+                    website: "#",
+                    name: "International Organisation of software Developers",
+                    logo: IOS,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"80%"
+                },
+                {
+                    website: "#",
+                    // name: "IEEE MSIT",
+                    logo: IEEEMSIT,
+                    width : "270px",
+                    height : "190px",
+                    fontSize:"15px",
+                    logoSize:"65%"
                 }
+                
+                
             ],
         ],
 

@@ -26,10 +26,10 @@ export default function IssueFullPage(props) {
             });
 
             var data = (await resp.json()).data;
-            if (!data) {
-                history.push("/error");
-                return;
-            }
+            // if (!data) {
+            //     history.push("/error");
+            //     return;
+            // }
 
             url = `https://openforce2022.herokuapp.com/api/org/${urlParm.searchParams.get(
                 "id"
