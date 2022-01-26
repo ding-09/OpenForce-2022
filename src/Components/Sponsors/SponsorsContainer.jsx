@@ -56,6 +56,7 @@ function SponsorsContainer() {
                     website: "https://projects.eclipse.org/projects/adoptium.aqavit",
                     // name: "Eclipse AqAvit",
                     logo: eclipse,
+                    logoSize:"35%",
                     tags: ["Goodies", "Workshops"],
                     desc : "Eclipse AQAvit project began about 4 years ago as a community effort to improve the quality of OpenJDK binaries"
                 },

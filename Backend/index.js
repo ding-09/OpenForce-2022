@@ -39,7 +39,6 @@ app.get('/panel', (req, res) => {
 
 //for api
 app.use('/api/user/',require('./routes/user'))
-app.use('/api/session/',require('./routes/session'))
 app.use('/api/org/',require('./routes/organization'))
 
 
