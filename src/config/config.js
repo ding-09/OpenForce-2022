@@ -27,9 +27,23 @@ const config = {
         {
             icon: bharatX,
             prices: [
-                "30k cash prize for winner of Bounty Challenge",
-                "Goodies to top 50",
-                "Hiring opportunites"
+                "30k cash prize winner of Bounty Challenge",
+            ],
+            p1: "BharatX enables Consumer facing apps & websites to give their users Credit, as a Feature, using their APIs in under 60 minutes.",
+            p2: "Enable 110 million middle class households to get access to credit without any income proof."
+        },
+        {
+            icon: bharatX,
+            prices: [
+                "Goodies to TOP 50 contributors",
+            ],
+            p1: "BharatX enables Consumer facing apps & websites to give their users Credit, as a Feature, using their APIs in under 60 minutes.",
+            p2: "Enable 110 million middle class households to get access to credit without any income proof."
+        },
+        {
+            icon: bharatX,
+            prices: [
+                "Hiring Opportunities"
             ],
             p1: "BharatX enables Consumer facing apps & websites to give their users Credit, as a Feature, using their APIs in under 60 minutes.",
             p2: "Enable 110 million middle class households to get access to credit without any income proof."

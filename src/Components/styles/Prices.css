@@ -1,18 +1,41 @@
+.subcont {
+    border: 2px solid #eee9e6;
+    color: #eee9e6;
+    padding: 20px 0px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #46474B;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    margin-bottom: 20px;
+}
+
 .pricescont{
     position: relative;
 }
 
+.sopnsedText{
+    /* color: #EEE9E6; */
+    color:rgb(10, 135, 237);
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
 .subcont {
-    padding:20px 0px;
+    /* padding:20px 0px; */
     border: 2px solid white;
-    height: 470px;
-    width: 260px;
+    /* height: 470px;
+    width: 260px; */
     box-shadow: 0px 0px 10px #eee9e6cc, 0px 0px 10px #1C232D inset;
     background-color: #eee9e633;
 }
 
 .prizelogo {
-    width: 70%;
+    width: 60%;
     margin-bottom: 20px;
 }
 .pricesdesc {
@@ -32,5 +55,7 @@
 }
 
 .prizelower{
-    height:contain;
+    margin: 10px 0px;
+    width: 80%;
+    font-size: 18px;
 }
