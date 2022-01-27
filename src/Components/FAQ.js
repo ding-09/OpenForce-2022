@@ -11,9 +11,9 @@ export default function FAQnew(props) {
             document.getElementById("answer"+props.index).style.height = "0px";
             btn.innerHTML="+";
         }else{
-            document.getElementById("answer"+props.index).style.height = "110px";
-            btn.innerHTML="-";
             document.getElementById("answer"+props.index).style.padding="20px";
+            document.getElementById("answer"+props.index).style.height = document.getElementById("answer"+props.index).scrollHeight+"px";
+            btn.innerHTML="-";
         }
 
     }
