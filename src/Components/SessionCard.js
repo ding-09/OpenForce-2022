@@ -22,6 +22,12 @@ const bookSession = async (id) =>{
     })
     const data = await res.json();
 }
+const watchSession = async (url) =>{
+    let a = document.createElement('a');
+    a.target = "_blank";
+    a.href = url;
+    a.click();
+}
 function SessionCard(props) {
     const bookingPossible = props.session.seatsAvailable>0 && new Date(props.session.time) > new Date();
     return (
@@ -39,15 +45,16 @@ function SessionCard(props) {
                 <div className="session-about-description">
                     {props.session.description}
                 </div>
-                <div className="session-seats-remaining">
+                {/* <div className="session-seats-remaining">
                     Seats left : {props.session.seatsAvailable}
-                </div>
+                </div> */}
                 <div className="session-scheduled-time">
-                    Scheduled on {timeFormat(props.session.time)}
+                    Streamed on {timeFormat(props.session.time)}
                 </div>
             </div>
             <div className="session-book">
-                <div className="session-book-btn" aria-disabled={!bookingPossible} onClick={()=>bookSession(props.session._id)}>{(bookingPossible)?"RSVP":"Bookings unavailable"} </div>
+                {/* <div className="session-book-btn" aria-disabled={!bookingPossible} onClick={()=>bookSession(props.session._id)}>{(bookingPossible)?"RSVP":"Bookings unavailable"} </div> */}
+                <div className="session-book-btn" aria-disabled={"false"} onClick={()=>watchSession(props.session.url)}>Watch Session </div>
             </div>
         </div>
     )

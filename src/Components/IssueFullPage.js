@@ -120,7 +120,7 @@ export default function IssueFullPage(props) {
             </div>
             <div className="issuesCont">
                 {orgIssue.length === 0 ? (
-                    <div className="noIssue middle">No Issue Avilable</div>
+                    <div className="noIssue middle">No Issue Available</div>
                 ) : (
                     orgIssue.map((elem, ind) => {
                         elem.ind = ind + 1;
