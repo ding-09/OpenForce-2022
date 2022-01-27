@@ -9,7 +9,7 @@ export default function Content() {
 
             <div className="content-cont">
                 <span className="bold" style={{color:"#5865F2"}}>OpenForce 2022</span> is a place where they can meet mentors from OpenSource
-                Organisations and contribute to them under guidance, network and
+                Organisations and contribute to them under guidance, network, and
                 “bring the Open Source Culture” with great enthusiasm.
                 <br/>
                 <br/>

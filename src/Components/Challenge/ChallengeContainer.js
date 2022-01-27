@@ -10,7 +10,7 @@ export default function ChallengeContainer() {
                     Challenges <i className="fab fa-angellist"></i>
                 </h1>
                 <p className={"swags-information"}>
-                    Complete the challenge provided by our prestigious Sponsors and Open Source Orgnization to get awsome prizes and bedges.
+                Complete the challenge provided by our prestigious Sponsors and Open Source Organization to get awesome prizes and badges.
                 </p>
                 <div className="swagborder">
                     <div className={"swags-item-container"}>

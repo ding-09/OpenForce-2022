@@ -43,7 +43,7 @@ function Home() {
                     <div className="homeContSub">its{" "}<div className="dynamic-text" id="dynamic-text">Contributor Force</div></div>
                 </h1>
                 <p>
-                3rd March to 23rd March <span className="span-color">2022</span>
+                3rd March to 28rd March <span className="span-color">2022</span>
                 </p>
 
                 <div className="landingBtn--wapper">
