@@ -20,6 +20,9 @@ import GDSCBITW from "./logo/GDSCBITW.png"
 import GDSCKalindiDU  from "./logo/GDSCKalindiDU.png"
 import IOS  from "./logo/IOS.png"
 import IEEEMSIT from "./logo/IEEEMSIT.png"
+import topmate from "./logo/topmate.png"
+import pepcoding from "./logo/pepcoding.png"
+import nados from "./logo/nados.png"
 
 function SponsorsContainer() {
     const titleSpon = [
@@ -93,6 +96,38 @@ function SponsorsContainer() {
             "Special Partners 📜",
             [
                 {
+                    logo: topmate,
+                    website: "https://topmate.io/",
+                    name: "Topmate",
+                    width : "320px",
+                    height : "180px",
+                    fontSize:"15px",
+                    logoSize:"60%",
+                    tags:["Communication Partner"]
+                },
+                {
+                    website: "https://www.pepcoding.com/",
+                    name: "Pepcoding",
+                    logo: pepcoding,
+                    padding:"20px",
+                    width : "320px",
+                    height : "180px",
+                    fontSize:"15px",
+                    logoSize:"30%",
+                    tags:["Education Partner"]
+                },
+                {
+                    website: "https://nados.io/feed",
+                    name: "NADOS",
+                    logo: nados,
+                    // padding:"20px",
+                    width : "320px",
+                    height : "180px",
+                    fontSize:"15px",
+                    logoSize:"60%",
+                    tags:["Education Partner"]
+                },
+                {
                     website: "https://givemycertificate.com/",
                     name: "Give My Certificates",
                     logo: givemycertificates,
@@ -102,38 +137,22 @@ function SponsorsContainer() {
                     fontSize:"15px",
                     tags:["Certificate Partner"]
                 },
-                // {
-                //     website: "mailto:codefloworg@gmail.com",
-                //     name: "Become Our Partner!",
-                //     width : "320px",
-                //     height : "180px",
-                //     fontSize:"23px",
-                //     tags:["Education Partner"]
-                // },
-                // {
-                //     website: "mailto:codefloworg@gmail.com",
-                //     name: "Become Our Partner!",
-                //     width : "320px",
-                //     height : "180px",
-                //     fontSize:"23px",
-                //     tags:["Platform Partner"]
-                // },
-                // {
-                //     website: "mailto:codefloworg@gmail.com",
-                //     name: "Become Our Partner!",
-                //     width : "320px",
-                //     height : "180px",
-                //     fontSize:"23px",
-                //     tags:["Communication Partner"]
-                // },
-                // {
-                //     website: "mailto:codefloworg@gmail.com",
-                //     name: "Become Our Partner!",
-                //     width : "320px",
-                //     height : "180px",
-                //     fontSize:"23px",
-                //     tags:["Media Partner"]
-                // },
+                {
+                    website: "mailto:codefloworg@gmail.com",
+                    name: "Become Our Partner!",
+                    width : "320px",
+                    height : "180px",
+                    fontSize:"23px",
+                    tags:["Platform Partner"]
+                },
+                {
+                    website: "mailto:codefloworg@gmail.com",
+                    name: "Become Our Partner!",
+                    width : "320px",
+                    height : "180px",
+                    fontSize:"23px",
+                    tags:["Media Partner"]
+                },
                 
             ],
         ],

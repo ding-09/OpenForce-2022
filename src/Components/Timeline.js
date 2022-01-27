@@ -58,7 +58,17 @@ export default function Timeline() {
                         {/* <div className="dotcircle"></div> */}
                     </div>
                     <div className="tlboxes" id="tlbox10">
-                        Contribution deadline
+                        Contribution Deadline
+                    </div>
+                </div>
+                <div className="tlboxwrap">
+                    <div className="tlboxes dark" id="tlbox9">
+                        31st March 2022
+                        <div className="dot"></div>
+                        {/* <div className="dotcircle"></div> */}
+                    </div>
+                    <div className="tlboxes" id="tlbox10">
+                        Result Declaration
                     </div>
                 </div>
             </div>

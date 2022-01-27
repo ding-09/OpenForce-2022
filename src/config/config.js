@@ -25,6 +25,7 @@ const config = {
 
     prizes: [
         {
+            website : "https://bharatx.tech/",
             icon: bharatX,
             prices: [
                 "30k cash prize winner of Bounty Challenge",
@@ -33,6 +34,7 @@ const config = {
             p2: "Enable 110 million middle class households to get access to credit without any income proof."
         },
         {
+            website : "https://bharatx.tech/",
             icon: bharatX,
             prices: [
                 "Goodies to TOP 50 contributors",
@@ -41,6 +43,7 @@ const config = {
             p2: "Enable 110 million middle class households to get access to credit without any income proof."
         },
         {
+            website : "https://bharatx.tech/",
             icon: bharatX,
             prices: [
                 "Hiring Opportunities"
