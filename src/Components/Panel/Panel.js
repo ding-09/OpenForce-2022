@@ -91,7 +91,7 @@ export default function Panel() {
                     {/* {orgData.bookedBy.indexOf(userEmail) !== -1 ? (
                         <div className="alreadyBooked">Already Booked</div>
                     ) : orgData.bookedBy.length >= 300 ? (
-                        <div className="slotsfull">No Slots Avilable</div>
+                        <div className="slotsfull">No Slots Available</div>
                     ) : (
                         <div className="bookNow" onClick={bookMe}>Book Now</div>
                     )} */}
