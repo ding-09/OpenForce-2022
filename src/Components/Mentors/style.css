@@ -1,0 +1,19 @@
+.indvmentors {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+    padding: 100px;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  @media only screen and (max-width: 830px) {
+    .indvmentors {
+      padding: 80px 20px;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */

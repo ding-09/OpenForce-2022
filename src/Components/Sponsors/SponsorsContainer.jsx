@@ -23,6 +23,8 @@ import IEEEMSIT from "./logo/IEEEMSIT.png"
 import topmate from "./logo/topmate.png"
 import pepcoding from "./logo/pepcoding.png"
 import nados from "./logo/nados.png"
+import github from "./logo/github.png"
+import hackclub from "./logo/hackclub.png"
 
 function SponsorsContainer() {
     const titleSpon = [
@@ -72,6 +74,12 @@ function SponsorsContainer() {
             "Silver Sponsors 🥈",
             [
                 {
+                    website: "https://github.com/",
+                    name: "GitHub",
+                    logo: github,
+                    logoSize:"35%"
+                },
+                {
                     website: "https://www.stickermule.com/",
                     name: "Stickermule",
                     logo: stickermule,
@@ -87,6 +95,12 @@ function SponsorsContainer() {
                     website: "https://jina.ai/",
                     name: "Jina.Ai",
                     logo: jina,
+                },
+                {
+                    website: "https://hackclub.com/",
+                    name: "Hack Club",
+                    logo: hackclub,
+                    logoSize:"35%"
                 },
                 // "13",
                 // "14",

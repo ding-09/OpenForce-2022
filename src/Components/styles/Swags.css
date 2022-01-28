@@ -1,33 +1,40 @@
-#swags,.challenge {
+#swags, .challenge {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 100px;
-    flex-direction: column;
-}
-
-/* .swagborder{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  /* .swagborder{
     border: 2px solid #EEE9E6;
     margin-bottom: 20px;
     border-radius: 10px;
-} */
-
-h1 {
+  } */
+  h1 {
     font-size: 2rem;
     font-weight: 700;
     padding: 10px;
     color: aliceblue;
     margin: 0 auto 2rem auto;
-}
-h1:after {
+  }
+  
+  h1:after {
     content: "";
     height: 1.5px;
     background: #ccc;
     display: block;
     margin-top: 0.2rem;
-}
-
-.swags-information {
+  }
+  
+  .swags-information {
     padding: 30px;
     width: 90%;
     background-color: #EEE9E6;
@@ -35,32 +42,36 @@ h1:after {
     border-radius: 1rem;
     margin: 2rem auto;
     color: #707070;
-}
-
-.swags-item-container {
+  }
+  
+  .swags-item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin: 2rem 0;
-}
-
-.swag-item {
+  }
+  
+  .swag-item {
     width: 520px;
     border-radius: 20px;
     position: relative;
     z-index: 2;
-}
-
-.swag-item--mobile {
+  }
+  
+  .swag-item--mobile {
     width: 300px;
-}
-
-.swag-item img {
+  }
+  
+  .swag-item img {
     width: 100%;
     border-radius: 20px;
     display: block;
-}
-
-.swag-item > span {
+  }
+  
+  .swag-item > span {
     position: absolute;
     background: #4149a1;
     color: #fff;
@@ -70,10 +81,10 @@ h1:after {
     left: 0;
     top: 0;
     border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px
-}
-
-.swag-item .btn {
+    border-bottom-right-radius: 10px;
+  }
+  
+  .swag-item .btn {
     background-color: #EEE9E6;
     color: #1C232D;
     position: absolute;
@@ -83,24 +94,26 @@ h1:after {
     font-weight: 900;
     padding: 0.3rem 0.8rem;
     border-radius: 10px;
-}
-
-.swag-item .btn:hover {
-    box-shadow: 0 0 0 6px rgb(232 82 37 / 25%);
-}
-
-@media only screen and (max-width: 1170px) {
+  }
+  
+  .swag-item .btn:hover {
+    -webkit-box-shadow: 0 0 0 6px rgba(232, 82, 37, 0.25);
+            box-shadow: 0 0 0 6px rgba(232, 82, 37, 0.25);
+  }
+  
+  @media only screen and (max-width: 1170px) {
     .swags-item-container {
-        flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
     }
-
     .swag-item {
-        margin: 20px;
+      margin: 20px;
     }
-}
-
-@media only screen and (max-width: 830px) {
+  }
+  
+  @media only screen and (max-width: 830px) {
     #swags {
-        padding: 70px 20px;
+      padding: 80px 20px;
     }
-}
+  }
+  /*# sourceMappingURL=style.css.map */

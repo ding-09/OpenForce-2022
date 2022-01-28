@@ -1,44 +1,48 @@
-.SessionCard{
-    background: linear-gradient(
-        180deg
-        , rgba(238, 233, 230, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+.SessionCard {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 233, 230, 0.4)), to(rgba(255, 255, 255, 0.1)));
+    background: linear-gradient(180deg, rgba(238, 233, 230, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     width: 280px;
     color: #EEE9E6;
-}
-.SessionCard:hover{
-    /* animation: float 3s ease-in 0s infinite alternate; */
-}
-.session-image{
+  }
+  
+  .session-image {
     padding: 15px;
     height: 140px;
-}
-.session-image>img{
-    object-fit: contain;
+  }
+  
+  .session-image > img {
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 100%;
     height: 140px;
     border-radius: 7px 7px 0px 0px;
-}
-.session-about{
+  }
+  
+  .session-about {
     margin-top: 20px;
     padding: 5px 20px;
-}
-.session-about-name{
+  }
+  
+  .session-about-name {
     font-size: 15px;
     line-height: 17px;
     text-transform: uppercase;
     font-weight: 900;
     /* color: #1C232D; */
-}
-.session-about-position{
+  }
+  
+  .session-about-position {
     text-transform: capitalize;
     font-size: 11px;
     line-height: 12px;
-}
-.session-about-description{
+  }
+  
+  .session-about-description {
     margin-top: 8px;
     font-size: 10px;
     text-transform: capitalize;
@@ -46,59 +50,110 @@
     height: 56px;
     line-height: 14px;
     overflow-y: hidden;
-}
-.session-seats-remaining{
+  }
+  
+  .session-seats-remaining {
     font-size: 11px;
     line-height: 15px;
     padding-bottom: 0;
     padding-top: 10px;
-}
-.session-scheduled-time{
+  }
+  
+  .session-scheduled-time {
     font-size: 11px;
     padding-top: 0;
-}
-.session-book{
+  }
+  
+  .session-book {
     margin-top: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 5px;
-}
-.session-book-btn{
+  }
+  
+  .session-book-btn {
     height: 40px;
     font-size: 13px;
     padding: 0px 15px;
     color: #1C232D;
     background-color: #EEE9E6;
     border-radius: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
     transition: box-shadow .5s;
-}
-.session-book-btn[aria-disabled=false]:hover{
-    box-shadow: 0px 2px 10px #EEE9E686,
-                0px 2px 20px #EEE9E672,
-                0px 2px 40px #EEE9E649;
-}
-.session-book-btn[aria-disabled=true]{
+    transition: box-shadow .5s, -webkit-box-shadow .5s;
+  }
+  
+  .session-book-btn[aria-disabled=false]:hover {
+    -webkit-box-shadow: 0px 2px 10px #EEE9E686,
+   0px 2px 20px #EEE9E672,
+   0px 2px 40px #EEE9E649;
+            box-shadow: 0px 2px 10px #EEE9E686,
+   0px 2px 20px #EEE9E672,
+   0px 2px 40px #EEE9E649;
+  }
+  
+  .session-book-btn[aria-disabled=true] {
     background-color: #8b8c90;
     cursor: not-allowed !important;
-}
-@keyframes float {
-    0%{
-        /* transform: translate(0,0); */
+  }
+  
+  @-webkit-keyframes float {
+    0% {
+      /* transform: translate(0,0); */
     }
-    25%{
-        transform: translate(-4px,4px);
+    25% {
+      -webkit-transform: translate(-4px, 4px);
+              transform: translate(-4px, 4px);
     }
-    50%{
-        transform: translate(-2px,-4px);
+    50% {
+      -webkit-transform: translate(-2px, -4px);
+              transform: translate(-2px, -4px);
     }
-    75%{
-        transform: translate(4px,0px);
+    75% {
+      -webkit-transform: translate(4px, 0px);
+              transform: translate(4px, 0px);
     }
-    100%{
-        transform: translate(1px,4px);
+    100% {
+      -webkit-transform: translate(1px, 4px);
+              transform: translate(1px, 4px);
     }
-}
+  }
+  
+  @keyframes float {
+    0% {
+      /* transform: translate(0,0); */
+    }
+    25% {
+      -webkit-transform: translate(-4px, 4px);
+              transform: translate(-4px, 4px);
+    }
+    50% {
+      -webkit-transform: translate(-2px, -4px);
+              transform: translate(-2px, -4px);
+    }
+    75% {
+      -webkit-transform: translate(4px, 0px);
+              transform: translate(4px, 0px);
+    }
+    100% {
+      -webkit-transform: translate(1px, 4px);
+              transform: translate(1px, 4px);
+    }
+  }
+  /*# sourceMappingURL=style.css.map */

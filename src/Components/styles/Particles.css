@@ -1,4 +1,4 @@
-#Particles{
+#Particles {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -6,138 +6,162 @@
     overflow-y: hidden;
     top: 0px;
     left: 0px;
-}
-.bg-crl{
-    content: url('../assets/crl_icon.svg');
-}
-.bg-icn{
-    content: url('../assets/code_icon.svg');
+  }
+  
+  .bg-crl {
+    content: url("../assets/crl_icon.svg");
+  }
+  
+  .bg-icn {
+    content: url("../assets/code_icon.svg");
     opacity: 0.3;
-}
-#Particles *{
+  }
+  
+  #Particles * {
     position: absolute;
     display: inline-block;
-}
-#bg-c1{
+  }
+  
+  #bg-c1 {
     width: 40vh;
     top: -10%;
     right: -2%;
-}
-#bg-c2{
+  }
+  
+  #bg-c2 {
     width: 60vh;
     top: 50%;
     left: -5%;
-}
-#bg-c3{
+  }
+  
+  #bg-c3 {
     width: 40vh;
     top: 130%;
     left: -10%;
-}
-#bg-c4{
+  }
+  
+  #bg-c4 {
     width: 65vh;
     top: 190%;
     right: -18%;
-}
-#bg-c5{
+  }
+  
+  #bg-c5 {
     width: 70vh;
     top: 230%;
     left: -8%;
-}
-#bg-c6{
+  }
+  
+  #bg-c6 {
     width: 40vh;
     top: 320%;
     right: -13%;
-}
-
-
-#bg-i1{
+  }
+  
+  #bg-i1 {
     top: 30%;
     right: 15%;
-}
-#bg-i2{
+  }
+  
+  #bg-i2 {
     top: 40%;
     left: 45%;
-}
-#bg-i3{
+  }
+  
+  #bg-i3 {
     top: 90%;
     left: 70%;
-}
-#bg-i4{
+  }
+  
+  #bg-i4 {
     top: 10%;
     left: 25%;
-}
-#bg-i5{
+  }
+  
+  #bg-i5 {
     top: 70%;
     left: 10%;
-}
-#bg-i6{
+  }
+  
+  #bg-i6 {
     top: 130%;
     right: 15%;
-}
-#bg-i7{
+  }
+  
+  #bg-i7 {
     top: 140%;
     left: 45%;
-}
-#bg-i8{
+  }
+  
+  #bg-i8 {
     top: 190%;
     left: 70%;
-}
-#bg-i9{
+  }
+  
+  #bg-i9 {
     top: 110%;
     left: 25%;
-}
-#bg-i10{
+  }
+  
+  #bg-i10 {
     top: 170%;
     left: 10%;
-}
-#bg-i11{
+  }
+  
+  #bg-i11 {
     top: 230%;
     right: 15%;
-}
-#bg-i12{
+  }
+  
+  #bg-i12 {
     top: 240%;
     left: 45%;
-}
-#bg-i13{
+  }
+  
+  #bg-i13 {
     top: 290%;
     left: 90%;
-}
-#bg-i14{
+  }
+  
+  #bg-i14 {
     top: 210%;
     left: 25%;
-}
-#bg-i15{
+  }
+  
+  #bg-i15 {
     top: 270%;
     left: 10%;
-}
-#bg-i16{
+  }
+  
+  #bg-i16 {
     top: 310%;
     left: 50%;
-}
-#bg-i17{
+  }
+  
+  #bg-i17 {
     top: 340%;
     left: 25%;
-}
-#bg-i18{
+  }
+  
+  #bg-i18 {
     top: 350%;
     left: 70%;
-}
-
-@media screen and (max-width : 500px) {
-    #Particles{
-        /* display: none; */
+  }
+  
+  @media screen and (max-width: 500px) {
+    #bg-c1 {
+      width: 30vh;
+      top: -10%;
+      right: -10%;
+      -webkit-transform: rotateX(130deg);
+              transform: rotateX(130deg);
+      -webkit-transform-origin: center;
+              transform-origin: center;
     }
-    #bg-c1{
-        width: 30vh;
-        top: -10%;
-        right: -10%;
-        transform: rotateX(130deg);
-        transform-origin: center;
-        
+    #bg-c2 {
+      width: 40vh;
+      top: 65%;
+      left: -15%;
     }
-    #bg-c2{
-        width: 40vh;
-        top: 65%;
-        left: -15%;
-    }
-}
+  }
+  /*# sourceMappingURL=style.css.map */

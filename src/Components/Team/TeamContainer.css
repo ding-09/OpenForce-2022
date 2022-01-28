@@ -1,42 +1,54 @@
-
-.team-container{
+.team-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
     padding: 20px 100px;
-}
-
-.team-heading{
+  }
+  
+  .team-heading {
     position: relative;
     text-transform: uppercase;
     color: #EEE9E6;
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 30px;
-}
-.team-heading::after{
+  }
+  
+  .team-heading::after {
     position: absolute;
     bottom: -10px;
     left: 0;
     content: "";
     border-bottom: 4px solid #EEE9E6;
     width: 7%;
-}
-
-.team-flexbox{
+  }
+  
+  .team-flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-@media screen and (max-width:1400px) {
-    .team-container{
-        padding: 20px 70px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .team-container {
+      padding: 20px 70px;
     }
-}
-@media screen and (max-width:900px) {
-    .team-container{
-        padding: 20px 20px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .team-container {
+      padding: 20px 20px;
     }
-}
+  }
+  /*# sourceMappingURL=style.css.map */

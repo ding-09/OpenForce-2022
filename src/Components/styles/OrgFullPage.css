@@ -1,37 +1,49 @@
-.btn-dark:hover{
+.btn-dark:hover {
     background-color: #242e3d !important;
-}
-/* container */
-
-.orgHeader{
+  }
+  
+  /* container */
+  .orgHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 70px;
     border-bottom: 2px solid #464748;
     padding: 0px 20px;
     margin-top: 85px;
-}
-
-.fullPageLogo{
+  }
+  
+  .fullPageLogo {
     width: 50px;
     height: 50px;
     border-radius: 100%;
-}
-
-.fpageOrgDetails{
+  }
+  
+  .fpageOrgDetails {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fpageOrgDetails div{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .fpageOrgDetails div {
     margin-left: 10px;
     color: #EEE9E6;
-}
-
-.selectLevel{
+  }
+  
+  .selectLevel {
     width: 150px;
     height: 40px;
     text-align: center;
@@ -40,13 +52,13 @@
     border: 2px solid #EEE9E6;
     color: white;
     position: relative;
-}
-
-.selectBox:focus{
+  }
+  
+  .selectBox:focus {
     outline: none;
-}
-
-.dropDown{
+  }
+  
+  .dropDown {
     z-index: 100;
     position: absolute;
     left: 0px;
@@ -56,32 +68,35 @@
     width: 100%;
     height: 0px;
     overflow: hidden;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     border-radius: 5px;
     z-index: 500 !important;
-}
-
-.option{
+  }
+  
+  .option {
     height: 40px;
     cursor: pointer;
     border-bottom: 1px solid #1C232D;
     line-height: 40px;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
-}
-
-.option:first-child{
+  }
+  
+  .option:first-child {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}
-.option:last-child{
+  }
+  
+  .option:last-child {
     border-radius: 5px;
-}
-
-.option:hover{
+  }
+  
+  .option:hover {
     background-color: #d1c6c0;
-}
-
-.issuesCont{
+  }
+  
+  .issuesCont {
     width: 80vw;
     /* height: fit-content; */
     height: calc(90vh - 70px);
@@ -92,53 +107,75 @@
     /* border: 2px solid #46474B; */
     position: relative;
     z-index: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dropDir{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .dropDir {
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
-}
-
-#selected{
+  }
+  
+  #selected {
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0px 20px;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
-}
-
-.issueCont:first-child{
+  }
+  
+  .issueCont:first-child {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-.issueCont:last-child{
+  }
+  
+  .issueCont:last-child {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 0px;
-}
-
-.noIssue{
+  }
+  
+  .noIssue {
     height: calc(90vh - 70px);
     width: 100%;
     color: #EEE9E6;
     font-size: 30px;
     border-radius: 10px;
     border: 2px solid #46474B;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rightOrgFullHeader{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .rightOrgFullHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-}
-
-.addNew{
+  }
+  
+  .addNew {
     margin-left: 20px;
     width: 100px;
     height: 40px;
@@ -149,17 +186,18 @@
     color: #46474B;
     line-height: 40px;
     cursor: pointer;
-}
-
-.issuesCont::-webkit-scrollbar{
+  }
+  
+  .issuesCont::-webkit-scrollbar {
     width: 0px;
-}
-
-@media screen and (max-width : 400px) {
-    .selectLevel{
-        width: 130px;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .selectLevel {
+      width: 130px;
     }
-    .issuesCont{
-        width: 95%;
+    .issuesCont {
+      width: 95%;
     }
-}
+  }
+  /*# sourceMappingURL=style.css.map */

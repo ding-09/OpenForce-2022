@@ -34,7 +34,7 @@ const orgData = [
     {
         _id : "fffc25e8bca742c1927096f520af09a1",
         logo : hypreldgerindia,
-        name : "Hypreldger",
+        name : "Hyperledger",
         tagline : "Hyperledger Foundation is a non profit organization that brings together all the necessary resources and infrastructure to ensure thriving and stable ecosystems around open source software blockchain projects.",
         website : "https://wiki.hyperledger.org/",
         tags : [],

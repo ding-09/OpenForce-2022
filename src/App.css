@@ -1,63 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 .App {
-    width: 100vw;
-    height: 100vh;
-}
-*{
-    font-family: 'Poppins', sans-serif;
-}
-::-webkit-scrollbar{
-    height: 4px;
-    width: 8px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: white;
-    border-radius: 2px;
-}
-::-webkit-scrollbar-track{
-    background-color: rgba(77, 77, 77, 0.9);
-    border-radius: 2px;
+  width: 100vw;
+  height: 100vh;
 }
 
-.scrollTop{
-    /* background-color: #1C232D; */
-    transition: all 0.5s;
-    position: fixed;
-    bottom: -100px;
-    right: 20px;                 
-    height: 50px;
-    width: 40px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    z-index: 40;
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
-.scrollMe{
-    margin: auto;
-    width: 40px;
-    height: 40px;
-    margin-top: 5px;
-    background-color: #EEE9E6;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 100%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+::-webkit-scrollbar {
+  height: 4px;
+  width: 8px;
 }
 
-.scrollMe .fas{
-    color: #1C232D;
-    font-size: 25px;
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 2px;
 }
 
-@media screen and (max-width : 500px) {
-    .scrollTop{
-        height: 45px;
-    }
+::-webkit-scrollbar-track {
+  background-color: rgba(77, 77, 77, 0.9);
+  border-radius: 2px;
 }
 
-.hide{
-    display: none;
+.scrollTop {
+  /* background-color: #1C232D; */
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: fixed;
+  bottom: -100px;
+  right: 20px;
+  height: 50px;
+  width: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  z-index: 40;
 }
+
+.scrollMe {
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #EEE9E6;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scrollMe .fas {
+  color: #1C232D;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .scrollTop {
+    height: 45px;
+  }
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,38 +1,48 @@
-.sponsors-container{
+.sponsors-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding: 20px 100px;
-}
-
-.sponsors-heading{
+  }
+  
+  .sponsors-heading {
     position: relative;
     text-transform: uppercase;
     color: #EEE9E6;
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 30px;
-}
-.sponsors-heading::after{
+  }
+  
+  .sponsors-heading::after {
     position: absolute;
     bottom: -10px;
     left: 0;
     content: "";
     border-bottom: 4px solid #EEE9E6;
     width: 7%;
-}
-
-.sponsors-container:first-child .sponsors-sub-container h3{
-    text-align:center;
-}
-
-@media screen and (max-width:1400px) {
-    .sponsors-container{
-        padding: 20px 70px;
+  }
+  
+  .sponsors-container:first-child .sponsors-sub-container h3 {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .sponsors-container {
+      padding: 20px 70px;
     }
-}
-@media screen and (max-width:900px) {
-    .sponsors-container{
-        padding: 20px 20px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .sponsors-container {
+      padding: 20px 20px;
     }
-}
+  }
+  /*# sourceMappingURL=style.css.map */

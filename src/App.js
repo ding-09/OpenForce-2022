@@ -27,6 +27,7 @@ import Content from "./Components/Content";
 import ChallengeCard from "./Components/Challenge/ChallengeCard"
 import ChallengeContainer from "./Components/Challenge/ChallengeContainer";
 import PreLoader from "./Components/PreLoader/PreLoader";
+import Mentors from "./Components/Mentors/Mentors";
 
 
 function App() {
@@ -113,6 +114,10 @@ function App() {
                     <Route exact path="/challenges">
                         <NavBar />
                         <ChallengeContainer/>
+                    </Route>
+                    <Route exact path="/mentors">
+                        <NavBar />
+                        <Mentors/>
                     </Route>
                 </Switch>
             </div>

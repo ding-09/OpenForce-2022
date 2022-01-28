@@ -1,26 +1,40 @@
-
-.preloader{
-    height:100vh;
+.preloader {
+    height: 100vh;
     background-color: #1C232D;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     z-index: 1000;
-}
-
-.preloader-img{
+  }
+  
+  .preloader-img {
     height: 200px;
     width: 200px;
-    animation: beat 2s infinite;
-}
-
-@keyframes beat {
-    50%{
-        height: 250px;
-        width: 250px;
+    -webkit-animation: beat 2s infinite;
+            animation: beat 2s infinite;
+  }
+  
+  @-webkit-keyframes beat {
+    50% {
+      height: 250px;
+      width: 250px;
     }
-}
-
-.hide{
+  }
+  
+  @keyframes beat {
+    50% {
+      height: 250px;
+      width: 250px;
+    }
+  }
+  
+  .hide {
     display: none;
-}
+  }
+  /*# sourceMappingURL=style.css.map */
