@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TeamCard from "../Team/TeamCard/TeamCard";
 import t1 from "../Team/team/t1.jpg";
 import t2 from "../Team/team/t2.jpeg";
 import "./style.css";
 
 export default function Mentors() {
+    useEffect(() => {
+        document.getElementById("root").scrollTop = 0;
+    }, [])
     const mentors = [
         [
             t1,

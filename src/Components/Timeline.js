@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Heading from "./Heading";
 import "./styles/Timeline.css";
-export default function Timeline() {
+export default function Timeline({resetTimeline}) {
+    useEffect(()=>{
+        console.log("first");
+        setTimeout(resetTimeline,10);
+    }, [])
     return (
         <>
             <Heading name="Timeline"/>

@@ -78,10 +78,10 @@ function App() {
                 <Switch>
                     <Route exact path="/">
 
-                        <NavBar />
+                        <NavBar/>
                         <Home />
                         <AboutUs />
-                        <Timeline />
+                        <Timeline resetTimeline={resetTimeline}/>
                         <Content/>
                         <Organization />
                         <Sessions />
@@ -94,15 +94,15 @@ function App() {
                         <ScrollTop/>
                     </Route>
                     <Route exact path={"/swags"}>
-                        <NavBar />
+                        <NavBar/>
                         <Swags />
                     </Route>
                     <Route exact path="/issue">
-                        <NavBar />
+                        <NavBar/>
                         <IssueFullPage />
                     </Route>
                     <Route exact path="/panel">
-                        <NavBar />
+                        <NavBar/>
                         <Panel />
                     </Route>
                     <Route exact path="/FAQs">
@@ -112,11 +112,11 @@ function App() {
                         <Error />
                     </Route>
                     <Route exact path="/challenges">
-                        <NavBar />
+                        <NavBar/>
                         <ChallengeContainer/>
                     </Route>
                     <Route exact path="/mentors">
-                        <NavBar />
+                        <NavBar/>
                         <Mentors/>
                     </Route>
                 </Switch>

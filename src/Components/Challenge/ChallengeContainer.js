@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ChallengeCard from "./ChallengeCard";
 import challenges from "./ChallengeDesc";
 
 export default function ChallengeContainer() {
+    useEffect(() => {
+        document.getElementById("root").scrollTop = 0;
+    }, [])
+    
     return (
         <section className="challenge">
             <>
