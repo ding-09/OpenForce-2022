@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "./Heading";
 import "./styles/Content.css"
+import { Link } from "react-router-dom";
 
 export default function Content() {
     return (
@@ -38,6 +39,9 @@ export default function Content() {
                 <a href="https://bit.ly/openforce2022" style={{fontWeight:"bolder"}}>
                     https://bit.ly/openforce2022
                 </a>
+                <div>
+                    <Link to="/overview" ><div className="theme-orange">Read More...</div></Link>
+                </div>
             </div>
         </div>
     );

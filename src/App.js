@@ -28,6 +28,7 @@ import ChallengeCard from "./Components/Challenge/ChallengeCard"
 import ChallengeContainer from "./Components/Challenge/ChallengeContainer";
 import PreLoader from "./Components/PreLoader/PreLoader";
 import Mentors from "./Components/Mentors/Mentors";
+import Overview from "./Components/Overview";
 
 
 function App() {
@@ -75,10 +76,9 @@ function App() {
         <BrowserRouter>
             <div className="App hide">
                 <Particles />
+                <NavBar/>
                 <Switch>
                     <Route exact path="/">
-
-                        <NavBar/>
                         <Home />
                         <AboutUs />
                         <Timeline resetTimeline={resetTimeline}/>
@@ -94,15 +94,12 @@ function App() {
                         <ScrollTop/>
                     </Route>
                     <Route exact path={"/swags"}>
-                        <NavBar/>
                         <Swags />
                     </Route>
                     <Route exact path="/issue">
-                        <NavBar/>
                         <IssueFullPage />
                     </Route>
                     <Route exact path="/panel">
-                        <NavBar/>
                         <Panel />
                     </Route>
                     <Route exact path="/FAQs">
@@ -112,12 +109,13 @@ function App() {
                         <Error />
                     </Route>
                     <Route exact path="/challenges">
-                        <NavBar/>
                         <ChallengeContainer/>
                     </Route>
                     <Route exact path="/mentors">
-                        <NavBar/>
                         <Mentors/>
+                    </Route>
+                    <Route exact path="/overview">
+                        <Overview/>
                     </Route>
                 </Switch>
             </div>

@@ -6,6 +6,9 @@
     overflow-y: hidden;
     top: 0px;
     left: 0px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   
   .bg-crl {

@@ -1,0 +1,19 @@
+#Overview{
+    padding: 90px 70px 0 70px;
+}
+#Overview>p{
+    color: white;
+    font-size: 20px;
+    padding: 20px 10px;
+}
+.theme-blue{
+    font-weight: bolder;
+    color: #326AF7;
+}
+.theme-orange{
+    font-weight: bolder;
+    color: #F48B0C;
+}
+.blockquote{
+    padding: 10px 20px;
+}
