@@ -37,15 +37,19 @@ function Particles() {
             }else{
                 if (document.querySelector(".scrollTop"))document.querySelector(".scrollTop").style.bottom = "-100px";
             }
+            var x = document.getElementById('bg-c2');
+            x.style.left = ((document.getElementById("root").scrollTop*0.3)%(window.innerWidth + 1.2*window.innerHeight) - 0.6 * window.innerHeight)+"px";
+            // x.style.backgroundPositionY = e.target.scrollTop*0.1 +"px";
+            x = document.getElementById('bg-c1');
+            x.style.left = (window.innerWidth - (document.getElementById("root").scrollTop*0.3)%(window.innerWidth + 0.8*window.innerHeight) + 0.4 * window.innerHeight)+"px";
+            // x.style.backgroundPositionY = -e.target.scrollTop*0.1 +"px";
+
+
         })
     return (
         <div id="Particles">
-            <img className="bg-crl" id="bg-c1" alt="" data-eff="30" />
-            <img className="bg-crl" id="bg-c2" alt="" data-eff="-10" />
-            <img className="bg-crl" id="bg-c3" alt="" data-eff="-25" />
-            <img className="bg-crl" id="bg-c4" alt="" data-eff="20" />
-            <img className="bg-crl" id="bg-c5" alt="" data-eff="-5" />
-            <img className="bg-crl" id="bg-c6" alt="" data-eff="-5"/>
+            <div className="bg-crl" id="bg-c1" alt="" data-eff="30"></div>
+            <div className="bg-crl" id="bg-c2" alt="" data-eff="-10"></div>
             
             <img className="bg-icn" id="bg-i1" alt="" data-eff="30" />
             <img className="bg-icn" id="bg-i2" alt="" data-eff="-10" />

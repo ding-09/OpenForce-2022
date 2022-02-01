@@ -15,11 +15,12 @@ function Home() {
                     <img src={codeflow} alt="Codeflow"/>
                 </div>
                 <div className="homeContSub">We bring Top Opensource organisations to you.</div>
-                <div className="homeContSub">Are you ready to be part of our OpenForce 2022 ?</div>
+                <div className="homeContSub">Are you ready to be part of our OpenForce 2022?</div>
                 <div className="poweredby">
                     <p>Powered By</p>
                     <img src={bharatX} alt="BharatX"/>
                 </div>
+                <span className="homeContSub" style={{fontSize:"20px"}}>Opensource meets  its</span><span className="homeContSub"  style={{color:"#AD5FAA", fontSize:"30px"}}> Contributor force</span>
                 <p>
                 3rd March to 28rd March <span className="span-color">2022</span>
                 </p>

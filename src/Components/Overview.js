@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles/Overview.css';
 
 function Overview() {
+
+    useEffect(()=>{
+        document.getElementById("root").scrollTop = 0;
+    },[])
+
     return <div id="Overview">
         <p>
             <span className='bold'>Codeflow</span> is an organization that serves the ultimate purpose of <span className='theme-blue'>‘Learning must go on’</span>,  is an organization whose main motive is to empower the student community by organizing webinars, hackathons, and open-source events. Codeflow is organizing the event named OpenForce, an initiative taken up for the students to provide them with the best learning environment and help them gain the principal knowledge about the fastest-growing field <span className='theme-orange'>‘Open Source’</span>.

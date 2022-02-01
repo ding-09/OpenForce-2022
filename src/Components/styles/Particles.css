@@ -12,11 +12,11 @@
   }
   
   .bg-crl {
-    content: url("../assets/crl_icon.svg");
+    /* content: url("../assets/crl_icon.svg"); */
   }
   
   .bg-icn {
-    content: url("../assets/code_icon.svg");
+    /* content: url("../assets/code_icon.svg"); */
     opacity: 0.3;
   }
   
@@ -27,14 +27,23 @@
   
   #bg-c1 {
     width: 40vh;
+    height: 40vh;
     top: -10%;
-    right: -2%;
+    background-image: linear-gradient(180deg, #9548B0 0%, rgba(65, 73, 162, 0) 100%);
+    right: -105%;
+    border-radius: 100%;
+    border: none;
+    /* filter: blur(40px); */
   }
   
   #bg-c2 {
     width: 60vh;
+    height: 60vh;
+    background-image: linear-gradient(180deg, rgba(65, 73, 162, 0) 0%, #4149A2 100%);
+    border-radius: 100%;
     top: 50%;
-    left: -5%;
+    left: -105%;
+
   }
   
   #bg-c3 {
@@ -154,8 +163,9 @@
   @media screen and (max-width: 500px) {
     #bg-c1 {
       width: 30vh;
-      top: -10%;
-      right: -10%;
+      height: 30vh;
+      top: 0%;
+      right: -105%;
       -webkit-transform: rotateX(130deg);
               transform: rotateX(130deg);
       -webkit-transform-origin: center;
@@ -163,8 +173,9 @@
     }
     #bg-c2 {
       width: 40vh;
+      height: 40vh;
       top: 65%;
-      left: -15%;
+      left: -105%;
     }
   }
   /*# sourceMappingURL=style.css.map */
