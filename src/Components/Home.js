@@ -1,47 +1,25 @@
 import React from "react";
 import "./styles/Home.css";
 
+import bharatX from "./Sponsors/logo/bharatX-white.png"
+import codeflow from "./Team/team/codeflow.png"
+
 function Home() {
 
-    const dynamicText = ["Contributor Force", ""]
-
-    const switchCont = (id, cont)=>{
-        const interval1 = setInterval(()=>{
-            const elem = document.getElementById(id);
-            if (!elem) return;
-            elem.innerHTML = elem.innerHTML.substring(0, elem.innerHTML.length - 1);
-            if(elem.innerHTML.length <= 1) {
-                clearInterval(interval1);
-                const interval2 = setInterval(()=>{
-                    elem.innerHTML = cont.substring(0, elem.innerHTML.length + 1);
-                    if(elem.innerHTML.length === cont.length){
-                        clearInterval(interval2);
-                        return;
-                    }
-                },140)
-            }
-        },140)
-    }
-
-    setInterval(()=>{
-        const elem = document.getElementById("dynamic-text");
-        if(!elem) return;
-        if(elem.innerHTML === "Contributor Force"){
-            switchCont("dynamic-text", "Openforce");
-        }else if(elem.innerHTML === "Openforce"){
-            switchCont("dynamic-text", "Contributor Force");
-        }
-    },4000)
-
-    
     return (
         <div className="landing" id="homepageLink">
             <div className="landindContent">
-                <h1 className="homeCont">
-                    <div className="openforcemention">OpenForce 2022</div>
-                    <div>OpenSource meets</div>
-                    <div className="homeContSub">its{" "}<div className="dynamic-text" id="dynamic-text">Contributor Force</div></div>
-                </h1>
+                <h1 className="homeCont openforcemention">OpenForce 2022</h1>
+                <div className="poweredby organisedby">
+                    <p>Organised By</p>
+                    <img src={codeflow} alt="Codeflow"/>
+                </div>
+                <div className="homeContSub">We bring Top Opensource organisations to you.</div>
+                <div className="homeContSub">Are you ready to be part of our OpenForce 2022 ?</div>
+                <div className="poweredby">
+                    <p>Powered By</p>
+                    <img src={bharatX} alt="BharatX"/>
+                </div>
                 <p>
                 3rd March to 28rd March <span className="span-color">2022</span>
                 </p>
@@ -63,8 +41,7 @@ function Home() {
             </div>
 
             <div className="landingImage">
-                <img src="./images/Main-image.png" />
-
+                <img src="./images/Main-image3.png" />
                 <div className="photo-bg"></div>
             </div>
         </div>
