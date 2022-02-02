@@ -25,6 +25,7 @@ import pepcoding from "./logo/pepcoding.png"
 import nados from "./logo/nados.png"
 import github from "./logo/github.png"
 import hackclub from "./logo/hackclub.png"
+import mlsa from "./logo/MLSA badge.png"
 
 function SponsorsContainer() {
     const titleSpon = [
@@ -276,6 +277,15 @@ function SponsorsContainer() {
                     website: "#",
                     // name: "IEEE MSIT",
                     logo: IEEEMSIT,
+                    width : "180px",
+                    height : "150px",
+                    fontSize:"11px",
+                    logoSize:"65%"
+                },
+                {
+                    website: "#",
+                    // name: "IEEE MSIT",
+                    logo: mlsa,
                     width : "180px",
                     height : "150px",
                     fontSize:"11px",

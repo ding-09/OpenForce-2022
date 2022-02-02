@@ -3,7 +3,7 @@ import './styles/Heading.css'
 function Heading(props) {
     return (
         <div className="Heading">
-            <hr />
+            <hr color='#AD5FAA'/>
             <div className="heading-name" id={props.id}>{props.name}</div>
         </div>
     )

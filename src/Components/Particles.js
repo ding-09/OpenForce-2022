@@ -37,11 +37,11 @@ function Particles() {
             }else{
                 if (document.querySelector(".scrollTop"))document.querySelector(".scrollTop").style.bottom = "-100px";
             }
-            var x = document.getElementById('bg-c2');
-            x.style.left = ((document.getElementById("root").scrollTop*0.3)%(window.innerWidth + 1.2*window.innerHeight) - 0.6 * window.innerHeight)+"px";
-            // x.style.backgroundPositionY = e.target.scrollTop*0.1 +"px";
-            x = document.getElementById('bg-c1');
-            x.style.left = (window.innerWidth - (document.getElementById("root").scrollTop*0.3)%(window.innerWidth + 0.8*window.innerHeight) + 0.4 * window.innerHeight)+"px";
+            // var x = document.getElementById('bg-c2');
+            // x.style.left = ((document.getElementById("root").scrollTop*0.3)%(window.innerWidth + 1.2*window.innerHeight) - 0.6 * window.innerHeight)+"px";
+            // // x.style.backgroundPositionY = e.target.scrollTop*0.1 +"px";
+            // x = document.getElementById('bg-c1');
+            // x.style.left = (window.innerWidth - (document.getElementById("root").scrollTop*0.3)%(window.innerWidth + 0.8*window.innerHeight) + 0.4 * window.innerHeight)+"px";
             // x.style.backgroundPositionY = -e.target.scrollTop*0.1 +"px";
 
 

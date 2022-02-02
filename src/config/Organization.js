@@ -5,16 +5,9 @@ import mojaglobal from "./Org/mojaglobal.png"
 import metacall from "./Org/metacall.png"
 import hypreldgerindia from "./Org/hypreldgerindia.jpeg"
 import jina from "./Org/jina.png"
+import mlsa from "./Org/MLSA badge.png"
 
 const orgData = [
-    {
-        _id : "dec174ee44f74a43be4c84bfa702f94e",
-        logo : mojaglobal,
-        name : "moja global",
-        tagline : "moja global is a not for profit, collaborative project that brings together a community of experts to develop open-source software.",
-        website : "https://github.com/moja-global",
-        tags : ["GSoC","GSoD","Outreachy","Linux Foundation Experience"],
-    },
     {
         _id : "ac4fe61022d4425b8bd46c470115e78e",
         logo : apache,
@@ -37,6 +30,22 @@ const orgData = [
         name : "Hyperledger",
         tagline : "Hyperledger Foundation is a non profit organization that brings together all the necessary resources and infrastructure to ensure thriving and stable ecosystems around open source software blockchain projects.",
         website : "https://wiki.hyperledger.org/",
+        tags : [],
+    },
+    {
+        _id : "dec174ee44f74a43be4c84bfa702f94e",
+        logo : mojaglobal,
+        name : "moja global",
+        tagline : "moja global is a not for profit, collaborative project that brings together a community of experts to develop open-source software.",
+        website : "https://github.com/moja-global",
+        tags : ["GSoC","GSoD","Outreachy","Linux Foundation Experience"],
+    },
+    {
+        _id : "b742d07af3254174be3ca3dc8af87ad2",
+        logo : mlsa,
+        name : "Microsoft Learn Student Ambassadors",
+        tagline : "The Microsoft Learn Student Ambassadors community is for students who want to use tech to solve real-world problems with like-minded peers, establish themselves as mentors and leaders in their community, and amplify their impact.",
+        website : "https://studentambassadors.microsoft.com/",
         tags : [],
     },
     {
@@ -70,7 +79,7 @@ const orgData = [
     
     
     
-    b742d07af3254174be3ca3dc8af87ad2
+    
     75be68303dbe4daf8400988c626d2b79
     f1b1de620848441db84c2673070914d8
     82bf5a83c6cb41a99bc6b3444d281b54
