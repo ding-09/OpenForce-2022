@@ -20,8 +20,18 @@ function Swags(props) {
                 <div className="swagborder">
                     <div className={"swags-item-container"}>
                         {
-                            prizes.map((elem) => {
-                                return (<Prices data={elem} key={elem}/>)
+                            prizes.map((elem) => {   
+                                return (
+                                    <div className="card">
+                                        <div class="card-title">
+                                            <p>Sponsored By</p>
+                                        </div>
+                                        <div class="card-image">
+                                            <img src={elem.icon} alt="logo" />
+                                        </div> 
+                                        <Prices data={elem} key={elem} />
+                                    </div>
+                                )
                             })
                         }
                     </div>

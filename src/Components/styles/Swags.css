@@ -95,7 +95,8 @@
     padding: 0.3rem 0.8rem;
     border-radius: 10px;
   }
-  
+
+
   .swag-item .btn:hover {
     -webkit-box-shadow: 0 0 0 6px rgba(232, 82, 37, 0.25);
             box-shadow: 0 0 0 6px rgba(232, 82, 37, 0.25);
@@ -116,4 +117,4 @@
       padding: 80px 20px;
     }
   }
-  /*# sourceMappingURL=style.css.map */
+ 

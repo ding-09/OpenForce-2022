@@ -1,4 +1,4 @@
-.subcont {
+/* .subcont {
     border: 2px solid #eee9e6;
     color: #eee9e6;
     padding: 20px 0px;
@@ -19,35 +19,32 @@
             align-items: center;
     width: 270px;
     margin-bottom: 20px;
-  }
+  } */
   
-  .pricescont {
+  /* .pricescont {
     position: relative;
-  }
-  
+  } */
+/*   
   .sopnsedText {
-    /* color: #EEE9E6; */
     color: #0a87ed;
     font-size: 20px;
     margin: 10px 0px;
   }
-  
-  .subcont {
-    /* padding:20px 0px; */
+   */
+  /* .subcont {
     border: 2px solid white;
-    /* height: 470px;
-    width: 260px; */
+
     -webkit-box-shadow: 0px 0px 10px #eee9e6cc, 0px 0px 10px #1C232D inset;
             box-shadow: 0px 0px 10px #eee9e6cc, 0px 0px 10px #1C232D inset;
     background-color: #eee9e633;
-  }
-  
+  } */
+/*   
   .prizelogo {
     width: 60%;
     margin-bottom: 20px;
-  }
+  } */
   
-  .pricesdesc {
+  /* .pricesdesc {
     color: #EEE9E6;
     width: 80%;
     margin: auto;
@@ -61,11 +58,64 @@
     width: 90%;
     margin: auto;
     font-size: 14px;
-  }
+  } */
   
-  .prizelower {
+  /* .prizelower {
     margin: 10px 0px;
     width: 80%;
     font-size: 18px;
-  }
-  /*# sourceMappingURL=style.css.map */
+  } */
+
+ :root {
+	 --background: rgba(36, 50, 71, 1);
+	 --card-background-color: linear-gradient(180.2deg, #5193f6 -8.53%, rgba(249, 71, 232, 0.57) 109.43%);
+	 --btn-color: rgba(5, 5, 5, 1);
+	 --text-primary: rgba(255, 255, 255, 1);
+	 --text-secondary: rgba(212, 212, 212, 1);
+	 --border-color: white;
+	 --card-shadow: 4px 7px 19px rgba(168, 44, 210, 0.56);
+}
+ body {
+	 background: var(--background);
+	 color: var(--text-primary);
+	 font-family: "Montserrat", sans-serif;
+	 display: grid;
+	 place-items: center;
+	 height: 100vh;
+	 width: 100%;
+	 line-height: 2rem;
+	 text-align: center;
+}
+ .card-image img {
+	 width: 90%;
+	 height: 90%;
+	 /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); */
+}
+.card-image{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+ .card {
+	 padding: 1rem;
+	 width: 300px;
+	 height: 450px;
+	 background: var(--card-background-color);
+	 border-radius: 20px;
+	 box-shadow: var(--card-shadow);
+}
+.card-title{
+  margin-top: 30px;
+}
+ .card .card-title {
+	 font-size: 1.5rem;
+	 font-weight: bold;
+ }
+
+ .card-subtitle{
+   margin-top: 15px;
+ }
+ .card .card-subtitle {
+	 color: var(--text-secondary);
+	 font-size: 1.2rem;
+	 margin-bottom: 5px;
+}
