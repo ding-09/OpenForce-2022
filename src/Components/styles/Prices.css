@@ -68,7 +68,7 @@
 
  :root {
 	 --background: rgba(36, 50, 71, 1);
-	 --card-background-color: linear-gradient(180.2deg, #5193f6 -8.53%, rgba(249, 71, 232, 0.57) 109.43%);
+	 --card-background-color: linear-gradient(180deg, #367CFF 0.04%, #C242BD 99.96%);
 	 --btn-color: rgba(5, 5, 5, 1);
 	 --text-primary: rgba(255, 255, 255, 1);
 	 --text-secondary: rgba(212, 212, 212, 1);
@@ -94,6 +94,8 @@
 .card-image{
   margin-top: 10px;
   margin-bottom: 20px;
+  width: 80%;
+  margin: auto;
 }
  .card {
 	 padding: 1rem;
@@ -102,6 +104,9 @@
 	 background: var(--card-background-color);
 	 border-radius: 20px;
 	 box-shadow: var(--card-shadow);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
 }
 .card-title{
   margin-top: 30px;
@@ -109,13 +114,12 @@
  .card .card-title {
 	 font-size: 1.5rem;
 	 font-weight: bold;
+   margin-top: 2px;
  }
 
- .card-subtitle{
-   margin-top: 15px;
- }
  .card .card-subtitle {
 	 color: var(--text-secondary);
-	 font-size: 1.2rem;
+	 font-size: 19px;
+   text-align: left;
 	 margin-bottom: 5px;
 }

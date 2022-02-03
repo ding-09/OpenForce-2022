@@ -23,12 +23,14 @@ function Swags(props) {
                             prizes.map((elem) => {   
                                 return (
                                     <div className="card">
+                                        <div>
                                         <div class="card-title">
                                             <p>Sponsored By</p>
                                         </div>
                                         <div class="card-image">
                                             <img src={elem.icon} alt="logo" />
                                         </div> 
+                                        </div>
                                         <Prices data={elem} key={elem} />
                                     </div>
                                 )

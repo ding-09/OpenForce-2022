@@ -10,11 +10,7 @@
     -ms-user-select: none;
     user-select: none;
   }
-  
-  .bg-crl {
-    /* content: url("../assets/crl_icon.svg"); */
-  }
-  
+
   .bg-icn {
     /* content: url("../assets/code_icon.svg"); */
     opacity: 0.3;

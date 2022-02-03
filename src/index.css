@@ -21,6 +21,7 @@ body {
 #root {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: #0f141b;
 }
 
 #root::-webkit-scrollbar {
