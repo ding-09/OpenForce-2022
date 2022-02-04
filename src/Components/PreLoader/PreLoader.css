@@ -16,8 +16,8 @@
   .preloader-img {
     height: 200px;
     width: 200px;
-    -webkit-animation: beat 2s infinite;
-            animation: beat 2s infinite;
+    -webkit-animation: beat 1.3s infinite;
+            animation: beat 1.3s infinite;
   }
   
   @-webkit-keyframes beat {

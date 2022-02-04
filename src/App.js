@@ -69,7 +69,7 @@ function App() {
         document.getElementsByClassName("preloader")[0].classList.add("hide");
         setTimeout(resetTimeline, 100);
         window.addEventListener('resize',resetTimeline);
-    },4000);
+    },1500);
     return (
         <div>
         <PreLoader/>

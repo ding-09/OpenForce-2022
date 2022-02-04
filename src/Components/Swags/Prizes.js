@@ -1,9 +1,9 @@
 import react from 'react';
-import "../styles/Prices.css"
+import "../styles/Prizes.css"
 
 export default function Prices(props) {
         return(
-            <ol>
+            <ol id="PrizesComponent">
                 {
                     props.data.prices.map((el)=>{
                         return (

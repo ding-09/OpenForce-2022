@@ -109,11 +109,12 @@
 }
 
 h1.openforcemention {
-  color: #5865F2;
+  color: #367CFF;
   font-weight: bolder;
   font-size: 55px;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 10px;
+  text-align: left;
 }
 
 .openforcemention::after {
@@ -188,7 +189,8 @@ h1.openforcemention {
 .poweredby {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  /* justify-content: flex-end; */
+  line-height: 0.6em;
 }
 
 .poweredby p {
