@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import storage from "../FirebaseInit";
-import BaseContext from "./BaseContext.js";
+import BaseContext from "./BaseContext.jsx";
 
 const BaseState = (props) => {
     const [organization, setOrganization] = useState([]);
