@@ -61,8 +61,8 @@ function NavBar() {
                     <Link className="nav-item px-3" to="/" onClick={()=>{moveTo("sponserLink")}}>
                         <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Sponsors</p>
                     </Link>
-                    <a className="nav-item px-3" href="https://forms.gle/VBqnNxuYUVdwHKgy6" target="_blank">
-                        <p className="nav-link text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">Register</p>
+                    <a className="nav-item px-3" href="https://forms.gle/VBqnNxuYUVdwHKgy6" target="_blank" >
+                        <div className="nav-link text-dark" data-bs-toggle="collapse" data-bs-target="#navbarNav" style={{ background: "#EEE9E6","border-radius": "10px", "paddingInline":"15px"}}>Register</div>
                     </a>
                 </ul>
             </div>
