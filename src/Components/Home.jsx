@@ -15,8 +15,8 @@ function Home() {
                     <img src={bharatX} alt="BharatX"/>
                 </div>
                 <h1 className="homeCont openforcemention">OpenForce 2022</h1>
-                <span className="homeContSub"  style={{color:"#AD5FAA", fontSize:"24px", fontWeight:"500px"}}>&lt;Opensource meets  its Contributor force/&gt;</span>
-                <div className="homeContSub" style={{fontWeight:"100",lineHeight:"1.2em"}}>We bring Top Opensource organisations to you.</div> 
+                <span className="homeContSub"  style={{color:"#BC52B8", fontSize:"24px", fontWeight:"500px"}}>&lt;Opensource meets  its Contributor force/&gt;</span>
+                <div className="homeContSub" style={{fontWeight:"100",lineHeight:"1.2em", marginTop:"20px"}}>We bring Top Opensource organisations to you.</div> 
                 <div className="homeContSub" style={{fontWeight:"bolder",lineHeight:"1.2em"}}>Are you ready to be part of our OpenForce 2022?</div>
                 
                 <div className="poweredby organisedby">
