@@ -82,6 +82,7 @@
           align-items: center;
   border-radius: 50%;
   font-size: 22px;
+  color: #1C232D;
 }
 
 .container .contactInfo .box .text {
@@ -90,6 +91,8 @@
   display: flex;
   margin-left: 20px;
   font-size: 16px;
+  width: 100%;
+  align-items: flex-start;
   color: #fff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

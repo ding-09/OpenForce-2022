@@ -10,9 +10,12 @@ library.add(faBars);
 
 function NavBar() {
     const history = useHistory();
+    // document.querySelector(".navbar-collapse").classList.add("collapsing");
     const moveTo = (a)=>{
         history.push(`/#${a}`);
-        document.getElementById("root").scrollTop=document.getElementById(a).offsetTop;
+        setTimeout(()=>{
+            document.getElementById("root").scrollTop=document.getElementById(a).offsetTop;
+        },10)
     }
     const scrollTop = ()=>{
         setTimeout(()=>{

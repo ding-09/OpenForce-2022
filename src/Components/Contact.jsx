@@ -45,9 +45,7 @@ function Contact() {
                             <div className="text">
                                 <h3>Address</h3>
                                 <p>
-                                    New Delhi
-                                    <br />
-                                    India
+                                    New Delhi, India
                                     <br />
                                 </p>
                             </div>

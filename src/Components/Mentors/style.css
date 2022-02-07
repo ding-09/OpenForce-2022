@@ -100,28 +100,28 @@
 }
 .mentorsearchtext input{
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid #EEE9E6;
   border-radius: 10px;
   height: 45px;
   width: 300px;
   padding-right: 10px;
-  color: white;
+  color: #EEE9E6;
   padding-left: 35px;
 }
 
 .mentorsearchtext input::placeholder{
-  color: white;
+  color: #EEE9E6;
   font-weight: 100;
 }
 
 #mentorfilter{
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid #EEE9E6;
   border-radius: 10px;
   height: 45px;
   width: 200px;
   padding-right: 10px;
-  color: white;
+  color: #EEE9E6;
   padding: 0px 5px;
 }
 
