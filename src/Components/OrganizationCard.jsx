@@ -34,11 +34,12 @@ export default function OrganizationCard(props) {
                         {props.data.tags.map((elem) => {
                             return (
                                 <div
-                                    class="badge"
+                                    className="badge"
                                     style={{
                                         backgroundColor: "#1C232D",
                                         fontSize: "12px",
                                     }}
+                                    key={elem}
                                 >
                                     {elem}
                                 </div>

@@ -8,7 +8,7 @@ export default function ScrollTop() {
 
     return (
         <div className='scrollTop' onClick={scrollZero}>
-            <div className='scrollMe'><i class="fas fa-chevron-up"></i></div>
+            <div className='scrollMe'><i className="fas fa-chevron-up"></i></div>
         </div>
     )
 }

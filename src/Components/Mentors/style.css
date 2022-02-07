@@ -1,19 +1,150 @@
 .indvmentors {
-    display: -webkit-box !important;
+    padding: 100px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 830px) {
+    .indvmentors {
+        padding: 80px 20px;
+    }
+}
+
+.lower{
+  display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     -webkit-box-pack: space-evenly !important;
-        -ms-flex-pack: space-evenly !important;
-            justify-content: space-evenly !important;
-    padding: 100px;
-    width: 100%;
+    -ms-flex-pack: space-evenly !important;
+    justify-content: space-evenly !important;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.mentorCardCont{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+.mentorimage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.mentorCover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.mentorCardCont:hover .mentorCover{
+  background-color: transparent;
+}
+
+.mentordetails{
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 10px;
+  align-items: left;
+}
+.nameandpos{
+  text-align: left;
+  font-size: 13px;
+}
+
+.linkedinmentor{
+  font-size: 30px;
+}
+
+
+/* container */
+
+.mentortext{
+  font-size: 20px;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.steps{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.steps > *{
+  margin: 20px;
+}
+
+.mentorsearchtext{
+  height: fit-content;
+  position: relative;
+}
+.mentorsearchtext i{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.mentorsearchtext input{
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 45px;
+  width: 300px;
+  padding-right: 10px;
+  color: white;
+  padding-left: 35px;
+}
+
+.mentorsearchtext input::placeholder{
+  color: white;
+  font-weight: 100;
+}
+
+#mentorfilter{
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 45px;
+  width: 200px;
+  padding-right: 10px;
+  color: white;
+  padding: 0px 5px;
+}
+
+#mentorfilter option{
+  color: black;
+}
+
+.mentorsearchtext input:focus{
+  outline: none;
+} 
+
+
+@media screen and (max-width : 500px){
+  .stp{
+    width: 90%;
+  } 
+  #mentorfilter{
+    width: 300px;
   }
-  
-  @media only screen and (max-width: 830px) {
-    .indvmentors {
-      padding: 80px 20px;
-    }
-  }
-  /*# sourceMappingURL=style.css.map */
+}
+
+@media screen and (min-width : 1020px) and (max-width : 1320px){
+  .mentorimg{
+    width: 90%;
+  } 
+}

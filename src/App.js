@@ -65,8 +65,8 @@ function App() {
     })
     
     setTimeout(() => {
-        document.getElementsByClassName("App")[0].classList.remove("hide");
-        document.getElementsByClassName("preloader")[0].classList.add("hide");
+        if(document.getElementsByClassName("App")[0])document.getElementsByClassName("App")[0].classList.remove("hide");
+        if(document.getElementsByClassName("preloader")[0])document.getElementsByClassName("preloader")[0].classList.add("hide");
         setTimeout(resetTimeline, 100);
         window.addEventListener('resize',resetTimeline);
     },1500);
