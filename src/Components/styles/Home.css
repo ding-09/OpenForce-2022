@@ -217,7 +217,12 @@ h1.openforcemention {
     padding-top: 100px;
   }
 }
-
+@media screen and (max-width:1300px) and (min-width:1100px) {
+  .landingImage{
+    padding: 5%;
+    width: 52%;
+  }
+}
 @media screen and (max-width: 1100px) {
   .landindContent {
     width: 100%;
