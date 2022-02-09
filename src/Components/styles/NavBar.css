@@ -38,7 +38,11 @@ nav button {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
-
+@media screen and (max-width: 1170px) {
+  .nav-item{
+    padding: 6px !important;
+  }
+}
 @media screen and (max-width: 700px) {
   nav img {
     left: 10px;
