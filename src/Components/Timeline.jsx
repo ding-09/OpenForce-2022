@@ -35,7 +35,7 @@ export default function Timeline({resetTimeline}) {
 
                 <div className="tlboxwrap">
                     <div className="tlboxes dark" id="tlbox5">
-                        3rd march 2022
+                        3rd March 2022
                         <div className="dot"></div>
                         {/* <div className="dotcircle"></div> */}
                     </div>
